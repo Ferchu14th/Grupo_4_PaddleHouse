@@ -25,9 +25,16 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 ***falta: una breve descripción de los integrantes del equipo*** 
 
 ## Temática: 
+El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las edades. Se juega siempre en pareja y consta de tres elementos fundamentales para su desarrollo: la pelota, la pala y el campo de juego o pista.  Desde **PaddleHouse** te traemos al país las paletas y accesorios de marcas ya establecidas en el mercado que mejor se adaptan a las necesidades de los que aman este deporte.
 
-Paddle Sports (Paleta o Raqueta)
-
-https://www.paddlehouserb.com/
-https://www.zonadepadel.es/
-https://padelsane.com/
+### Antecedentes sitios similares
+1. https://www.zonadepadel.es/
+   Impacto visiual y variedad de productos en el mercado Europeo
+2. https://padelsane.com/
+   Dinámica de la página, velocidad de carga y calidad de imágenes.
+3. https://padelusa.com/
+   Distribución de contenidos y plataforma conversacional omnicanal (Chat, Telefono, Formulario)
+4. https://www.padelstore.com.ar/
+   Diversidad de promociones y amplia oferta de modalidades de pago
+5. https://www.padelnuestro.com/
+   mucho texto y lo que quisieramos evitar hacer.
