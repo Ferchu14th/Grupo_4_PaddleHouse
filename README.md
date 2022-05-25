@@ -20,7 +20,7 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 1. Federico Soto (alias: xxxxx) e-mail // url linkedIn
 2. Martin Bufczyk (alias: xxxxx) e-mail // url linkedIn
 3. Sebastian Dell Aera: (alias: xxxxx) e-mail // url linkedIn 
-4. Pablo Graña (alias: xxxxx) e-mail // url linkedIn 
+4. Pablo Graña (alias: Pol) e-mail: pablodagra@hotmail.com // url linkedIn 
 5. Fernando Riedel (Ferchu)  e-mail: riedelfernando@gmail.com // www.linkedin.com/in/fernandoriedel  
 
 ***falta: una breve descripción de los integrantes del equipo*** 
