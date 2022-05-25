@@ -17,7 +17,7 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 
 ## Integrantes del grupo:
 
-1. Federico Soto (alias: xxxxx) e-mail // url linkedIn
+1. Federico Soto (Fede) fedesoto28@gmail.com // www.linkedin.com/in/federico-ezequiel-soto/
 2. Martin Bufczyk (alias: xxxxx) e-mail // url linkedIn
 3. Sebastian Dell Aera: (alias: xxxxx) e-mail // url linkedIn 
 4. Pablo Graña (alias: Pol) e-mail: pablodagra@hotmail.com // url linkedIn 
