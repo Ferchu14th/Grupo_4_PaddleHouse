@@ -1,11 +1,11 @@
 # Grupo_4_eCommerce
 Terminaremos de definir el nombre cuando elijamos la temática
 
-# Objetivo 
+## Objetivo 
 Nuestro cliente DH Venture Capitals ha puesto en nuestras manos el desarrollo de un e-commerce
 para poner a prueba el desempeño de nuestro equipo al trabajar con Node.js y React.
 
-El cliente solicitó que seamos nosotros el Grupo_4 quienes elijamos la temática del sitio
+El cliente solicitó que seamos nosotros el ***Grupo_4*** quienes elijamos la temática del sitio
 y que presentemos un boceto gráfico de las principales secciones a implementar, antes de
 comenzar con el proceso de desarrollo.
 
@@ -15,12 +15,14 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 3. Sea funcional y cumpla con los requisitos del cliente.
 4. Las entregas se cumplan en tiempo y forma.
 
-# Integrantes del grupo:
+## Integrantes del grupo:
 
 1. Federico Soto (alias: xxxxx) e-mail // url linkedIn
 2. Martin Bufczyk (alias: xxxxx) e-mail // url linkedIn
-3. Sebastian Dell Aera: xxxxx) e-mail // url linkedIn 
+3. Sebastian Dell Aera: (alias: xxxxx) e-mail // url linkedIn 
 4. Pablo Graña (alias: xxxxx) e-mail // url linkedIn 
 5. Fernando Riedel (Ferchu)  e-mail: riedelfernando@gmail.com // www.linkedin.com/in/fernandoriedel  
  
+## Temática: 
 
+***explicamos brevemente la temática***
