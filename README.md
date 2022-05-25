@@ -25,7 +25,7 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 ***falta: una breve descripción de los integrantes del equipo*** 
 
 ## Temática: 
-El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las edades. Se juega siempre en pareja y consta de tres elementos fundamentales para su desarrollo: la pelota, la pala y el campo de juego o pista.  Desde **PaddleHouse** te traemos al país las paletas y accesorios de marcas ya establecidas en el mercado que mejor se adaptan a las necesidades de los que aman este deporte.
+El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las edades. Se juega siempre en pareja y consta de tres elementos fundamentales para su desarrollo: la pelota, la paleta o raqueta y el campo de juego o pista.  Desde **PaddleHouse** te traemos al país las paletas y accesorios de marcas ya establecidas en el mercado que mejor se adaptan a las necesidades de los que aman este deporte, junto con otros accesorios que forman parte de los elementos necesarios para disfrutar a pleno y de manera segura de esta pasión.
 
 ### Antecedentes sitios similares
 1. https://www.zonadepadel.es/
