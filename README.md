@@ -1,5 +1,4 @@
-# Grupo_4_eCommerce
-Terminaremos de definir el nombre cuando elijamos la temática
+# Grupo_4_PaddleHouse
 
 ## Objetivo 
 Nuestro cliente DH Venture Capitals ha puesto en nuestras manos el desarrollo de un e-commerce
@@ -21,13 +20,14 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 2. Martin Bufczyk (alias: Martin) marrtinbuf@gmail.com // url linkedIn
 3. Sebastian Dell Aera: (alias: Pela) sebastiandellaera@gmail.com // url linkedIn 
 4. Pablo Graña (alias: Pol) e-mail: pablodagra@hotmail.com // url linkedIn 
-5. Fernando Riedel (Ferchu)  e-mail: riedelfernando@gmail.com // www.linkedin.com/in/fernandoriedel  
+5. Fernando Riedel (Ferchu)  e-mail: riedelfernando@gmail.com // www.linkedin.com/in/fernandoriedel 
 
 ***falta: una breve descripción de los integrantes del equipo*** 
 
 ## Temática: 
 
-**Explicamos brevemente la temática**.
+Paddle Sports (Paleta o Raqueta)
 
-Una breve descripción de la oferta de productos y/o servicios ofrecidos por su
-sitio. También agregar una breve descripción del público al que apunta el sitio.
+https://www.paddlehouserb.com/
+https://www.zonadepadel.es/
+https://padelsane.com/
