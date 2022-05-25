@@ -22,7 +22,12 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 3. Sebastian Dell Aera: (alias: xxxxx) e-mail // url linkedIn 
 4. Pablo Graña (alias: xxxxx) e-mail // url linkedIn 
 5. Fernando Riedel (Ferchu)  e-mail: riedelfernando@gmail.com // www.linkedin.com/in/fernandoriedel  
- 
+
+***falta: una breve descripción de los integrantes del equipo*** 
+
 ## Temática: 
 
-***explicamos brevemente la temática***
+**Explicamos brevemente la temática**.
+
+Una breve descripción de la oferta de productos y/o servicios ofrecidos por su
+sitio. También agregar una breve descripción del público al que apunta el sitio.
