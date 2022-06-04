@@ -42,7 +42,7 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
    
    
 
-[^1]: *@Federico: lorem lorum completum porcus nos acostem sim notarium*
+[^1]: *@Federico: lkasj kljas jdalskj dlkj saklj dksj dksj dlk jsad*
 [^2]: *@Martin: Lorem lorum completum porcus nos acostem sim notarium*
 [^3]: *@Sebastian: lorem lorum completum porcus nos acostem sim notarium*
 [^4]: *@Pablo: lorem lorum completum porcus nos acostem sim notarium*
