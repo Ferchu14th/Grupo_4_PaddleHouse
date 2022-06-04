@@ -17,6 +17,14 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 ## Temática: 
 El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las edades. Se juega siempre en pareja y consta de tres elementos fundamentales para su desarrollo: la pelota, la paleta o raqueta y el campo de juego o pista.  Desde **PaddleHouse** te traemos al país las paletas y accesorios de marcas ya establecidas en el mercado que mejor se adaptan a las necesidades de los que aman este deporte, junto con otros accesorios que forman parte de los elementos necesarios para disfrutar a pleno y de manera segura de esta pasión.
 
+## Integrantes del grupo: ##
+
+1. **Federico Soto** (Fede)[^1] ---> fedesoto28@gmail.com // [Perfil en LinkedIn](http://www.linkedin.com/in/federico-ezequiel-soto/)
+2. **Martin Bufczyk** (Martin)[^2] ---> marrtinbuf@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
+3. **Sebastian Dell Aera** (Pela)[^3] ---> sebastiandellaera@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
+4. **Pablo Graña** (Pol)[^4] ---> pablodagra@hotmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
+5. **Fernando Riedel** (Ferchu)[^5] ---> riedelfernando@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/fernandoriedel/)
+
 ### Antecedentes sitios similares
 1. https://www.zonadepadel.es/
    Impacto visiual y variedad de productos en el mercado Europeo
@@ -28,14 +36,11 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
    Diversidad de promociones y amplia oferta de modalidades de pago
 5. https://www.padelnuestro.com/
    mucho texto y lo que quisieramos evitar hacer.
-## Integrantes del grupo: ##
-
-1. **Federico Soto** (Fede)[^1] --->fedesoto28@gmail.com // [Perfil en LinkedIn](http://www.linkedin.com/in/federico-ezequiel-soto/)
-2. **Martin Bufczyk** (Martin)[^2] ---> marrtinbuf@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
-3. **Sebastian Dell Aera** (Pela)[^3] ---> sebastiandellaera@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
-4. **Pablo Graña** (Pol)[^4] e-mail: ---> pablodagra@hotmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
-5. **Fernando Riedel** (Ferchu)[^5] ---> e-mail: riedelfernando@gmail.com[^5] // [Perfil en LinkedIn](https://www.linkedin.com/in/fernandoriedel/)
-
+   
+   
+   
+   
+   
 
 [^1]: *@Federico: lorem lorum completum porcus nos acostem sim notarium*
 [^2]: *@Martin: Lorem lorum completum porcus nos acostem sim notarium*
