@@ -46,4 +46,4 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
 [^2]: *@Martin: Lorem lorum completum porcus nos acostem sim notarium*
 [^3]: *@Sebastian: lorem lorum completum porcus nos acostem sim notarium*
 [^4]: *@Pablo: lorem lorum completum porcus nos acostem sim notarium*
-[^5]: *@Ferchu14th: Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer*
+[^5]: *@Fernando: Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer*
