@@ -34,7 +34,7 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
 2. **Martin Bufczyk** (Martin) marrtinbuf@gmail.com // [Perfil en LinkedIn](url)
 3. **Sebastian Dell Aera** (Pela) sebastiandellaera@gmail.com // [Perfil en LinkedIn](url) 
 4. **Pablo Graña** (Pol) e-mail: pablodagra@hotmail.com // [Perfil en LinkedIn](url) 
-5. **Fernando Riedel** (Ferchu) e-mail: riedelfernando@gmail.com // [Perfil en LinkedIn](http//:www.linkedin.com/in/fernandoriedel) 
+5. **Fernando Riedel** (Ferchu) e-mail: riedelfernando@gmail.com // [Perfil en LinkedIn]([http//:www.linkedin.com/in/fernandoriedel]) 
 
    
 
