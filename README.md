@@ -30,14 +30,15 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
    mucho texto y lo que quisieramos evitar hacer.
 ## Integrantes del grupo: ##
 
-1. **Federico Soto** (Fede) fedesoto28@gmail.com // [Perfil en LinkedIn](http//:www.linkedin.com/in/federico-ezequiel-soto/)
-2. **Martin Bufczyk** (Martin) marrtinbuf@gmail.com // [Perfil en LinkedIn](url)
-3. **Sebastian Dell Aera** (Pela) sebastiandellaera@gmail.com // [Perfil en LinkedIn](url) 
-4. **Pablo Graña** (Pol) e-mail: pablodagra@hotmail.com // [Perfil en LinkedIn](url) 
-5. **Fernando Riedel** (Ferchu) e-mail: riedelfernando@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/fernandoriedel/)
+1. **Federico Soto** (Fede)[^1] --->fedesoto28@gmail.com // [Perfil en LinkedIn](http://www.linkedin.com/in/federico-ezequiel-soto/)
+2. **Martin Bufczyk** (Martin)[^2] ---> marrtinbuf@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
+3. **Sebastian Dell Aera** (Pela)[^3] ---> sebastiandellaera@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
+4. **Pablo Graña** (Pol)[^4] e-mail: ---> pablodagra@hotmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
+5. **Fernando Riedel** (Ferchu)[^5] ---> e-mail: riedelfernando@gmail.com[^5] // [Perfil en LinkedIn](https://www.linkedin.com/in/fernandoriedel/)
 
-   
 
->***falta: una breve descripción de algunos de los integrantes del equipo*** 
-
-[5]: *Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer.*]
+[^1]: *@Federico: lorem lorum completum porcus nos acostem sim notarium*
+[^2]: *@Martin: Lorem lorum completum porcus nos acostem sim notarium*
+[^3]: *@Sebastian: lorem lorum completum porcus nos acostem sim notarium*
+[^4]: *@Pablo: lorem lorum completum porcus nos acostem sim notarium*
+[^5]: *@Ferchu14th: Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer*
