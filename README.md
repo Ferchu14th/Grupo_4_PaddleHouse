@@ -34,10 +34,10 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
 2. **Martin Bufczyk** (Martin) marrtinbuf@gmail.com // [Perfil en LinkedIn](url)
 3. **Sebastian Dell Aera** (Pela) sebastiandellaera@gmail.com // [Perfil en LinkedIn](url) 
 4. **Pablo Graña** (Pol) e-mail: pablodagra@hotmail.com // [Perfil en LinkedIn](url) 
-5. **Fernando Riedel** (Ferchu) [^5]  e-mail: riedelfernando@gmail.com // [Perfil en LinkedIn](www.linkedin.com/in/fernandoriedel) 
+5. **Fernando Riedel** (Ferchu) [5]  e-mail: riedelfernando@gmail.com // [Perfil en LinkedIn](www.linkedin.com/in/fernandoriedel) 
 
    
 
 >***falta: una breve descripción de algunos de los integrantes del equipo*** 
 
-[^5]*Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer.*
+[5.*Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer.*]
