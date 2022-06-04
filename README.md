@@ -14,16 +14,6 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 3. Sea funcional y cumpla con los requisitos del cliente.
 4. Las entregas se cumplan en tiempo y forma.
 
-## Integrantes del grupo:
-
-1. Federico Soto (Fede) fedesoto28@gmail.com // www.linkedin.com/in/federico-ezequiel-soto/
-2. Martin Bufczyk (alias: Martin) marrtinbuf@gmail.com // url linkedIn
-3. Sebastian Dell Aera: (alias: Pela) sebastiandellaera@gmail.com // url linkedIn 
-4. Pablo Graña (alias: Pol) e-mail: pablodagra@hotmail.com // url linkedIn 
-5. Fernando Riedel (Ferchu)  e-mail: riedelfernando@gmail.com // www.linkedin.com/in/fernandoriedel 
-
-***falta: una breve descripción de los integrantes del equipo*** 
-
 ## Temática: 
 El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las edades. Se juega siempre en pareja y consta de tres elementos fundamentales para su desarrollo: la pelota, la paleta o raqueta y el campo de juego o pista.  Desde **PaddleHouse** te traemos al país las paletas y accesorios de marcas ya establecidas en el mercado que mejor se adaptan a las necesidades de los que aman este deporte, junto con otros accesorios que forman parte de los elementos necesarios para disfrutar a pleno y de manera segura de esta pasión.
 
@@ -38,3 +28,16 @@ El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las
    Diversidad de promociones y amplia oferta de modalidades de pago
 5. https://www.padelnuestro.com/
    mucho texto y lo que quisieramos evitar hacer.
+## Integrantes del grupo: ##
+
+1. **Federico Soto** (Fede) fedesoto28@gmail.com // [Perfil en LinkedIn](www.linkedin.com/in/federico-ezequiel-soto/)
+2. **Martin Bufczyk** (Martin) marrtinbuf@gmail.com // [Perfil en LinkedIn](url)
+3. **Sebastian Dell Aera** (Pela) sebastiandellaera@gmail.com // [Perfil en LinkedIn](url) 
+4. **Pablo Graña** (Pol) e-mail: pablodagra@hotmail.com // [Perfil en LinkedIn](url) 
+5. **Fernando Riedel** (Ferchu) [^5]  e-mail: riedelfernando@gmail.com // [Perfil en LinkedIn](www.linkedin.com/in/fernandoriedel) 
+
+   
+
+>***falta: una breve descripción de algunos de los integrantes del equipo*** 
+
+[^5]*Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer.*
