@@ -17,6 +17,9 @@ Nuestro rol será el de desarrollar el sitio asegurándonos que:
 ## Temática: 
 El pádel (Paddle en Inglés) es un deporte de raqueta que se adapta a todas las edades. Se juega siempre en pareja y consta de tres elementos fundamentales para su desarrollo: la pelota, la paleta o raqueta y el campo de juego o pista.  Desde **PaddleHouse** te traemos al país las paletas y accesorios de marcas ya establecidas en el mercado que mejor se adaptan a las necesidades de los que aman este deporte, junto con otros accesorios que forman parte de los elementos necesarios para disfrutar a pleno y de manera segura de esta pasión.
 
+## Público Objetivo
+El pádel es un deporte joven, dinámico y accesible tanto desde un puento de vista físico como económico. Además es muy fácil practicarlo y hay una distribución de canchas suficientes en la mayoría de las principales ciudades del país, que lo hacen de fácil acceso y contratación. Por esta razón es que lo practican personas, entre 10 y 80 años de los cuales, alrededor del 35% son mujeres. De esta manera pondrémos el acento en este sitio, con productos, ofertas, comunicaciones, y diseño, pensando en este amplio colectivo de personas, pero con un foco especial en Jóvenes (entre 15 y 25 años) y Adultos (entre 40 y 60 años). 
+
 ## Integrantes del grupo: ##
 
 1. **Federico Soto** (Fede)[^1] ---> fedesoto28@gmail.com // [Perfil en LinkedIn](http://www.linkedin.com/in/federico-ezequiel-soto/)
