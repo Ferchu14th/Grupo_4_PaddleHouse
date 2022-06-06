@@ -49,4 +49,4 @@ El pádel es un deporte joven, dinámico y accesible tanto desde un puento de vi
 [^2]: *@Martin: Lorem lorum completum porcus nos acostem sim notarium*
 [^3]: *@Sebastian: Visitador médico, gerente en Leman SRL lavadero industrial, hasta que empezo la pandemia y tuvimos que cerrar. Actualmente auditoria en Atlantics-ciudades inteligentes
 [^4]: *@Pablo: lorem lorum completum porcus nos acostem sim notarium*
-[^5]: *@Fernando: Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´), Profesor en Diplomatura Gestion Omnicanal (UBP/UB 20´) y actualmente Trainee Web Full Stack y con ganas de hacer*
+[^5]: *@Fernando: Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´) y actualmente Trainee Web Full Stack y con ganas de hacer*
