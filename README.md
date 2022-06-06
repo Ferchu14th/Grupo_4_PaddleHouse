@@ -8,6 +8,8 @@ El cliente solicitó que seamos nosotros el ***Grupo_4*** quienes elijamos la te
 y que presentemos un boceto gráfico de las principales secciones a implementar, antes de
 comenzar con el proceso de desarrollo.
 
+URL REPO: https://github.com/Ferchu14th/Grupo_4_PaddleHouse.git
+
 Nuestro rol será el de desarrollar el sitio asegurándonos que:
 1. Sea estéticamente agradable (UI - User Interface).
 2. Sea fácil de usar (UX - User Experience).
