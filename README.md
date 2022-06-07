@@ -47,8 +47,8 @@ El pádel es un deporte joven, dinámico y accesible tanto desde un puento de vi
    
    
 
-[^1]: *@Federico: lkasj kljas jdalskj dlkj saklj dksj dksj dlk jsad*
-[^2]: *@Martin: Lorem lorum completum porcus nos acostem sim notarium*
-[^3]: *@Sebastian: Visitador médico, gerente en Leman SRL lavadero industrial, hasta que empezo la pandemia y tuvimos que cerrar. Actualmente auditoria en Atlantics-ciudades inteligentes
-[^4]: *@Pablo: lorem lorum completum porcus nos acostem sim notarium*
-[^5]: *@Fernando: Regional Product Manager en Lumen Technologies para línea de soluciones de Colaboración (UCaaS / CPaaS) y Plataformas Conversacionales (CCaaS, CX/EX y CRM). Casado, 3 hijos, Analista de Sistemas en los 90' (UBA), Licenciado en Comercialización (UCES 00´) y actualmente Trainee Web Full Stack y con ganas de hacer*
+[^1]: *@Federico: el creativo e implacable rastreador de info en las redes*
+[^2]: *@Martin: nuestro jugador y estrella de paddle que no alimenta de conocimientos sobre esta temática*
+[^3]: *@Sebastian: nuestro auditor y tester*
+[^4]: *@Pablo: comenzando seriamente a tratar el código de manera lúdica*
+[^5]: *@Fernando: diseña y monetiza nuestras ideas, ilusionista y bohemio desde la cuna*
