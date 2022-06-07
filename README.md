@@ -48,7 +48,7 @@ El pádel es un deporte joven, dinámico y accesible tanto desde un puento de vi
    
 
 [^1]: *@Federico: el creativo e implacable rastreador de info en las redes*
-[^2]: *@Martin: nuestro jugador y estrella de paddle que no alimenta de conocimientos sobre esta temática*
+[^2]: *@Martin: nuestro jugador y estrella de paddle que nos alimenta de conocimientos sobre esta temática*
 [^3]: *@Sebastian: nuestro auditor y tester*
 [^4]: *@Pablo: comenzando seriamente a tratar el código de manera lúdica*
 [^5]: *@Fernando: diseña y monetiza nuestras ideas, ilusionista y bohemio desde la cuna*
