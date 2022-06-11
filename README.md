@@ -26,7 +26,7 @@ El pádel es un deporte joven, dinámico y accesible tanto desde un puento de vi
 
 1. **Federico Soto** (Fede)[^1] ---> fedesoto28@gmail.com // [Perfil en LinkedIn](http://www.linkedin.com/in/federico-ezequiel-soto/)
 2. **Martin Bufczyk** (Martin)[^2] ---> marrtinbuf@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
-3. **Sebastian Dell Aera** (Pela)[^3] ---> sebastiandellaera@gmail.com // [Perfil en LinkedIn] (https://www.linkedin.com/in/sebastian-albino-dell-aera-b944941b9
+3. **Sebastian Dell Aera** (Pela)[^3] ---> sebastiandellaera@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/sebastian-albino-dell-aera-b944941b9)
 4. **Pablo Graña** (Pol)[^4] ---> pablodagra@hotmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/tunombre/)
 5. **Fernando Riedel** (Ferchu)[^5] ---> riedelfernando@gmail.com // [Perfil en LinkedIn](https://www.linkedin.com/in/fernandoriedel/)
 
