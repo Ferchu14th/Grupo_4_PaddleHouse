@@ -53,7 +53,7 @@ Link: https://trello.com/b/7AXQr8EV/proyecto-integrador-paddle-house-e4
    
 
 [^1]: *@Federico: el creativo e implacable rastreador de info en las redes*
-[^2]: *@Martin: nuestro jugador y estrella de paddle que nos alimenta de conocimientos sobre esta temática*
+[^2]: *@Martin: nuestro jugador y estrella de padel que nos alimenta de conocimientos sobre esta temática*
 [^3]: *@Sebastian: nuestro auditor y tester*
 [^4]: *@Pablo: comenzando seriamente a tratar el código de manera lúdica*
 [^5]: *@Fernando: diseña y monetiza nuestras ideas, ilusionista y bohemio desde la cuna*
