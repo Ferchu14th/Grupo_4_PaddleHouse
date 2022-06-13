@@ -42,7 +42,11 @@ El pádel es un deporte joven, dinámico y accesible tanto desde un puento de vi
 5. https://www.padelnuestro.com/
    mucho texto y lo que quisieramos evitar hacer.
    
-   
+## Creación de un Tablero de Trabajo ##
+Elejimos como app a Trello para crear Tablero y espacio de trabajo para Grupo 4 Paddle House.
+Link: https://trello.com/b/7AXQr8EV/proyecto-integrador-paddle-house-e4
+
+
    
    
    
