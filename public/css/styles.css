@@ -2,9 +2,28 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
+   
+}
+head{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 main{
     text-align: center;
+    font-family: 'Abel', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+footer{
+    font-family: 'Abel', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 div{
     text-align: center;
