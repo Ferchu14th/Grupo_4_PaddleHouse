@@ -2,28 +2,29 @@
     margin: 0px;
     padding: 0px;    
     box-sizing: border-box;
-   
+  
 }
 head{
     font-family: 'Abel', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+ 
 }
+
+
 header{
     font-family: 'Abel', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+  
+    
 }
 main{
     text-align: center;
     font-family: 'Abel', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+   
+  
 }
 footer{
     font-family: 'Abel', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+
+  
 }
 div{
     text-align: center;
@@ -53,25 +54,40 @@ div{
     border: black 5px solid;
     height: 300px;
 }
+.banner-foto{
+    box-sizing: border-box;
+    display: flex;
+}
+.foto-bann{
+    width: 100%;
+    height:100%;
+}
 .ofertas-main{
-    text-align: center;
     box-sizing: border-box;
     display: flex;
     padding: 15px;
     width: 100%;
     border: grey 2px solid;
-    height: 300px;
-    justify-content: flex-start;
+    height: 400px;
 }
-.oferta1{
-width: 33.4%;
-}
-.oferta2{
+.ofertas1{
     width: 33.3%;
+    text-align: center;
+    justify-content: center;
 }
-.oferta3{
+
+.ofertas2{
     width: 33.3%;
+    text-align: center;
+    justify-content: center;
 }
+
+.ofertas3{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+}
+
 .products-main{
     box-sizing: border-box;
     display: flex;
@@ -80,6 +96,21 @@ width: 33.4%;
     width: 100%;
     border: grey 2px solid;
     height: 400px;
+}
+.products1{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+}
+.products2{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+}
+.products3{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
 }
 .cajas-main{
     text-align: center;
@@ -93,6 +124,21 @@ width: 33.4%;
     border: grey 2px solid;
     height: 300px;
 }
+.caja1{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+}
+.caja2{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+}
+.caja3{
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
+}
 
 .a-footer{
     box-sizing: border-box;
@@ -105,26 +151,17 @@ width: 33.4%;
    
 }
 .products-footer{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    width: 15px;
-    justify-content: flex-start;
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
 }
 .servicios-footer{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    width: 15px;
-    justify-content: flex-start;
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
 }
 .contacto-footer{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    width: 15px;
-    justify-content: flex-start;
+    width: 33.3%;
+    text-align: center;
+    justify-content: center;
 }
