@@ -156,7 +156,7 @@ div {
   text-align: center;
   width: 100%;
   border: grey 2px solid;
-  height: 400px;
+  height: 100%;
 }
 .products1 {
   width: 33.3%;
@@ -206,7 +206,7 @@ div {
   justify-content: flex-start;
   width: 100%;
   border: grey 2px solid;
-  height: 300px;
+  height: 100%;
 }
 .caja1 {
   width: 33.3%;
@@ -242,6 +242,7 @@ div {
   text-align: center;
   width: 100%;
   border: grey 2px solid;
+  height: 70%;
 }
 .logo-footer {
   width: 25%;
