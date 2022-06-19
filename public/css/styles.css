@@ -28,20 +28,25 @@ footer {
 div {
   text-align: center;
 }
+.top-header{
+  width: 100%;
+  height: 100%;
+}
 .logo-nav-iconos {
   text-align: justify;
   box-sizing: border-box;
   display: flex;
-  padding: 15px;
-  height: 100px;
+  padding: 10px;
+  height: 100%;
   border: lightblue 5px solid;
 }
 .logo {
-  width: 20%;
+  width: 30%;
+  height: 70%;
 }
 .logo-foto {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
 }
 .barra-accesorios {
   text-align: justify;
@@ -63,29 +68,35 @@ div {
 }
 
 .search {
-  width: 50%;
+  width: 70%;
   text-align: center;
   justify-content: center;
   height: 50%;
 }
 .contacto-logo {
-  width: 15%;
-  text-align: center;
-  justify-content: center;
-  height: 50%;
+  width: 100%; 
+  height: 100%;
+  padding: 3%;
 }
 .micuenta-logo {
-  width: 15%;
-  text-align: center;
-  justify-content: center;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 3%;
 }
 .carrito-logo {
-  width: 15%;
-  text-align: center;
-  justify-content: center;
-  height: 50%;
+  width: 100%;
+  height: 100%;
+ padding: 3%;
 }
+.logos3{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+ width: 90%;
+ font-size: 100%;
+}
+
 .banner {
   width: 100%;
   border: black 5px solid;
@@ -281,8 +292,35 @@ div {
   .titulos-producto3 {
     font-size: 25px;
   }
+  
+
 }
 @media (max-width: 729px) {
+  .logo-nav-iconos{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logos3{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .micuenta-logo{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start
+  }
+  .carrito-logo{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start
+  }
+  .contacto-logo{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+  }
   .marca-modelo {
     box-sizing: border-box;
     display: flex;
