@@ -35,6 +35,7 @@ div {
 .logo-nav-iconos {
   text-align: justify;
   box-sizing: border-box;
+  align-items: center;
   display: flex;
   padding: 10px;
   height: 100%;
@@ -45,14 +46,15 @@ div {
   height: 70%;
 }
 .logo-foto {
-  width: 90%;
-  height: 70%;
+  display:flex;
+  width: 100%;
+  height: 100%;
 }
 .barra-accesorios {
-  text-align: justify;
-  box-sizing: border-box;
   display: flex;
-  padding: 15px;
+  box-sizing: border-box;
+  align-content: flex-start;
+  padding: 10px;
   height: 100px;
   border: lightblue 5px solid;
   font-size: 36px;
@@ -69,9 +71,13 @@ div {
 
 .search {
   width: 70%;
+  display: flex;
+  box-sizing: border-box;
   text-align: center;
   justify-content: center;
   height: 50%;
+  border: rgb(166, 169, 170) 2px solid;
+  border-radius: 10px;
 }
 .contacto-logo {
   width: 100%; 
@@ -86,21 +92,21 @@ div {
 .carrito-logo {
   width: 100%;
   height: 100%;
- padding: 3%;
+  padding: 3%;
 }
 .logos3{
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: flex-start;
- width: 90%;
- font-size: 100%;
+  width: 90%;
+  font-size: 100%;
 }
 
 .banner {
   width: 100%;
   border: black 5px solid;
-  height: 300px;
+  height: 100%;
 }
 .banner-foto {
   box-sizing: border-box;
@@ -124,6 +130,7 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
 }
 
 .ofertas2 {
@@ -132,6 +139,7 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
 }
 
 .ofertas3 {
@@ -140,7 +148,34 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
 }
+
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4472c4;
+}
+
+.button1:hover {
+  background-color: #4472c4;
+  color: white;
+}
+
+
 .ofertass {
   width: 90%;
 }
@@ -175,6 +210,8 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
+
 }
 .products2 {
   width: 33.3%;
@@ -182,6 +219,8 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
+
 }
 .products3 {
   width: 33.3%;
@@ -189,7 +228,9 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+border-radius: 20px;
 }
+
 .productoss {
   width: 85%;
   height: 85%;
@@ -225,6 +266,8 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
+
 }
 .caja2 {
   width: 33.3%;
@@ -232,16 +275,20 @@ div {
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
 }
+
 .caja3 {
   width: 33.3%;
   text-align: center;
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
+  border-radius: 20px;
 }
+
 .cajass {
-  width: 100%;
+  width: 80%;
   height: 80%;
 }
 
@@ -355,7 +402,7 @@ div {
     display: flex;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: start;
     flex-direction: column;
     flex-wrap: wrap;
     font-size: 30px;
@@ -410,6 +457,9 @@ div {
   }
   .footer-ul{
     font-size: 23px;
+  }
+  .enlaces-fonts {
+    font-size: 36px;
   }
 }
 
