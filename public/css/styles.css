@@ -125,21 +125,23 @@ div {
   height: 100%;
 }
 .ofertas1 {
-  width: 33.3%;
+  width:33.3%;
   text-align: center;
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
   border-radius: 20px;
+
 }
 
 .ofertas2 {
-  width: 33.3%;
+  width: 34.8%;
   text-align: center;
   justify-content: center;
   border: grey 1px solid;
   background-color: white;
   border-radius: 20px;
+  
 }
 
 .ofertas3 {
@@ -214,7 +216,7 @@ div {
 
 }
 .products2 {
-  width: 33.3%;
+  width: 35.3%;
   text-align: center;
   justify-content: center;
   border: grey 1px solid;
@@ -342,7 +344,7 @@ border-radius: 20px;
   
 
 }
-@media (max-width: 729px) {
+@media (max-width: 818px) {
   .logo-nav-iconos{
     box-sizing: border-box;
     display: flex;
