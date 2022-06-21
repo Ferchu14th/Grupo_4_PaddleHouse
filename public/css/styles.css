@@ -205,6 +205,7 @@ div {
   width: 100%;
   border: grey 2px solid;
   height: 100%;
+  align-items: flex-end
 }
 .products1 {
   width: 33.3%;
@@ -216,7 +217,7 @@ div {
 
 }
 .products2 {
-  width: 35.3%;
+  width: 34.5%;
   text-align: center;
   justify-content: center;
   border: grey 1px solid;
@@ -239,7 +240,7 @@ border-radius: 20px;
 }
 .productoss2 {
   width: 80%;
-  height: 80%;
+  height: 70%;
 }
 .titulos-producto1 {
   font-size: 36px;
@@ -343,6 +344,12 @@ border-radius: 20px;
   }
   
 
+}
+@media(max-width:1050px){
+  .productoss2{
+width: 78%;
+height: 80%;
+  }
 }
 @media (max-width: 818px) {
   .logo-nav-iconos{
