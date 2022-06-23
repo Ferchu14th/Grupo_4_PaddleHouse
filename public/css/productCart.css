@@ -120,7 +120,7 @@
   }
   
   #contenedor-carrito table thead td{
-    background-color: coral;
+    background-color: #4472C4;
     color: white;
     border: none;
     padding: 6px, 0px;
@@ -182,7 +182,7 @@
   
   #finalizar-carrito .cupon h5,
   #finalizar-carrito .total h5{
-    background-color: coral;
+    background-color: #4472C4;
     color: white;
     border: none;
     padding: 6px, 12px;
