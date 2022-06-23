@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -47,18 +47,43 @@
 </header>
 <main class="register">
     <form action="/" method="POST">
-        <label for="registrarse">Crear cuenta</label>
         
-        <input type="text" name="name" placeholder="Nombre y apellido">
-        <input type="email" name="Email" placeholder="Email">
-        <input type="tel" name="telefono" placeholder="Telefono">
-        <input type="password" name="pass" placeholder="Contraseña">
-        <input type="password" name="pass2" placeholder="Confirmar contraseña">
+        <p>Inicio > Mi cuenta > Crear cuenta</p>
+        <h4>Crear cuenta</h4>
+
+        <div class="box">
+            <label for="user"></label>
+            <input class="input" type="text" name="NyA" id="NyA" placeholder="Nombre y Apellido" required="">
+        </div>  
         
+        <div class="box">
+            <label for="user"></label>
+            <input class="input" type="email" name="email" id="email" placeholder=email required="">
+        </div>  
+       
+        <div class="box">
+           <label for="tel"></label>
+           <input class="input" type="tel" name="telefono"id="tel" placeholder="Telefono" required="">
+        </div> 
+       
+         <div class="box">
+           <label for="password"></label>
+           <input class="input" type="password" name="password" id="password" placeholder="Contraseña" required="">
+        </div> 
 
-        <input type="submit" value="INICIAR SESIÓN">
+        <div class="box">
+            <label for="password"></label>
+            <input class="input" type="password" name="password" id="password" placeholder="Confirmar contraseña" required="">
+         </div> 
 
-        <label for="recordarme">¿ya tenes tu cuenta? <a href="login">Inicia sesión</a></label>
+
+        <div class="box">
+            <button class="button" type="submit">CREAR CUENTA</button>   
+        </div>
+           
+    </form>
+    <h5>Ya tenés una cuenta? <a href="/login">INICIAR SESION</a></h5>
+
 <footer>
     <br>
     <br>

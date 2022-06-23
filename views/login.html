@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -49,15 +49,28 @@
 
 
 <main class="login">
-            <form action="/" method="POST">
-                <label for="inicia sesión">Inicia sesión</label>
-                
-                <input type="text" name="email" placeholder="email">
-                <input type="password" name="pass" placeholder="contraseña">
-                <label for="recordarme">¿Olvidaste tu contraseña?</label>
-                
-                <input type="submit" value="INICIAR SESIÓN">
-            </form>
+    <p>Inicio > Mi cuenta > Login</p>
+    <h4>Inicia Sesion</h4>
+
+    <form action="/" method="GET">
+        <div class="box">
+            <label for="user"></label>
+            <input class="input" type="text" name="email" id="email" placeholder=email required="">
+        </div>  
+        <div class="box">
+           <label for="password"></label>
+           <input class="input" type="password" name="password" id="password" placeholder="Contraseña" required="">
+        </div> 
+        <div class="titulo"><label>¿Olvidaste tu contraseña?</label></div>
+
+
+        <div class="box">
+            <button class="button" type="submit">INICIA SESION</button>   
+        </div>
+           
+    </form>
+    <h5>No tenés cuenta aún? <a href="/register">CREAR CUENTA</a></h5>
+
 </main>
 
 <footer>
