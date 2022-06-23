@@ -18,7 +18,8 @@ h4 {
 }
 h5 {
   font-size: 24px;
-  align-items:initial;
+  text-align: left;
+  margin: 10px;
 }
 p {
   font-size: 20px;
@@ -110,7 +111,6 @@ div {
 .DescripcionProductos{
   box-sizing: border-box;
   display: flex;
-  align-items: center;
   align-items: stretch;
   padding: 15px;
   width: 100%;
@@ -120,7 +120,7 @@ div {
 .SelectorProducto {
   width: 19%;
   text-align:start;
-  justify-content:first baseline;
+  align-content:center ;
   background-color: white;
 }
 .Desc-1 {
@@ -177,13 +177,29 @@ div {
 .ofertass {
   width: 100%;
 }
+
 .marca-modelo {
   box-sizing: border-box;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
+
+div .opciones {
+  text-align: left;
+}
+
+.marca-producto {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: center;
+}
+
 .precios {
   box-sizing: border-box;
   display: flex;
