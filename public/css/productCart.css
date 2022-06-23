@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  head {
+    font-family: "Abel", sans-serif;
+  }
+  header {
+    font-family: "Abel", sans-serif;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 24px;
+  }
+  main {
+    text-align: center;
+    font-family: "Abel", sans-serif;
+  }
+  footer {
+    font-family: "Abel", sans-serif;
+  }
+  div {
+    text-align: center;
+  }
+  .top-header{
+    width: 100%;
+    height: 100%;
+  }
+  .logo-nav-iconos {
+    text-align: justify;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    border: lightblue 5px solid;
+  }
+  .logo {
+    width: 30%;
+    height: 70%;
+  }
+  .logo-foto {
+    display:flex;
+    width: 100%;
+    height: 100%;
+  }
+  .barra-accesorios {
+    display: flex;
+    box-sizing: border-box;
+    align-content: flex-start;
+    padding: 10px;
+    height: 100px;
+    border: lightblue 5px solid;
+    font-size: 36px;
+  }
+  .barra-accesoriosB {
+    width: 33%;
+  }
+  .barra-accesoriosA {
+    width: 33%;
+  }
+  .barra-accesoriosC {
+    width: 33%;
+  }
+  
+  .search {
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    height: 50%;
+    border: rgb(166, 169, 170) 2px solid;
+    border-radius: 10px;
+  }
+  .contacto-logo {
+    width: 100%; 
+    height: 100%;
+    padding: 3%;
+  }
+  .micuenta-logo {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+  }
+  .carrito-logo {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .logos3{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    font-size: 100%;
+  }
+  
+   #contenedor-carrito{
+    overflow-x: auto;
+  }
+  #contenedor-carrito table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+  }
+  
+  #contenedor-carrito table thead{
+    font-weight: 700;
+  }
+  
+  #contenedor-carrito table thead td{
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 6px, 0px;
+  }
+  
+  #contenedor-carrito table td{
+    border: 1px solid #b6b3b3;
+    text-align: center;
+  }
+  
+  #contenedor-carrito table td:nth-child(1){
+    width: 100px;
+  }
+  
+  #contenedor-carrito table td:nth-child(2),
+  #contenedor-carrito table td:nth-child(3){
+    width: 200px;
+  }
+  
+  #contenedor-carrito table td:nth-child(4),
+  #contenedor-carrito table td:nth-child(5),
+  #contenedor-carrito table td:nth-child(6){
+    width: 170px;
+  }
+  
+  #contenedor-carrito table tbody img{
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .contenedor-finalizar{
+    margin:10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .contenedor-finalizar .cupon{
+    display: table-cell;
+    padding: 10px;
+  }
+  
+  .contenedor-finalizar .total{
+    display: table-cell;
+    padding: 10px;
+    width: 700px;
+  }
+  
+  .total-a-pagar{
+    display: flex ;
+    justify-content: space-around;
+  
+  }
+  
+  #finalizar-carrito .cupon>div,
+  #finalizar-carrito .total>div{
+    border: 1px solid #b6b3b3;
+  }
+  
+  #finalizar-carrito .cupon h5,
+  #finalizar-carrito .total h5{
+    background-color: coral;
+    color: white;
+    border: none;
+    padding: 6px, 12px;
+    font-size: 20px;
+  }
+  
+  #finalizar-carrito .cupon p,
+  #finalizar-carrito .cupon input{
+    padding: 0 12px
+  }
+  
+  #finalizar-carrito .cupon input{
+    height: 44px;
+  }
+  #finalizar-carrito .cupon input{
+    margin: 0px, 0px, 20px, 12px;
+  }
+  
+  #finalizar-carrito .total div>div{
+    padding: 0px, 12px;
+  }
+  
+  #finalizar-carrito .total h6{
+  color: black;
+  font-size: 20px;
+  }
+  
+  .segundo-hr{
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+  }
+  
+  .a-footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border: grey 2px solid;
+    height: 70%;
+  }
+  .logo-footer {
+    width: 25%;
+  }
+  
+  .products-footer {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .servicios-footer {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .contacto-footer {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .logx {
+    width: 80%;
+  }
+  @media (max-width: 595px) {
+    .barra-accesorios {
+      font-size: 25px;
+    }
+  }
+  
+    
+  @media (max-width: 818px) {
+    .logo-nav-iconos{
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .logos3{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .micuenta-logo{
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start
+    }
+  
+    .contacto-logo{
+      box-sizing: border-box;
+      display: flex;
+      justify-content: flex-start;
+    }
+    .marca-modelo {
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  
+    
+    .barra-accesorios {
+      box-sizing: border-box;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      text-align: start;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: 30px;
+    }
+    
+    .a-footer {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      text-align: center;
+    }
+    .footer-ul{
+      font-size: 23px;
+    }
+    .enlaces-fonts {
+      font-size: 36px;
+    }
+  }
+  
+  
+  
+  
+  
