@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  /*outline: 1px solid red;*/
 }
 head {
   font-family: "Abel", sans-serif;
@@ -29,6 +30,10 @@ footer {
 div {
   text-align: center;
 }
+a:link {
+  display: block;
+  text-decoration: none;
+}
 .top-header{
   width: 100%;
   height: 100%;
@@ -55,11 +60,13 @@ div {
   display: flex;
   box-sizing: border-box;
   align-content: flex-start;
+  align-items: center;
   padding: 10px;
   height: 100px;
   border: lightblue 5px solid;
   font-size: 36px;
 }
+
 .barra-accesoriosB {
   width: 33%;
 }
