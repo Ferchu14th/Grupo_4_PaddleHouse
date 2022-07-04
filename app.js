@@ -1,36 +1,26 @@
 const express = require('express');
 const app = express();
 
-const indexRoutes = require('./routes/indexRoutes');
+const indexRoutes = require('./src/routes/indexRoutes');
+const productsRoutes = require('./src/routes/productsRoutes');
+const usersRoutes = require('./src/routes/usersRoutes');
 
 const PORT = process.env.PORT || 3050;
+/*app.set('views', path.join(__dirname, './src/views'));
+app.set('view engine', 'ejs');*/
+
+
 app.use(express.static('public'));
-
-
+/******Nuevas Rutas a través de Routes y Controllers INDEX o ENTRY POINT*****/
 app.use('/', indexRoutes);
-/*app.get('/', (req,res)=>{
-//    res.sendFile(__dirname + '/src/views/index.html');
-});*/
 
-//hay que meter ahora los dos productos en productRoutes y productController (como hicimos con el Index) 
-app.get('/productCart', (req,res)=>{
-    res.sendFile(__dirname + '/src/views/productCart.html');
-});
+/******Nuevas Rutas a través de Routes y Controllers PRODUCTOS******/
+app.use('/products', productsRoutes);
 
-app.get('/productDetail', (req,res)=>{
-    res.sendFile(__dirname + '/src/views/productDetail.html');
-});
+/******Nuevas Rutas a través de Routes y Controllers USUARIOS******/
+app.use('/users', usersRoutes)
 
-//hay que meter ahora los dos usuarios en usersRoutes y usersController (como hicimos con Productos) 
-app.get('/login', (req,res)=>{
-    res.sendFile(__dirname + '/src/views/login.html');
-});
-
-app.get('/register', (req,res)=>{
-    res.sendFile(__dirname + '/src/views/register.html');
-});
-
-// este es el Listen que siempre dejamos al final
+/******este es el Listen que siempre dejamos al final**************/
 app.listen(PORT, () => {
     console.log("listening on port " + PORT);
 });
