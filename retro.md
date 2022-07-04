@@ -28,3 +28,39 @@ Participantes: Equipo completo
 **¿Qué deberían dejar de hacer?**
 
 1. Llegar muy jugados con los contenidos de las clases y practicas
+------------------------------------------------------------------------------------------------------------------------
+## Retro sprint 2 ##
+
+### Equipo 4 Paddle House ###
+
+Fecha: 02/07/2022
+
+Participantes: Equipo completo
+
+**¿Qué hicieron bien en el sprint anterior?**
+
+1. Nos organizamos bien con las tareas
+2. Cumplimos todos con las tareas establecidas en Trello
+3. Intensificamos el trabajo a travez de Github
+4. Colaboramos entre nosotros para resolver dudas
+
+**¿Qué hicieron mal?**
+
+1. No hicimos un chequeo del contenido del Package.Json
+2. tuvimos que corregir el Listen que no estaba en ultimo lugar del app.js
+3. Mejorar la identacion en los HTML y sacar el subrayado a los link
+
+**¿Qué deberían empezar a hacer?**
+
+1. Profundizar nuevas funcionalidades y aplicarlas al proyecto
+2. Consultar mas con los profesores y no perder demasiado tiempo con las dudas
+3. Tener un mayor compromiso individual con nuestras tareas especificas
+4. Adelantarnos una clase al ritmo del proceso
+
+**¿Qué deberían dejar de hacer?**
+
+1. Buscar muchas referencias que nos hacen perder el folco en nuestro proyecto
+
+
+
+
