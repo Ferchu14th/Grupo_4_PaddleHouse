@@ -1,8 +1,8 @@
 module.exports = {
     detail: (req, res) => {
-        res.sendFile(__dirname + '/src/views/productDetail.html');
+        res.sendFile(path.join(__dirname, '../views/productDetail.html'));
     },
     cart: (req, res) => {
-        res.sendFile(__dirname + '/src/views/productCart.html');
+        res.sendFile(path.join(__dirname, '../views/productCart.html'));
     }
 }

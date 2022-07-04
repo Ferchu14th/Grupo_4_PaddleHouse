@@ -1,4 +1,15 @@
 {
+  "name": "grupo4paddlehouse",
+  "version": "1.0.0",
+  "description": "https://github.com/Ferchu14th/Grupo_4_PaddleHouse.git",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.18.1"
   },

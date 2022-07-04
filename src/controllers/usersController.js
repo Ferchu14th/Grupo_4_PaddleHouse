@@ -1,8 +1,8 @@
 module.exports = {
     login: (req, res) => {
-        res.sendFile(__dirname + '/src/views/login.html');
+        res.sendFile(path.join(__dirname, '../views/login.html'));
     },
     register: (req, res) => {
-        res.sendFile(__dirname + '/src/views/register.html');
+        res.sendFile(path.join(__dirname, '../views/register.html'));
     }
 }

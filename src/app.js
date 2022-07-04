@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 
-const indexRoutes = require('./src/routes/indexRoutes');
-const productsRoutes = require('./src/routes/productsRoutes');
-const usersRoutes = require('./src/routes/usersRoutes');
+const indexRoutes = require('./routes/indexRoutes');
+const productsRoutes = require('./routes/productsRoutes');
+const usersRoutes = require('./routes/usersRoutes');
 
 const PORT = process.env.PORT || 3050;
 /*app.set('views', path.join(__dirname, './src/views'));
