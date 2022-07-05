@@ -59,7 +59,7 @@ Participantes: Equipo completo
 
 **¿Qué deberían dejar de hacer?**
 
-1. Buscar muchas referencias que nos hacen perder el folco en nuestro proyecto
+1. Buscar muchas referencias que nos hacen perder el foco en nuestro proyecto
 
 
 

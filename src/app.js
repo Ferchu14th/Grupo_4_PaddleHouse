@@ -1,16 +1,22 @@
 const express = require('express');
 const app = express();
+const path = require('path');
 
 const indexRoutes = require('./routes/indexRoutes');
 const productsRoutes = require('./routes/productsRoutes');
 const usersRoutes = require('./routes/usersRoutes');
 
 const PORT = process.env.PORT || 3050;
-/*app.set('views', path.join(__dirname, './src/views'));
-app.set('view engine', 'ejs');*/
+
+//setea el motor de vistas
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './src/views'));
 
 
+//configuración de public static
 app.use(express.static('public'));
+
+
 /******Nuevas Rutas a través de Routes y Controllers INDEX o ENTRY POINT*****/
 app.use('/', indexRoutes);
 
