@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,10 +13,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Paddle House</title>
-</head>
+</head> -->
+
+<%- include("./partials/head") %>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="top-header">
             <div class="logo-nav-iconos">
                 <div class="logo">
@@ -48,7 +50,10 @@
                 <a class="barra-accesoriosB" href="/productDetail">ACCESORIOS</a>
                 <a class="barra-accesoriosC" href="/productDetail">BOLSOS</a>
             </div>
-    </header>
+    </header> -->
+
+    <%- include("./partials/header") %>
+
     <main>
         <h5>INICIO/PRODUCTO</h5>
         <div class="DescripcionProductos">
@@ -146,7 +151,7 @@
                 <button class="button button1">Añadir al Carrito</button>
             </article>
         </div>
-        <footer>
+        <!-- <footer>
             <br>
             <br>
             <div class="a-footer">
@@ -176,7 +181,10 @@
                     <p class="footer-ul">Argentina</p>
                 </div>
             </div>
-        </footer>
+        </footer> -->
+
+        <%- include("./partials/footer") %>
+
 </body>
 
 </html>

@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/productCart.css">
+      <link rel="stylesheet" href="css/productCart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,10 +13,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <title>Paddle House</title>
-</head>
+</head> -->
+
+<%- include("./partials/head") %>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="top-header">
             <div class="logo-nav-iconos">
                 <div class="logo">
@@ -51,7 +53,10 @@
         </nav>
         </div>
         </div>
-    </header>
+    </header> -->
+
+    <%- include("./partials/header") %>
+
     <main>
         <div class="contenedor" id="contenedor-carrito">
             <table width="100%">
@@ -146,7 +151,7 @@
         </div>
 
     </main>
-
+<!-- 
     <footer>
         <br>
         <br>
@@ -177,7 +182,10 @@
                 <p class="footer-ul">Argentina</p>
             </div>
         </div>
-    </footer>
+    </footer>   -->
+
+    <%- include("./partials/footer") %>
+    
 </body>
 
 </html>
