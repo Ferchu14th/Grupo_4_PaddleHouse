@@ -38,7 +38,9 @@ module.exports = {
 //        const detailProduct = products.find(product => {
 //            return product.id == id
 //        })
-        res.render("products/productDetail", { detailProduct });
+        res.render("./products/productDetail");
+        //{ detailProduct }
+        
     },
     cart: (req, res) => {
         res.render("products/productCart");
