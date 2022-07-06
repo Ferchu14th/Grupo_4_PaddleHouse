@@ -1,3 +1,4 @@
+const { application } = require("express");
 
 module.exports = {
     detail: (req, res) => {
@@ -7,3 +8,4 @@ module.exports = {
         res.render('productCart');
     }
 }
+
