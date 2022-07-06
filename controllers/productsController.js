@@ -38,12 +38,12 @@ module.exports = {
 //        const detailProduct = products.find(product => {
 //            return product.id == id
 //        })
-        res.render("./products/productDetail");
+        res.render("./products/productDetail", { styles: "productDetail" });
         //{ detailProduct }
         
     },
     cart: (req, res) => {
-        res.render("products/productCart");
+        res.render("products/productCart", { styles: "productCart" });
     },
     //allProducts: (req, res) => {
     //    res.render("products/allProducts", { listaDeProductos: products });
