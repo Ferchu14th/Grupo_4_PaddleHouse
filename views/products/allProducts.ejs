@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head") %>
+  <body>
+    <%- include("../partials/header") %>
+    <main>
+        <h2>Soy la pagina de todos los productos</h2>
+        <% listaDeProductos.forEach(producto => { %>
+            <div>
+                <h3><%= producto.title %></h3>
+            </div>
+        <% }) %>
+    </main>
+    <%- include("../partials/footer") %>
+  </body>
+</html>
