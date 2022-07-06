@@ -1,0 +1,108 @@
+!--<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head") %>
+
+    <body>
+
+        <%- include("../partials/header") %>
+
+            <main>
+                <div class="contenedor" id="contenedor-carrito">
+                    <table width="100%">
+                        <thead>
+                            <tr>
+                                <td>Eliminar</td>
+                                <td>imagen</td>
+                                <td>Producto</td>
+                                <td>Precio</td>
+                                <td>Cantidad</td>
+                                <td>Subtotal</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><img src="/images/Paleta_KelmeLycan.jpg" alt=""></td>
+                                <td>
+                                    <h5>Paleta Kelme Lycan</h5>
+                                </td>
+                                <td>
+                                    <h5>$ 20000</h5>
+                                </td>
+                                <td><input class="w-25 pl-1" value="1" type="number"></td>
+                                <td>
+                                    <h5>$ 40000</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><img src="/images/Accesorio_CubreGripx60NexusBlanco.jpg" alt=""></td>
+                                <td>
+                                    <h5>CubreGrip Nexus Blaco</h5>
+                                </td>
+                                <td>
+                                    <h5>$ 450</h5>
+                                </td>
+                                <td><input class="w-25 pl-1" value="1" type="number"></td>
+                                <td>
+                                    <h5>$ 450</h5>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><img src="images/Bolsos_PaleteroAdidasWeekendWhite20.jpg" alt=""></td>
+                                <td>
+                                    <h5>Bolso Adidas Blanco</h5>
+                                </td>
+                                <td>
+                                    <h5>$ 15000</h5>
+                                </td>
+                                <td><input class="w-25 pl-1" value="1" type="number"></td>
+                                <td>
+                                    <h5>$ 15000</h5>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div id="finalizar-carrito" class="contenedor-finalizar">
+
+                    <div class="cupon">
+                        <div>
+                            <h5>CUPÓN</h5>
+                            <input type="text" placeholder="Código de cupón">
+                            <button>Aplicar Cupón</button>
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div>
+                            <h5>TOTAL</h5>
+                            <div class="total-a-pagar">
+                                <h6>SUBTOTAL</h6>
+                                <p>$ 55450</p>
+                            </div>
+                            <div class="total-a-pagar">
+                                <h6>ENVÍO</h6>
+                                <p>Gratis o pago</p>
+                            </div>
+                            <hr class="segundo-hr">
+                            <div class="total-a-pagar">
+                                <h6>TOTAL</h6>
+                                <p>$ 40550</p>
+                            </div>
+                            <button class="ml-auto">FINALIZAR COMPRA</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </main>
+            <%- include("../partials/footer") %>
+
+    </body> 
+
+    </html>

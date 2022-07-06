@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%- include("../partials/head") %>
+
+<body>
+
+    <%- include("../partials/header") %>
+
+    <main class="register">
+        <form action="/" method="POST">
+
+            <p>Inicio > Mi cuenta > Crear cuenta</p>
+            <h4>Crear cuenta</h4>
+
+            <div class="box">
+                <label for="user"></label>
+                <input class="input" type="text" name="NyA" id="NyA" placeholder="Nombre y Apellido" required="">
+            </div>
+
+            <div class="box">
+                <label for="user"></label>
+                <input class="input" type="email" name="email" id="email" placeholder=email required="">
+            </div>
+
+            <div class="box">
+                <label for="tel"></label>
+                <input class="input" type="tel" name="telefono" id="tel" placeholder="Telefono" required="">
+            </div>
+
+            <div class="box">
+                <label for="password"></label>
+                <input class="input" type="password" name="password" id="password" placeholder="Contraseña" required="">
+            </div>
+
+            <div class="box">
+                <label for="password"></label>
+                <input class="input" type="password" name="password" id="password" placeholder="Confirmar contraseña"
+                    required="">
+            </div>
+
+
+            <div class="box">
+                <button class="button" type="submit">CREAR CUENTA</button>
+            </div>
+
+        </form>
+        <h5>Ya tenés una cuenta? <a href="../users/login">INICIAR SESION</a></h5>
+
+    </main>
+        <%- include("../partials/footer") %>
+
+</body>
+
+</html>

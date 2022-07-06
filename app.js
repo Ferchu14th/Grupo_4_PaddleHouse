@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-const indexRoutes = require('./routes/indexRoutes');
+const indexRoutes = require("./routes/indexRoutes");
 const productsRoutes = require('./routes/productsRoutes');
 const usersRoutes = require('./routes/usersRoutes');
 
@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3050;
 
 //setea el motor de vistas
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, './src/views'));
+app.set('views', path.join(__dirname, 'views'));
 
 
 //configuración de public static

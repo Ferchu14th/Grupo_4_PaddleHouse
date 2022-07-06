@@ -1,9 +1,9 @@
 
 module.exports = {
     login: (req, res) => {
-        res.render('../views/login.html');
+        res.render('login');
     },
     register: (req, res) => {
-        res.render('../views/register.html');
+        res.render('register');
     }
 }
