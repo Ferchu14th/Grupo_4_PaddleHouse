@@ -130,10 +130,10 @@ module.exports = {
     });
   },
   crear: (req, res) => {
-    res.render("/products/crear", { styles: "register" });
+    res.render("products/crear", { styles: "register" });
   },
   modificar: (req, res) => {
-    res.render("/products/modificar", { styles: "register" });
+    res.render("products/modificar", { styles: "register" });
   },
 };
 //allProducts: (req, res) => {
