@@ -141,6 +141,11 @@ main .box {
   justify-content: center;
   padding: 20px 0px;
 }
+main .box-imagen {
+  display: flex;
+  justify-content:center;
+  padding: 20px 0px;
+}
 
 main .input {
   border-radius: 5px;
