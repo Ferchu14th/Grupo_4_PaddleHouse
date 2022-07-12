@@ -1,0 +1,325 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*outline: 1px solid red;*/
+}
+
+head {
+    font-family: "Abel", sans-serif;
+}
+
+header {
+    font-family: "Abel", sans-serif;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 24px;
+}
+
+main {
+    margin: 10px;
+    text-align: center;
+    font-family: "Abel", sans-serif;
+    background-color: #ebebeb;
+}
+
+footer {
+    font-family: "Abel", sans-serif;
+}
+
+div {
+    text-align: center;
+}
+
+a:link {
+    display: block;
+    text-decoration: none;
+}
+
+.top-header {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-nav-iconos {
+    text-align: justify;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    height: 100%;
+    border: lightblue 5px solid;
+}
+
+.logo {
+    width: 30%;
+    height: 70%;
+}
+
+.logo-foto {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.barra-accesorios {
+    display: flex;
+    box-sizing: border-box;
+    align-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    border: lightblue 5px solid;
+    font-size: 36px;
+}
+
+.barra-accesoriosB {
+    width: 33%;
+}
+
+.barra-accesoriosA {
+    width: 33%;
+}
+
+.barra-accesoriosC {
+    width: 33%;
+}
+
+.search {
+    width: 70%;
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    height: 50%;
+    border: rgb(166, 169, 170) 2px solid;
+    border-radius: 10px;
+}
+
+.contacto-logo {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.micuenta-logo {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.carrito-logo {
+    width: 100%;
+    height: 100%;
+    padding: 3%;
+}
+
+.logos3 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    font-size: 100%;
+}
+
+/*--------ARTICULOS------*/
+section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.titulo {
+    margin: 20px 0 20px 0;
+}
+
+h4 {
+    color: rgba(164, 89, 255);
+    font-size: 1.3em;
+}
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.articulo img {
+    width: 80%;
+    height: auto;
+}
+
+.img {
+    width: 80%;
+    text-align: center;
+}
+
+/*--------BOTON CARRITO------*/
+#agregar {
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(111, 0, 209);
+}
+
+p {
+    font-size: 1.1em;
+}
+
+/*--------DESCRIPCIONES DE PRODUCTO------*/
+.especificaciones {
+    width: 80%;
+    height: auto;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+p.modelo {
+    color: rgb(111, 0, 209);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+p.description {
+    margin: 20px 0 20px 0;
+}
+
+.priceCart {
+    text-align: center;
+}
+
+.a-footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    border: grey 2px solid;
+    height: 70%;
+}
+
+.logo-footer {
+    width: 25%;
+}
+
+.products-footer {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.servicios-footer {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.contacto-footer {
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.logx {
+    width: 80%;
+}
+
+@media (max-width: 595px) {
+    .barra-accesorios {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 818px) {
+    .logo-nav-iconos {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logos3 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .micuenta-logo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .carrito-logo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .contacto-logo {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .marca-modelo {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .barra-accesorios {
+        box-sizing: border-box;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        text-align: start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+
+    .a-footer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-ul {
+        font-size: 23px;
+    }
+
+    .enlaces-fonts {
+        font-size: 36px;
+    }
+}

@@ -5,12 +5,30 @@
   <body>
     <%- include("../partials/header") %>
     <main>
-        <h2>Soy la pagina de todos los productos</h2>
-        <% listaDeProductos.forEach(producto => { %>
-            <div>
-                <h3><%= producto.title %></h3>
-            </div>
-        <% }) %>
+        <section>
+          <div class="DescripcionProductos">
+            <img id="producto" src=<%= product.image %> />
+          </div>
+          <div class="especificaciones">
+            <p class="modelo">
+              <%= `${product.brand} ${product.model}` %>
+            </p>
+
+            <p>MARCA: <%= product.brand %>
+            </p>
+            <p>MODELO: <%= product.model %>
+            </p>
+            <P class="precio">PRECIO: $<%= product.price %>
+            </P>
+            <p>
+              <%= `12 cuotas de $${(product.price / 12).toFixed(2)}` %>
+            </p>
+
+            <p class="description">DESCRIPCIÓN:</br>
+              <%= product.description %></p>
+            <button id="agregar" type="submit">Agregar al carrito</button>
+          </div>
+        </section>
     </main>
     <%- include("../partials/footer") %>
   </body>

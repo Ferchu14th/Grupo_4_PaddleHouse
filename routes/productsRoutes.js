@@ -6,11 +6,11 @@ router.get('/create', productsController.create);
 
 router.get('/edit', productsController.edit);
 
-router.get('/detail', productsController.detail);
+router.get('/oneProduct', productsController.productDescription);
 
 router.get('/cart', productsController.cart);
 
-router.get('/list/:categoria', productsController.productFilter);
+router.get('/detail/:categoria', productsController.productFilter);
 
 
 module.exports = router;
