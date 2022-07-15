@@ -6,11 +6,13 @@ router.get('/create', productsController.create);
 
 router.get('/edit', productsController.edit);
 
-router.get('/oneProduct', productsController.productDescription);
+router.get('/oneProduct/:id', productsController.productDescription);
 
 router.get('/cart', productsController.cart);
 
-router.get('/detail/:categoria', productsController.productFilter);
+router.get('/detail/:category', productsController.productFilter);
+
+router.get('/detail/', productsController.detail);
 
 
 module.exports = router;

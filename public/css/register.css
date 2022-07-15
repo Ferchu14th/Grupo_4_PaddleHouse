@@ -86,17 +86,22 @@ a:link {
   font-size: 36px;
 }
 
-.barra-accesoriosB {
-  width: 33%;
+.barra-accesoriosA {
+  width: 25%;
 }
 
-.barra-accesoriosA {
-  width: 33%;
+.barra-accesoriosB {
+  width: 25%;
 }
 
 .barra-accesoriosC {
-  width: 33%;
+  width: 25%;
 }
+
+.barra-accesoriosD {
+  width: 25%;
+}
+
 
 .search {
   width: 70%;
@@ -145,6 +150,7 @@ main .box-imagen {
   display: flex;
   justify-content:center;
   padding: 20px 0px;
+  flex-direction: column;
 }
 
 main .input {
@@ -216,6 +222,10 @@ main .titulo {
 
 .logx {
   width: 80%;
+}
+.cargarImagen{
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 595px) {

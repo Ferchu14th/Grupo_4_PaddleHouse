@@ -5,7 +5,6 @@
     <%- include("../partials/header") %> 
     <main class="register">
         <form action="/" method="POST">
-
             
             <h4>Crear producto</h4>
 
@@ -30,9 +29,13 @@
             </div>
 
             <div class="box-imagen">
+                <div class="cargarImagen">
                 <label for="imagen">Cargar imagen del producto</label>
+                </div>
+                <div>
                 <input class="input" type="file" name="imagen" id="imagen" placeholder="imagen del producto"
                     required="">
+                </div>
             </div>
 
             <div class="box">
@@ -44,7 +47,7 @@
             <div class="box">
                 <button class="button" type="submit">CARGAR PRODUCTO</button>
             </div>
-
+        </div>
         </form>
 
     </main>

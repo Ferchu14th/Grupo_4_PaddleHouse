@@ -7,7 +7,7 @@ const products = [
     brand: "ADIDAS",
     model: "MatchLigth",
     price: 35000,
-    image: "./images/Paleta_AdidasMatchLigth31",
+    image: "/images/Paleta_AdidasMatchLigth31.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
@@ -17,7 +17,7 @@ const products = [
     brand: "KELME",
     model: "Lycan",
     price: 25000,
-    image: "/images/Paleta_KelmeLycan",
+    image: "/images/Paleta_KelmeLycan.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
@@ -27,7 +27,7 @@ const products = [
     brand: "KELME",
     model: "Falcon",
     price: 22500,
-    image: "/images/Paleta_KelmeFalcon",
+    image: "/images/Paleta_KelmeFalcon.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
@@ -37,7 +37,7 @@ const products = [
     brand: "Softee",
     model: "Cubre Grip Confort",
     price: 650,
-    image: "/images/Accesorio_CubreGripSofteeConfortPerforadox60",
+    image: "/images/Accesorio_CubreGripSofteeConfortPerforadox60.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
@@ -47,7 +47,7 @@ const products = [
     brand: "ADIDAS",
     model: "Grip Paddle Performance Blanco",
     price: 450,
-    image: "/images/Accesorio_GripAdidasPadelPerformance1blanco",
+    image: "/images/Accesorio_GripAdidasPadelPerformance1blanco.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
@@ -57,37 +57,37 @@ const products = [
     brand: "ADIDAS",
     model: "Grip Paddle Performance Rojo",
     price: 500,
-    image: "/images/Accesorio_GripAdidasPadelPerformance1rojo",
+    image: "/images/Accesorio_GripAdidasPadelPerformance1rojo.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
   {
     id: 7,
-    category: "BOLSOS PALETERO",
+    category: "BOLSOS-PALETERO",
     brand: "ADIDAS",
     model: "Multigame Lite White",
     price: 29000,
-    image: "/images/Bolsos_PaleteroAdidasMultigameLiteWhite",
+    image: "/images/Bolsos_PaleteroAdidasMultigameLiteWhite.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
   {
     id: 8,
-    category: "BOLSOS PALETERO",
+    category: "BOLSOS-PALETERO",
     brand: "ADIDAS",
     model: "Weekend White",
     price: 22300,
-    image: "/images/Bolsos_PaleteroAdidasWeekendWhite20",
+    image: "/images/Bolsos_PaleteroAdidasWeekendWhite20.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
   {
     id: 9,
-    category: "BOLSOS PALETERO",
+    category: "BOLSOS-PALETERO",
     brand: "ADIDAS",
     model: "Weekend Green",
     price: 25000,
-    image: "/images/Bolsos_PaleteroAdidasWeekendVerde",
+    image: "/images/Bolsos_PaleteroAdidasWeekendVerde.jpg",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
   },
@@ -109,9 +109,9 @@ module.exports = {
       (element) => element.category == clasificacion
     );
 
-    res.render("products/list", {
+    res.render("products/productDetail", {
       styles: "productDetail",
-      detail: nuevaLista,
+      products: nuevaLista,
     });
   },
   productDescription: (req, res) => {
