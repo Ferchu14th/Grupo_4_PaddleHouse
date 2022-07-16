@@ -66,8 +66,8 @@ div.logo-nav-iconos {
 }
 
 .logo {
-  width: 30%;
-  height: 70%;
+  width: 20%;
+  height: 60%;
 }
 
 .logo-foto {
@@ -78,7 +78,7 @@ div.logo-nav-iconos {
 
 .search {
   width: 70%;
-  margin-left: 10%;
+  margin-left: 50%;
   display: flex;
   box-sizing: border-box;
   text-align: center;

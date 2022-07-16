@@ -13,6 +13,17 @@ header {
   font-family: "Abel", sans-serif;
 }
 
+h2 {
+  font-size: 3.5em;
+  margin-top: 100px;
+  font-family: sans-serif, serif;
+  font-style: italic;
+  color: aliceblue;
+  text-shadow: #1386d3;
+  opacity: 50%;
+  vertical-align: middle;
+}
+
 h3 {
   font-size: 36px;
   border: lightblue 1px solid;
@@ -52,7 +63,7 @@ a:link {
 
 div.logo-nav-iconos {
   display: flex;
-  text-align: justify;
+  text-align: end;
   box-sizing: border-box;
   align-items: center;
   padding: 10px;
@@ -61,8 +72,8 @@ div.logo-nav-iconos {
 }
 
 .logo {
-  width: 30%;
-  height: 70%;
+  width: 20%;
+  height: 60%;
 }
 
 .logo-foto {
@@ -71,9 +82,9 @@ div.logo-nav-iconos {
   height: auto;
 }
 
-.search {
+.imput-search {
   width: 70%;
-  margin-left: 10%;
+  margin: 100px;
   display: flex;
   box-sizing: border-box;
   text-align: center;
@@ -175,7 +186,6 @@ header .button-search {
   color: #1386d3;
 }
 
-
 .logos3 {
   box-sizing: border-box;
   display: flex;
@@ -185,20 +195,37 @@ header .button-search {
   font-size: 100%;
 }
 
-.banner {
+section {
   width: 100%;
   height: auto;
+  position: relative;
+  overflow: hidden;
+
 }
 
-.banner-foto {
-  box-sizing: border-box;
-  display: flex;
-  padding: 4px;
+video {
+  width: 100%;
+
 }
 
-.foto-bann {
+.absolute {
   width: 100%;
   height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.575);
+
 }
 
 .ofertas-main {
@@ -471,6 +498,12 @@ header .button-search {
       flex-wrap: wrap;
     }
 
+    .logo-foto {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
     .logos3 {
       box-sizing: border-box;
       display: flex;
@@ -610,4 +643,11 @@ header .button-search {
     .ofertass {
       width: 90%;
     }
+
+    .logo-foto {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
   }
+}
