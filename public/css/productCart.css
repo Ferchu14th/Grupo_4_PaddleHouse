@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   /*outline: 1px solid red;*/
+
 }
 
 head {
@@ -13,8 +14,20 @@ header {
   font-family: "Abel", sans-serif;
 }
 
+h2 {
+  font-size: 3.5em;
+  margin-top: 100px;
+  font-family: sans-serif, serif;
+  font-style: italic;
+  color: aliceblue;
+  text-shadow: #1386d3;
+  opacity: 50%;
+  vertical-align: middle;
+}
+
 h3 {
   font-size: 36px;
+  border: lightblue 1px solid;
 }
 
 h4 {
@@ -51,7 +64,7 @@ a:link {
 
 div.logo-nav-iconos {
   display: flex;
-  text-align: justify;
+  text-align: end;
   box-sizing: border-box;
   align-items: center;
   padding: 10px;
@@ -70,9 +83,9 @@ div.logo-nav-iconos {
   height: auto;
 }
 
-.search {
+.imput-search {
   width: 70%;
-  margin-left: 10%;
+  margin: 100px;
   display: flex;
   box-sizing: border-box;
   text-align: center;
@@ -114,18 +127,21 @@ header .button-search {
   width: auto;
   height: auto;
   padding: 3%;
+  color: black;
 }
 
 .micuenta-logo {
   width: auto;
   height: auto;
   padding: 3%;
+  color: black;
 }
 
 .carrito-logo {
   width: auto;
   height: auto;
   padding: 3%;
+  color: black;
 }
 
 .fa-address-card {
@@ -148,47 +164,57 @@ header .button-search {
   box-sizing: border-box;
   align-content: flex-start;
   align-items: center;
-  padding: 10px;
-  height: 100px;
+  height: 80px;
   font-size: 36px;
   color: #1386d3;
 }
 
 .barra-accesoriosA {
   width: 25%;
+  color: #1386d3;
+  height: 100%;
+}
+.barra-accesoriosA:hover{
+  background-color: #4472c4;
+  color: white; 
 }
 
 .barra-accesoriosB {
   width: 25%;
+  color: #1386d3;
+  height: 100%;
+}
+.barra-accesoriosB:hover{
+  background-color: #4472c4;
+  color: white; 
 }
 
 .barra-accesoriosC {
   width: 25%;
+  color: #1386d3;
+  height: 100%;
+}
+.barra-accesoriosC:hover{
+  background-color: #4472c4;
+  color: white; 
 }
 
 .barra-accesoriosD {
   width: 25%;
+  color: #1386d3;
+  height: 100%;
 }
-
-
-.search {
-  width: 70%;
-  display: flex;
-  box-sizing: border-box;
-  text-align: center;
-  justify-content: center;
-  height: 50%;
-  border: rgb(166, 169, 170) 2px solid;
-  border-radius: 10px;
+.barra-accesoriosD:hover{
+  background-color: #4472c4;
+  color: white; 
 }
-
 
 .logos3 {
   box-sizing: border-box;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   align-items: flex-start;
-  width: 90%;
+  width: 80%;
   font-size: 100%;
 }
 
@@ -340,7 +366,13 @@ header .button-search {
   justify-content: center;
   height: 100%;
 }
-
+.enlaces-fonts{
+  color:black;
+}
+.enlaces-fonts:hover{
+  background-color: #4472c4;
+color: white;
+}
 .logx {
   width: 80%;
 }

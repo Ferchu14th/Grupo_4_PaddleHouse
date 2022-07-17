@@ -12,7 +12,7 @@
 
             <p>Inicio > Mi cuenta > Crear cuenta</p>
             <h4>Crear cuenta</h4>
-
+            <div class="inputs">
             <div class="box">
                 <label for="user"></label>
                 <input class="input" type="text" name="NyA" id="NyA" placeholder="Nombre y Apellido" required="">
@@ -38,14 +38,14 @@
                 <input class="input" type="password" name="password" id="password" placeholder="Confirmar contraseña"
                     required="">
             </div>
-
+        </div>
 
             <div class="box">
                 <button class="button" type="submit">CREAR CUENTA</button>
             </div>
 
         </form>
-        <h5>Ya tenés una cuenta? <a href="/users/log">INICIAR SESION</a></h5>
+        <h5>Ya tenés una cuenta? <a class="boton-iniciar" href="/users/log">INICIAR SESION</a></h5>
 
     </main>
         <%- include("../partials/footer") %>
