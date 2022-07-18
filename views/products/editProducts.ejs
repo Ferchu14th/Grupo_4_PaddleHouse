@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("../partials/head") %>
+<body>
+    <%- include("../partials/header") %> 
+    <main class="register">
+        <h4>Editar producto <%= product.id ?? ''%> </h4>
+        <form action="/products/<%= product.id?? ''%>?_method=PUT" method="post">
+            <div class="box">
+                <label for="category"></label>
+                <input class="input" 
+                type="text" name="category" 
+                placeholder="category" value="<%= product.category ?? ''%>">
+            </div>
+
+            <div class="box">
+                <label for="brand"></label>
+                <input class="input" 
+                type="text" name="brand" 
+                placeholder="brand" value="<%= product.brand ?? ''%>">
+            </div>
+
+            <div class="box">
+                <label for="model"></label>
+                <input class="input" 
+                type="text" name="model" 
+                placeholder="model" value="<%= product.model ?? ''%>">
+            </div>
+
+            <div class="box">
+                <label for="price"></label>
+                <input class="input" 
+                type="number" name="price" 
+                placeholder="price" value="<%= product.price ?? ''%>">
+            </div>
+
+            <div class="box-image">
+                <div class="cargarImagen">
+                <label for="image">Cargar imagen del producto</label>
+                </div>
+                <div>
+                <input class="input" 
+                type="file" name="image" 
+                placeholder="imagen del producto" value="<%= product.image ?? ''%>">
+                </div>
+                </div>
+
+            <div class="box">
+                <label for="description"></label>
+                <input class="input" 
+                type="text" name="description" 
+                placeholder="description" value="<%= product.description ?? ''%>">
+            </div>
+
+            <div class="box">
+                <button class="button" type="submit">EDITAR PRODUCTO</button>
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <%- include("../partials/footer") %>
+</body>
+</html>

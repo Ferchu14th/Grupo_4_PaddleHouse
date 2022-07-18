@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "category": "PALETA",
+    "brand": "ADIDAS",
+    "model": "MatchLigth",
+    "price": 35000,
+    "image": "/images/Paleta_AdidasMatchLigth31.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 2,
+    "category": "PALETA",
+    "brand": "KELME",
+    "model": "Lycan",
+    "price": 25000,
+    "image": "/images/Paleta_KelmeLycan.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 3,
+    "category": "PALETA",
+    "brand": "KELME",
+    "model": "Falcon",
+    "price": 22500,
+    "image": "/images/Paleta_KelmeFalcon.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 4,
+    "category": "ACCESORIOS",
+    "brand": "Softee",
+    "model": "Cubre Grip Confort",
+    "price": 650,
+    "image": "/images/Accesorio_CubreGripSofteeConfortPerforadox60.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 5,
+    "category": "ACCESORIOS",
+    "brand": "ADIDAS",
+    "model": "Grip Paddle Performance Blanco",
+    "price": 450,
+    "image": "/images/Accesorio_GripAdidasPadelPerformance1blanco.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 6,
+    "category": "ACCESORIOS",
+    "brand": "ADIDAS",
+    "model": "Grip Paddle Performance Rojo",
+    "price": 500,
+    "image": "/images/Accesorio_GripAdidasPadelPerformance1rojo.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 7,
+    "category": "BOLSOS-PALETERO",
+    "brand": "ADIDAS",
+    "model": "Multigame Lite White",
+    "price": 29000,
+    "image": "/images/Bolsos_PaleteroAdidasMultigameLiteWhite.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 8,
+    "category": "BOLSOS-PALETERO",
+    "brand": "ADIDAS",
+    "model": "Weekend White",
+    "price": 22300,
+    "image": "/images/Bolsos_PaleteroAdidasWeekendWhite20.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "id": 9,
+    "category": "BOLSOS-PALETERO",
+    "brand": "ADIDAS",
+    "model": "Weekend Green",
+    "price": 25000,
+    "image": "/images/Bolsos_PaleteroAdidasWeekendVerde.jpg",
+    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
+  },
+  {
+    "category": "Paleta",
+    "brand": "Adidas",
+    "model": "Buenos Aires",
+    "price": "23545",
+    "image": "Metalbone_MASTER_RK1AC5U12_DetailCenter.jpg",
+    "description": "Adidas de fabricación nacional",
+    "id": "d6a4b94d-5483-4a14-a971-b7ec5180ea29"
+  },
+  {
+    "category": "PRUEBA 1",
+    "brand": "MARCA 1",
+    "model": "MODELO 1",
+    "price": "9999999",
+    "image": "Metalbone_MASTER_RK1AC5U12_DetailCenter2.jpg",
+    "description": "DESCRIPCION 1",
+    "id": "ebc0e250-b912-48a7-93fb-8f79cfd8245a"
+  }
+]

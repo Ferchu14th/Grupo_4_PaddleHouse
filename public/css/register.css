@@ -237,6 +237,7 @@ main .input {
   padding: 10px;
   border: none;
   font-size: 14px;
+  background:#b5d6ee;
 }
 .inputs{
   box-sizing: border-box;

@@ -1,132 +1,93 @@
 const { application } = require("express");
-
-const products = [
-  {
-    id: 1,
-    category: "PALETA",
-    brand: "ADIDAS",
-    model: "MatchLigth",
-    price: 35000,
-    image: "/images/Paleta_AdidasMatchLigth31.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 2,
-    category: "PALETA",
-    brand: "KELME",
-    model: "Lycan",
-    price: 25000,
-    image: "/images/Paleta_KelmeLycan.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 3,
-    category: "PALETA",
-    brand: "KELME",
-    model: "Falcon",
-    price: 22500,
-    image: "/images/Paleta_KelmeFalcon.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 4,
-    category: "ACCESORIOS",
-    brand: "Softee",
-    model: "Cubre Grip Confort",
-    price: 650,
-    image: "/images/Accesorio_CubreGripSofteeConfortPerforadox60.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 5,
-    category: "ACCESORIOS",
-    brand: "ADIDAS",
-    model: "Grip Paddle Performance Blanco",
-    price: 450,
-    image: "/images/Accesorio_GripAdidasPadelPerformance1blanco.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 6,
-    category: "ACCESORIOS",
-    brand: "ADIDAS",
-    model: "Grip Paddle Performance Rojo",
-    price: 500,
-    image: "/images/Accesorio_GripAdidasPadelPerformance1rojo.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 7,
-    category: "BOLSOS-PALETERO",
-    brand: "ADIDAS",
-    model: "Multigame Lite White",
-    price: 29000,
-    image: "/images/Bolsos_PaleteroAdidasMultigameLiteWhite.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 8,
-    category: "BOLSOS-PALETERO",
-    brand: "ADIDAS",
-    model: "Weekend White",
-    price: 22300,
-    image: "/images/Bolsos_PaleteroAdidasWeekendWhite20.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-  {
-    id: 9,
-    category: "BOLSOS-PALETERO",
-    brand: "ADIDAS",
-    model: "Weekend Green",
-    price: 25000,
-    image: "/images/Bolsos_PaleteroAdidasWeekendVerde.jpg",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad",
-  },
-];
+const { v4: uuidv4 } = require("uuid");
+const fs = require("fs");
+const path = require("path");
+//Tenemos un objeto literal (productList) con datos, que estamos ubicando, listando y parseando.
+const productListPath = path.resolve(__dirname, "../database/products.json");
+const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8"));
 
 module.exports = {
-  cart: (req, res) => {
-    res.render("products/productCart", { styles: "productCart" });
-  },
-  detail: (req, res) => {
-    res.render("./products/productDetail", {
-      styles: "productDetail",
-      products: products,
+  // Vista de todos los productos
+  detailProducts: (req, res) => {
+    res.render("./products/allProducts", {
+      styles: "allProducts",
+      products: productList,
     });
   },
+  // Método x 2: Formulario de creación de productos con método GET (renderización) createProducts y POST (procesamiento) StoreProducts
+  createProducts: (req, res) => {
+    res.render("products/createProducts", {
+      styles: "register",
+    });
+  },
+  storeProducts: (req, res) => {
+    let product = req.body;
+
+    product.id = uuidv4();
+    //voy creando el array con push
+    productList.push(product);
+    //voy grabando en JSON
+    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+
+    res.redirect("/products");
+  },
+  // Método x 2 para la modificación/edición de un producto con método GET (renderización) editproducts y PUT (procesamiento)
+  editProducts: (req, res) => {
+    const id = req.params.id;
+    const product1 = productList.find((element) => element.id == id);
+
+    res.render("products/editProducts", {
+      styles: "register",
+      product: product1,
+    });
+  },
+
+  updateProducts: (req, res) => {
+    let id = req.params.id;
+    let newProduct = req.body;
+
+    newProduct.id = id;
+
+    for (let index = 0; index < productList.length; index++) {
+      const element = productList[index];
+      if (element.id == id) {
+        productList[index] = newProduct;
+      }
+    }
+    //hay que actualizar el archivo con fs (como hicimos con el producto) el null y el 2 es fijo para que mantenga el formato el JSON.
+    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+
+    res.redirect("/products");
+  },
+
+  deleteProduct: (req, res) => {
+    let id = req.params.id;
+    console.log("deleteProduct", id);
+    for (let index = 0; index < productList.length; index++) {
+      const element = productList[index];
+      if (element.id == id) {
+        productList.splice(index, 1);
+      }
+    }
+
+    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+
+    res.redirect("/products");
+  },
+
+  // revisar
   productFilter: (req, res) => {
     const clasificacion = req.params.category;
-    const nuevaLista = products.filter(
-      (element) => element.category == clasificacion
-    );
-
-    res.render("products/productDetail", {
-      styles: "productDetail",
-      products: nuevaLista,
-    });
-  },
-  productDescription: (req, res) => {
-    const id = req.params.id;
-    const product = products.find(element => element.id == id);
+    const nuevaLista = productList.filter((e) => e.category == clasificacion);
 
     res.render("products/oneProduct", {
       styles: "oneProduct",
-      product: product,
+      product: nuevaLista,
     });
   },
-  create: (req, res) => {
-    res.render("products/create", { styles: "register" });
-  },
-  edit: (req, res) => {
-    res.render("products/edit", { styles: "register" });
+
+  // Carrito de Compras que por ahora no tocamos
+  cartProducts: (req, res) => {
+    res.render("products/productCart", { styles: "productCart" });
   },
 };

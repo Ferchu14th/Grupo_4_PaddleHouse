@@ -31,12 +31,12 @@
            
             <% for(let i=0; i < products.length; i++){ %>
                 <div class="Desc-1">
-                  <a href="/products/oneProduct/<%= products[i].id %> ">
+                  <a href="/products/allProducts/<%= products[i].id %> ">
                     <h4>
                       <%= `${products[i].brand} ${products[i].model} `%>
                     </h4>
                   </a>
-                  <a class="img" href="/products/oneProduct/<%= products[i].id %> ">
+                  <a class="img" href="/products/allProducts/<%= products[i].id %> ">
                     <img src="<%= products[i].image %>" alt="">
                   </a>
                   <div class="precios">
