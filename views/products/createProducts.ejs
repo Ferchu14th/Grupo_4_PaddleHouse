@@ -4,7 +4,7 @@
 <body>
     <%- include("../partials/header") %> 
     <main class="register">
-        <form action="/" method="post">
+        <form action="/products" method="post" enctype="multipart/form-data">
             
             <h4>Crear producto</h4>
 
@@ -33,7 +33,7 @@
                 <label for="image">Cargar imagen del producto</label>
                 </div>
                 <div>
-                <input class="input" type="file" name="image" id="image" placeholder="imagen del producto"
+                <input class="input" type="file" name="avatar" id="image" placeholder="imagen del producto"
                     required="">
                 </div>
             </div>

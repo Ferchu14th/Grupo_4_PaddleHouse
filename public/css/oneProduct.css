@@ -159,55 +159,68 @@
     color: #1386d3;
   }
   
-  .barra-accesorios {
-    display: flex;
-    box-sizing: border-box;
-    align-content: flex-start;
-    align-items: center;
-    height: 80px;
-    font-size: 36px;
-    color: #1386d3;
-  }
+    .barra-accesorios {
+      display: flex;
+      box-sizing: border-box;
+      align-content: flex-start;
+      align-items: center;
+      height: auto;
+      font-size: 36px;
+      color: #1386d3;
+    }
   
-  .barra-accesoriosA {
-    width: 25%;
-    color: #1386d3;
-    height: 100%;
-  }
-  .barra-accesoriosA:hover{
-    background-color: #4472c4;
-    color: white; 
-  }
+    .barra-accesoriosA {
+      width: 25%;
+      color: #1386d3;
+      height: 100%;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
   
-  .barra-accesoriosB {
-    width: 25%;
-    color: #1386d3;
-    height: 100%;
-  }
-  .barra-accesoriosB:hover{
-    background-color: #4472c4;
-    color: white; 
-  }
+    .barra-accesoriosA:hover {
+      background-color: #4472c4;
+      color: white;
   
-  .barra-accesoriosC {
-    width: 25%;
-    color: #1386d3;
-    height: 100%;
-  }
-  .barra-accesoriosC:hover{
-    background-color: #4472c4;
-    color: white; 
-  }
+    }
   
-  .barra-accesoriosD {
-    width: 25%;
-    color: #1386d3;
-    height: 100%;
-  }
-  .barra-accesoriosD:hover{
-    background-color: #4472c4;
-    color: white; 
-  }
+    .barra-accesoriosB {
+      width: 25%;
+      color: #1386d3;
+      height: 100%;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+  
+    .barra-accesoriosB:hover {
+      background-color: #4472c4;
+      color: white;
+    }
+  
+    .barra-accesoriosC {
+      width: 25%;
+      color: #1386d3;
+      height: 100%;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+  
+    .barra-accesoriosC:hover {
+      background-color: #4472c4;
+      color: white;
+    }
+  
+    .barra-accesoriosD {
+      width: 25%;
+      color: #1386d3;
+      height: 100%;
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+    }
+  
+    .barra-accesoriosD:hover {
+      background-color: #4472c4;
+      color: white;
+    }
 
 .logos3 {
     box-sizing: border-box;

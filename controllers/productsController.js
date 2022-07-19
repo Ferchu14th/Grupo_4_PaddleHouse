@@ -8,13 +8,20 @@ const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8"));
 
 module.exports = {
   // Vista de todos los productos
-  detailProducts: (req, res) => {
+  getAllProducts: (req, res) => {
     res.render("./products/allProducts", {
       styles: "allProducts",
       products: productList,
     });
   },
-  // Método x 2: Formulario de creación de productos con método GET (renderización) createProducts y POST (procesamiento) StoreProducts
+  /*  getProductById: (req, res) => {
+      let id = req.params.id;
+  
+      res.send("Get product by id: " + id);
+    },*/
+
+  // Método x 2: Formulario de creación de productos con método GET (renderización) createProducts y 
+  // POST(procesamiento) StoreProducts
   createProducts: (req, res) => {
     res.render("products/createProducts", {
       styles: "register",
@@ -22,15 +29,26 @@ module.exports = {
   },
   storeProducts: (req, res) => {
     let product = req.body;
+    let image = req.file;
+    let images = req.files;
 
     product.id = uuidv4();
+
+    if (image) {
+      product.image = image.filename;
+    } else if (images) {
+      product.image = images.map(image => image.filename);
+    }
+
     //voy creando el array con push
     productList.push(product);
+
     //voy grabando en JSON
     fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
 
     res.redirect("/products");
   },
+  
   // Método x 2 para la modificación/edición de un producto con método GET (renderización) editproducts y PUT (procesamiento)
   editProducts: (req, res) => {
     const id = req.params.id;
