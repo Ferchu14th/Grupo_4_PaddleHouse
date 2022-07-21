@@ -36,8 +36,8 @@
                       <%= `${products[i].brand} ${products[i].model} `%>
                     </h4>
                   </a>
-                  <a class="img" href="/products/allProducts/<%= products[i].id %> ">
-                    <img src="<%= products[i].image %>" alt="">
+                  <a class="img" href="<%= products[i].id %> ">
+                    <img src="/images/uploads/<%= products[i].image %>" alt="">
                   </a>
                   <div class="precios">
                     <p>
@@ -50,8 +50,6 @@
                   </div>
                 </div>
                 <% } %>
-      
-      
                   </div>
         </div>
     </main>

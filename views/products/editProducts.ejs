@@ -6,7 +6,7 @@
     <main class="register">
         <form action="/products/edit/<%= product.id?? ''%>?_method=PUT" method="post">
             
-            <h4>Editar producto <%= product.category + product.model ?? ''%> </h4>
+            <h4>Editar producto <%= product.category + " " + product.model ?? ''%> </h4>
             
             <div class="box">
                 <label for="category"></label>

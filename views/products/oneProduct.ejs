@@ -7,25 +7,25 @@
     <main>
         <section>
           <div class="DescripcionProductos">
-            <img id="producto" src=<%= product.image %> />
+            <img id="producto" src=<%= products.id %> />
           </div>
           <div class="especificaciones">
             <p class="modelo">
-              <%= `${product.brand} ${product.model}` %>
+              <%= `${products.brand} ${products.model}` %>
             </p>
 
-            <p>MARCA: <%= product.brand %>
+            <p>MARCA: <%= products.brand %>
             </p>
-            <p>MODELO: <%= product.model %>
+            <p>MODELO: <%= products.model %>
             </p>
-            <P class="precio">PRECIO: $<%= product.price %>
+            <P class="precio">PRECIO: $<%= products.price %>
             </P>
             <p>
-              <%= `12 cuotas de $${(product.price / 12).toFixed(2)}` %>
+              <%= `12 cuotas de $${(products.price / 12).toFixed(2)}` %>
             </p>
 
             <p class="description">DESCRIPCIÓN:</br>
-              <%= product.description %></p>
+              <%= products.description %></p>
               <button class="button button1" id="agregar" type="submit">
                 Agregar al carrito
               </button>

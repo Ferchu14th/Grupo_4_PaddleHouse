@@ -9,8 +9,7 @@ router.get('/', productsController.getAllProducts);
 
 // Route create a new product
 router.get('/create', productsController.createProducts);
-
-//router.post('/', upload.single('image'), productsController.storeProduct);
+//router.post('/', upload.single('image'), productsController.storeProducts);
 router.post('/', upload.array('image', 3), productsController.storeProducts);
 
 // Route to get a product by id

@@ -1,50 +1,5 @@
 [
   {
-    "id": 1,
-    "category": "PALETA",
-    "brand": "ADIDAS",
-    "model": "MatchLigth",
-    "price": 35000,
-    "image": "/images/Paleta_AdidasMatchLigth31.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 2,
-    "category": "PALETA",
-    "brand": "KELME",
-    "model": "Lycan",
-    "price": 25000,
-    "image": "/images/Paleta_KelmeLycan.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 3,
-    "category": "PALETA",
-    "brand": "KELME",
-    "model": "Falcon",
-    "price": 22500,
-    "image": "/images/Paleta_KelmeFalcon.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 4,
-    "category": "ACCESORIOS",
-    "brand": "Softee",
-    "model": "Cubre Grip Confort",
-    "price": 650,
-    "image": "/images/Accesorio_CubreGripSofteeConfortPerforadox60.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 5,
-    "category": "ACCESORIOS",
-    "brand": "ADIDAS",
-    "model": "Grip Paddle Performance Blanco",
-    "price": 450,
-    "image": "/images/Accesorio_GripAdidasPadelPerformance1blanco.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
     "id": 6,
     "category": "ACCESORIOS",
     "brand": "ADIDAS",
@@ -81,21 +36,58 @@
     "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
   },
   {
-    "category": "Paleta",
-    "brand": "Adidas",
-    "model": "Buenos Aires",
-    "price": "23545",
-    "image": "Metalbone_MASTER_RK1AC5U12_DetailCenter.jpg",
-    "description": "Adidas de fabricación nacional",
-    "id": "d6a4b94d-5483-4a14-a971-b7ec5180ea29"
+    "category": "PALETA",
+    "brand": "ADIDAS",
+    "model": "MatchLigth",
+    "price": "35000",
+    "description": "Paleta ultra liviana especial para damas",
+    "id": "7a8f8545-969a-4717-9157-f63b94cf2f90",
+    "image": [
+      "1658358563305.jpg"
+    ]
   },
   {
-    "category": "PRUEBA 1",
-    "brand": "MARCA 1",
-    "model": "MODELO 1",
-    "price": "9999999",
-    "image": "Metalbone_MASTER_RK1AC5U12_DetailCenter2.jpg",
-    "description": "DESCRIPCION 1",
-    "id": "ebc0e250-b912-48a7-93fb-8f79cfd8245a"
+    "category": "PALETA",
+    "brand": "KELME",
+    "model": "Falcon",
+    "price": "22500",
+    "description": "Paleta sin vibraciones, ultra compacta.",
+    "id": "a5176eae-c8fd-4379-9445-bae064c1d8e6",
+    "image": [
+      "1658359096277.jpg"
+    ]
+  },
+  {
+    "category": "PALETA",
+    "brand": "KELME",
+    "model": "Lycan",
+    "price": "27600",
+    "description": "Paleta liviana especial para jóvenes",
+    "id": "be9a3a46-8094-4321-bd19-57dff3fd0e80",
+    "image": [
+      "1658359374447.jpg"
+    ]
+  },
+  {
+    "category": "ACCESORIOS",
+    "brand": "Softee",
+    "model": "Cubre Grip Confort",
+    "price": "650",
+    "description": "estuche por 60",
+    "id": "d749c81a-ff40-444f-9c20-46233b730c5b",
+    "image": [
+      "1658360213826.jpg"
+    ]
+  },
+  {
+    "category": "ACCESORIOS",
+    "brand": "ADIDAS",
+    "model": "Grip Paddle Performance Banco",
+    "price": "450",
+    "description": "Nexus Blanco Estuche de 60 unidades",
+    "id": "a27a2961-bdaf-4b10-8a51-35742fae36ee",
+    "image": [
+      "1658360880554.jpg"
+    ]
   }
 ]
