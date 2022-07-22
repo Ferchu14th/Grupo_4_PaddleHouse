@@ -14,11 +14,20 @@ module.exports = {
       products: productList,
     });
   },
-  /*  getProductById: (req, res) => {
-      let id = req.params.id;
-  
-      res.send("Get product by id: " + id);
-    },*/
+  productDetail: (req, res) => {
+    let id = req.params.id;
+    let product = productList.find((e) => e.id == id);
+
+    res.render("./products/oneProduct", {
+      styles: "oneProduct",
+      products: product,
+    });
+  },
+
+    // Carrito de Compras que por ahora no tocamos
+    cartProducts: (req, res) => {
+      res.render("products/productCart", { styles: "productCart" });
+    },
 
   // Método x 2: Formulario de creación de productos con método GET (renderización) createProducts y 
   // POST(procesamiento) StoreProducts
@@ -98,14 +107,11 @@ module.exports = {
     const clasificacion = req.params.category;
     const nuevaLista = productList.filter((e) => e.category == clasificacion);
 
-    res.render("products/oneProduct", {
-      styles: "oneProduct",
-      product: nuevaLista,
+    res.render("products/allProducts", {
+      styles: "allProducts",
+      products: nuevaLista,
     });
   },
 
-  // Carrito de Compras que por ahora no tocamos
-  cartProducts: (req, res) => {
-    res.render("products/productCart", { styles: "productCart" });
-  },
+
 };
