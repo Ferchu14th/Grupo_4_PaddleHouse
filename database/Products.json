@@ -1,41 +1,5 @@
 [
   {
-    "id": 6,
-    "category": "ACCESORIOS",
-    "brand": "ADIDAS",
-    "model": "Grip Paddle Performance Rojo",
-    "price": 500,
-    "image": "/images/Accesorio_GripAdidasPadelPerformance1rojo.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 7,
-    "category": "BOLSOS-PALETERO",
-    "brand": "ADIDAS",
-    "model": "Multigame Lite White",
-    "price": 29000,
-    "image": "/images/Bolsos_PaleteroAdidasMultigameLiteWhite.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 8,
-    "category": "BOLSOS-PALETERO",
-    "brand": "ADIDAS",
-    "model": "Weekend White",
-    "price": 22300,
-    "image": "/images/Bolsos_PaleteroAdidasWeekendWhite20.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
-    "id": 9,
-    "category": "BOLSOS-PALETERO",
-    "brand": "ADIDAS",
-    "model": "Weekend Green",
-    "price": 25000,
-    "image": "/images/Bolsos_PaleteroAdidasWeekendVerde.jpg",
-    "description": "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad"
-  },
-  {
     "category": "PALETA",
     "brand": "ADIDAS",
     "model": "MatchLigth",
@@ -72,7 +36,7 @@
     "category": "ACCESORIOS",
     "brand": "Softee",
     "model": "Cubre Grip Confort",
-    "price": "650",
+    "price": "1650",
     "description": "estuche por 60",
     "id": "d749c81a-ff40-444f-9c20-46233b730c5b",
     "image": [
@@ -83,11 +47,55 @@
     "category": "ACCESORIOS",
     "brand": "ADIDAS",
     "model": "Grip Paddle Performance Banco",
-    "price": "450",
+    "price": "1450",
     "description": "Nexus Blanco Estuche de 60 unidades",
     "id": "a27a2961-bdaf-4b10-8a51-35742fae36ee",
     "image": [
       "1658360880554.jpg"
+    ]
+  },
+  {
+    "category": "ACCESORIOS",
+    "brand": "ADIDAS",
+    "model": "Grid Paddle Performance Rojo",
+    "price": "250",
+    "description": "Estuche de Grid Adidas color rojo para mangos de paletas de padel",
+    "id": "96f514e9-008e-4cf4-8705-d3eb658e50aa",
+    "image": [
+      "1658526716543.jpg"
+    ]
+  },
+  {
+    "category": "BOLSOS-PALETERO",
+    "brand": "ADIDAS",
+    "model": "Multigame Lite White",
+    "price": "19800",
+    "description": "Bolso para paletas de padel impermeable de gran capacidad",
+    "id": "c5c92be8-0597-4b24-ae4a-c736415ac748",
+    "image": [
+      "1658526842632.jpg"
+    ]
+  },
+  {
+    "category": "BOLSOS-PALETERO",
+    "brand": "ADIDAS",
+    "model": "Weekend White",
+    "price": "15430",
+    "description": "Bolso para paletas de padel color blanco individual",
+    "id": "f7e6d644-3485-4b98-aef8-9ff9f8f057e7",
+    "image": [
+      "1658527023807.jpg"
+    ]
+  },
+  {
+    "category": "BOLSOS-PALETERO",
+    "brand": "ADIDAS",
+    "model": "Weekend green",
+    "price": "16100",
+    "description": "Bolso para paletas de padel casual individual",
+    "id": "cc302ae9-58b5-42e7-8de0-00b8f2ae9aae",
+    "image": [
+      "1658527157663.jpg"
     ]
   }
 ]
