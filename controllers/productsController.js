@@ -1,26 +1,26 @@
-const { application } = require("express");
-const { v4: uuidv4 } = require("uuid");
-const fs = require("fs");
-const path = require("path");
+const { application } = require("express"); //requiero el express
+const { v4: uuidv4 } = require("uuid"); //requiero el uuid
+const fs = require("fs"); //requiero el fs que sirve para leer y escribir archivos
+const path = require("path"); //requiero el path que sirve para crear rutas
 //Tenemos un objeto literal (productList) con datos, que estamos ubicando, listando y parseando.
-const productListPath = path.resolve(__dirname, "../database/products.json");
-const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8"));
+const productListPath = path.resolve(__dirname, "../database/products.json"); //resolvemos el path de la carpeta database
+const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8")); //parseamos el archivo json y lo guardamos en una variable
 
 module.exports = {
   // Vista de todos los productos
-  getAllProducts: (req, res) => {
-    res.render("./products/allProducts", {
-      styles: "allProducts",
-      products: productList,
+  getAllProducts: (req, res) => { //Vista de todos los productos
+    res.render("./products/allProducts", { //renderizamos la vista de todos los productos
+      styles: "allProducts", //le pasamos el estilo que queremos que se muestre
+      products: productList, //le pasamos el objeto productList
     });
   },
-  productDetail: (req, res) => {
-    let id = req.params.id;
-    let product = productList.find((e) => e.id == id);
+  productDetail: (req, res) => { //Vista de un producto
+    let id = req.params.id; //obtenemos el id del producto
+    let product = productList.find((e) => e.id == id); //buscamos el producto en la lista de productos
 
-    res.render("./products/oneProduct", {
-      styles: "oneProduct",
-      products: product,
+    res.render("./products/oneProduct", { //renderizamos la vista del producto
+      styles: "oneProduct", //le pasamos el estilo correspondiente
+      products: product, //le pasamos el producto
     });
   },
 
@@ -31,85 +31,86 @@ module.exports = {
 
   // Método x 2: Formulario de creación de productos con método GET (renderización) createProducts y 
   // POST(procesamiento) StoreProducts
-  createProducts: (req, res) => {
-    res.render("products/createProducts", {
-      styles: "register",
+  createProducts: (req, res) => { //Formulario de creación de productos
+    res.render("products/createProducts", { //renderizamos la vista de creación de productos
+      styles: "register", //utilizamos el estilo register para el formulario de registro
     });
   },
-  storeProducts: (req, res) => {
-    let product = req.body;
-    let image = req.file;
-    let images = req.files;
+  storeProducts: (req, res) => { //Procesamiento de creación de productos
+    let product = req.body; //req.body es un objeto que contiene todos los datos que se envían desde el formulario
+    let image = req.file; //el file es el nombre de la propiedad que se le pasa al middleware multer
+    let images = req.files; //array de imágenes
+  
+    //console.log("store image",req.file); //con console y req.file veo la imagen
+    product.id = uuidv4(); //uuidv4 es una función que genera un id único
 
-    product.id = uuidv4();
-
-    if (image) {
-      product.image = image.filename;
-    } else if (images) {
-      product.image = images.map(image => image.filename);
+    if (image) { //si existe la imagen
+      product.image = image.filename; //el nombre de la imagen que se subió
+    } else if (images) {//si existen más de una imagen
+      product.image = images.map(image => image.filename); //entonces subo el array de imágenes
     }
 
     //voy creando el array con push
-    productList.push(product);
+    productList.push(product); //agregamos el producto al array
 
     //voy grabando en JSON
-    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2)); //el null y 2 son opcionales pero mejoran la vista del JSON
 
-    res.redirect("/products");
+    res.redirect("/products"); //redireccionamos a la vista de todos los productos
   },
   
   // Método x 2 para la modificación/edición de un producto con método GET (renderización) editproducts y PUT (procesamiento)
-  editProducts: (req, res) => {
-    const id = req.params.id;
-    const product1 = productList.find((element) => element.id == id);
+  editProducts: (req, res) => { //Formulario de edición de productos
+    const id = req.params.id; //obtenemos el id del producto
+    const product1 = productList.find((element) => element.id == id); //buscamos el producto en la lista de productos
 
-    res.render("products/editProducts", {
-      styles: "register",
-      product: product1,
+    res.render("products/editProducts", { //renderizamos la vista de edición de productos
+      styles: "register", //utilizamos el estilo register para el formulario de registro
+      product: product1, //le pasamos el producto
     });
   },
 
-  updateProducts: (req, res) => {
-    let id = req.params.id;
-    let newProduct = req.body;
+  updateProducts: (req, res) => { //Procesamiento de edición de productos
+    let id = req.params.id; //obtenemos el id del producto
+    let newProduct = req.body; //req.body es un objeto que contiene todos los datos que se envían desde el formulario
 
-    newProduct.id = id;
+    newProduct.id = id; //le asignamos el mismo id al producto
 
-    for (let index = 0; index < productList.length; index++) {
-      const element = productList[index];
-      if (element.id == id) {
-        productList[index] = newProduct;
+    for (let index = 0; index < productList.length; index++) { //recorremos el array de productos
+      const element = productList[index]; //guardamos el elemento actual del array
+      if (element.id == id) { //si el elemento actual es el producto que queremos editar
+        productList[index] = newProduct; //lo reemplazamos por el nuevo producto
       }
     }
     //hay que actualizar el archivo con fs (como hicimos con el producto) el null y el 2 es fijo para que mantenga el formato el JSON.
-    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2)); //el null y 2 son opcionales pero mejoran la vista del JSON
 
-    res.redirect("/products");
+    res.redirect("/products");//redireccionamos a la vista de todos los productos
   },
 
-  deleteProduct: (req, res) => {
-    let id = req.params.id;
-    console.log("deleteProduct", id);
-    for (let index = 0; index < productList.length; index++) {
-      const element = productList[index];
-      if (element.id == id) {
-        productList.splice(index, 1);
+  deleteProduct: (req, res) => {//Procesamiento de eliminación de productos
+    let id = req.params.id; //obtenemos el id del producto
+    console.log("deleteProduct", id);//console.log para ver el id del producto que se va a eliminar
+    for (let index = 0; index < productList.length; index++) {//recorremos el array de productos
+      const element = productList[index];//guardamos el elemento actual del array
+      if (element.id == id) {//si el elemento actual es el producto que queremos eliminar
+        productList.splice(index, 1);//lo eliminamos del array
       }
     }
 
-    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2)); //usamos fs para grabar el archivo JSON
 
-    res.redirect("/products");
+    res.redirect("/products"); //redireccionamos a la vista de todos los productos
   },
 
-  // revisar
-  productFilter: (req, res) => {
-    const clasificacion = req.params.category;
-    const nuevaLista = productList.filter((e) => e.category == clasificacion);
+  // Para filtrar los productos en la vista de todos los productos que se llama allProducts por categoria
+  productFilter: (req, res) => { //Filtro de productos
+    const clasificacion = req.params.category; //obtenemos la categoría del producto
+    const nuevaLista = productList.filter((e) => e.category == clasificacion); //filtramos la lista de productos por la categoría
 
-    res.render("products/allProducts", {
-      styles: "allProducts",
-      products: nuevaLista,
+    res.render("products/allProducts", { //renderizamos la vista de todos los productos
+      styles: "allProducts", //le pasamos el estilo correspondiente
+      products: nuevaLista, //le pasamos la lista de productos filtrada
     });
   },
 

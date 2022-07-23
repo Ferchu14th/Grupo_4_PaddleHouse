@@ -4,7 +4,10 @@
 <body>
     <%- include("../partials/header") %> 
     <main class="register">
-        <form action="/products" method="post" enctype="multipart/form-data">
+
+        /*para incorporar la propiedad "image" en el JSON utilizando el middleware Multer agregamos el enctype dentro del form*/
+
+<form action="/products" method="post" enctype="multipart/form-data">
             
             <h4>Crear producto</h4>
 
@@ -33,7 +36,9 @@
                 <label for="image">Cargar imagen del producto</label>
                 </div>
                 <div>
-                <input class="input" type="file" name="image" id="image" multiple>
+                    /*acá incorporamos el imput type file, el id que seria opcional y el multiple que sirve 
+                    para poder seleccionar más de un archivo */
+                    <input class="input" type="file" name="image" id="image" multiple>
                 </div>
             </div>
 
