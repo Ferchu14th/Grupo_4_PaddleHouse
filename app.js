@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, "public")));
 /******Nuevas Rutas a través de Routes y Controllers INDEX o ENTRY POINT*****/
 app.use('/', indexRoutes);
 
-/******Nuevas Rutas a través de Routes y Controllers PRODUCTOS******/
+/******Nuevas Rutas a través de Routes y Controllers PRODUCTOS con PREFIJO /products ******/
 app.use('/products', productsRoutes);
 
 /******Nuevas Rutas a través de Routes y Controllers USUARIOS******/

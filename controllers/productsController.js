@@ -44,7 +44,7 @@ module.exports = {
     //console.log("store image",req.file); //con console y req.file veo la imagen
     product.id = uuidv4(); //uuidv4 es una función que genera un id único
 
-    if (image) { //si existe la imagen
+    if (image) { //si existe una imagen sola
       product.image = image.filename; //el nombre de la imagen que se subió
     } else if (images) {//si existen más de una imagen
       product.image = images.map(image => image.filename); //entonces subo el array de imágenes

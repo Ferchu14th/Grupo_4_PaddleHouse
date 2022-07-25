@@ -8,44 +8,32 @@
     <%- include("../partials/header") %>
 
     <main class="register">
-        <form action="/" method="POST">
+        <form action="/users/register" method="POST">
 
             <p>Inicio > Mi cuenta > Crear cuenta</p>
             <h4>Crear cuenta</h4>
             <div class="inputs">
             <div class="box">
                 <label for="user"></label>
-                <input class="input" type="text" name="NyA" id="NyA" placeholder="Nombre y Apellido" required="">
+                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario" required>
             </div>
 
             <div class="box">
                 <label for="user"></label>
-                <input class="input" type="email" name="email" id="email" placeholder=email required="">
-            </div>
-
-            <div class="box">
-                <label for="tel"></label>
-                <input class="input" type="tel" name="telefono" id="tel" placeholder="Telefono" required="">
+                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email" required>
             </div>
 
             <div class="box">
                 <label for="password"></label>
-                <input class="input" type="password" name="password" id="password" placeholder="Contraseña" required="">
+                <input class="input" type="password" name="password" placeholder="Crea tu contraseña">
             </div>
 
             <div class="box">
-                <label for="password"></label>
-                <input class="input" type="password" name="password" id="password" placeholder="Confirmar contraseña"
-                    required="">
-            </div>
-        </div>
-
-            <div class="box">
-                <button class="button" type="submit">CREAR CUENTA</button>
+                <button class="button" type="submit">CREA TU CUENTA</button>
             </div>
 
         </form>
-        <h5>Ya tenés una cuenta? <a class="boton-iniciar" href="/users/log">INICIAR SESION</a></h5>
+        <h5>Ya tenés una cuenta? <a class="boton-iniciar" href="/users/login">INICIAR SESION (LOGIN)</a></h5>
 
     </main>
         <%- include("../partials/footer") %>

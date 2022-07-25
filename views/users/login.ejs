@@ -11,15 +11,15 @@
                 <p>Inicio > Mi cuenta > Login</p>
                 <h4>Inicia Sesion</h4>
 
-                <form action="/" method="GET">
+                <form action="/users/login" method="post">
                     <div class="box">
                         <label for="user"></label>
-                        <input class="input" type="email" name="email" id="email" placeholder=email required="">
+                        <input class="input" type="email" name="email" placeholder=email required>
                     </div>
                     <div class="box">
                         <label for="password"></label>
-                        <input class="input" type="password" name="password" id="password" placeholder="Contraseña"
-                            required="">
+                        <input class="input" type="password" name="password" placeholder="Contraseña"
+                            required>
                     </div>
                     <label class="titulo">¿Olvidaste tu contraseña?</label>
                     <div class="box">
@@ -27,7 +27,7 @@
                     </div>
 
                 </form>
-                <h5>No tenés cuenta aún? <a class="crear-link" href="/users/reg">CREAR CUENTA</a></h5>
+                <h5>No tenés cuenta aún? <a class="crear-link" href="/users/register">CREAR CUENTA</a></h5>
 
             </main>
 
