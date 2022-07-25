@@ -65,7 +65,7 @@ module.exports = {
     const product1 = productList.find((element) => element.id == id); //buscamos el producto en la lista de productos
 
     res.render("products/editProducts", { //renderizamos la vista de edición de productos
-      styles: "register", //utilizamos el estilo register para el formulario de registro
+      styles: "register", //utilizamos el estilo register para el formulario de editar un producto
       product: product1, //le pasamos el producto
     });
   },
@@ -90,11 +90,10 @@ module.exports = {
 
   deleteProduct: (req, res) => {//Procesamiento de eliminación de productos
     let id = req.params.id; //obtenemos el id del producto
-    console.log("deleteProduct", id);//console.log para ver el id del producto que se va a eliminar
-    for (let index = 0; index < productList.length; index++) {//recorremos el array de productos
-      const element = productList[index];//guardamos el elemento actual del array
-      if (element.id == id) {//si el elemento actual es el producto que queremos eliminar
-        productList.splice(index, 1);//lo eliminamos del array
+    for (let index = 0; index < productList.length; index++) {
+      const element = productList[index]; //guardamos el elemento actual del array
+      if (element.id == id) { //si el elemento actual es el producto que queremos eliminar
+        productList.splice(index, 1); //lo eliminamos del array
       }
     }
 

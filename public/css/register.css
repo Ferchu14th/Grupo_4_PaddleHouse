@@ -236,6 +236,7 @@ main .box {
   padding: 20px 0px;
   border:  1px ;
 }
+
 main .box-imagen {
   display: flex;
   justify-content:center;
@@ -273,6 +274,23 @@ main .button {
 
 main .button:hover {
   background-color: #0022aa;
+}
+
+main .button-delete {
+  display: block;
+  width: 50%;
+  border-radius: 5px;
+  margin: auto;
+  padding: 10px;
+  background-color: #b91934;
+  font-size: 14px;
+  border: none;
+  color: white;
+  transition: background-color, 0.5s;
+}
+
+main .button-delete:hover {
+  background-color: #460707;
 }
 
 main .titulo {

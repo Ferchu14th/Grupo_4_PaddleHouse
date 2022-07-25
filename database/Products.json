@@ -26,22 +26,18 @@
     "brand": "KELME",
     "model": "Lycan",
     "price": "27600",
+    "image": "1658359374447.jpg",
     "description": "Paleta liviana especial para jóvenes",
-    "id": "be9a3a46-8094-4321-bd19-57dff3fd0e80",
-    "image": [
-      "1658359374447.jpg"
-    ]
+    "id": "be9a3a46-8094-4321-bd19-57dff3fd0e80"
   },
   {
     "category": "ACCESORIOS",
     "brand": "Softee",
-    "model": "Cubre Grip Confort",
+    "model": "Cubre Grip Confort 100",
     "price": "1650",
+    "image": "1658360213826.jpg",
     "description": "estuche por 60",
-    "id": "d749c81a-ff40-444f-9c20-46233b730c5b",
-    "image": [
-      "1658360213826.jpg"
-    ]
+    "id": "d749c81a-ff40-444f-9c20-46233b730c5b"
   },
   {
     "category": "ACCESORIOS",
@@ -68,13 +64,11 @@
   {
     "category": "BOLSOS-PALETERO",
     "brand": "ADIDAS",
-    "model": "Multigame Lite White",
-    "price": "19800",
+    "model": "Multigame Lite White 50",
+    "price": "19810",
+    "image": "1658526842632.jpg",
     "description": "Bolso para paletas de padel impermeable de gran capacidad",
-    "id": "c5c92be8-0597-4b24-ae4a-c736415ac748",
-    "image": [
-      "1658526842632.jpg"
-    ]
+    "id": "c5c92be8-0597-4b24-ae4a-c736415ac748"
   },
   {
     "category": "BOLSOS-PALETERO",

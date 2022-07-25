@@ -26,9 +26,9 @@ router.post('/', upload.array('image', 3), productsController.storeProducts); //
 
 // Route edit a products
 router.get('/edit/:id', productsController.editProducts);
-router.put('/:id', productsController.updateProducts)
+router.put('/edit/:id', productsController.updateProducts)
 
 // Route to delete a product
-router.delete('/:id', productsController.deleteProduct);
+router.delete('/edit/:id', productsController.deleteProduct);
 
 module.exports = router;
