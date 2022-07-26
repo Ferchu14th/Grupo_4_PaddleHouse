@@ -266,6 +266,11 @@ header .button-search {
     padding: 10px;
 }
 
+.img img{
+  width: 227px;
+  height: 298px;
+  place-self: center;
+}
 .Desc-2 {
   width: 27%;
   text-align: center;

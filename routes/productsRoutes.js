@@ -29,6 +29,6 @@ router.get('/edit/:id', productsController.editProducts);
 router.put('/edit/:id', productsController.updateProducts)
 
 // Route to delete a product
-router.delete('/edit/:id', productsController.deleteProduct);
+router.delete('/delete/:id', productsController.deleteProduct);
 
 module.exports = router;
