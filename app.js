@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const methodOverride = require('method-override');
+//const session = require('express-session');
 
 const indexRoutes = require("./routes/indexRoutes");
 const productsRoutes = require('./routes/productsRoutes');
@@ -13,12 +14,17 @@ const PORT = process.env.PORT || 3050;
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-//uso los siguientes middlewares para leer lo que viene por formulario
+/****************Middlewares***********************/
+// uso los siguientes middlewares para leer lo que viene por formulario
 // el "extended: true" fuerza a que sea un objeto literal lo que nos llega.
 // y lo que llega lo haga JSON que es la segunda línea
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
+//app.use(session({
+//    secret: 'secret',
+//    cookies: {maxAge: 1000 * 60 * 60 * 24 * 7},
+//}));
 
 //configuración de public static
 app.use(express.static(path.join(__dirname, "public")));

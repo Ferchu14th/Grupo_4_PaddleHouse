@@ -8,11 +8,28 @@ const usersList = JSON.parse(fs.readFileSync(usersListPath, "utf-8"));
 const usersModel = require("../models/usersModel");
 
 const usersController = {
-    login: (req, res) => {
-        res.render("users/login", { styles: "login" });
+    login: (req, res) => { //funcion para logearse
+        res.render("users/login", { styles: "login" }); //renderizo la vista login
     },
     processLogin: (req, res) => {
-        res.JSON("todo va bien");
+        try {
+            let currentUser = {
+                email: req.body.email,
+                password: req.body.password
+            };
+
+            let validate = usersModel.validateUser(currentUser);
+
+            if (validate) {
+                req.session.user = validate;
+                res.redirect("/");
+            } 
+        } catch (error) {
+            res.json({
+                success: false,
+                error: error.message
+            });
+        }
     },
     register: (req, res) => {
         //creo una función para registrar un usuario
@@ -20,8 +37,8 @@ const usersController = {
     },
     processRegister: (req, res) => {
         //proceso el registro de crear un usuario
-        let currentUser = req.body; //creo una variable currentUser que me trae el body del formulario
-        let listUsers = usersModel.getAll(); //creo una variable listUsers que me trae la lista de usuarios
+        const currentUser = req.body; //creo una variable currentUser que me trae el body del formulario
+        const listUsers = usersModel.getAll(); //creo una variable listUsers que me trae la lista de usuarios
 
         const newUser = listUsers.find((user) => {
             if (user.email == currentUser.email) {
@@ -32,7 +49,7 @@ const usersController = {
                 });
             }
         });
-        if (! newUser) {
+        if (!newUser) {
             //si el usuario no existe
             usersModel.createUsers(currentUser); //creo un nuevo usuario
             res.redirect("/"); //y redirijo al usuario a la página principal
