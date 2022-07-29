@@ -4,20 +4,21 @@
 const fs = require("fs");
 const path = require("path");
 const bcrypt = require("bcrypt");
-const uuid = require("uuid");
+const { v4: uuidv4 } = require("uuid");
 
-const usersListPath = path.resolve(__dirname, "../database/Users.json");
+
 
 const User = {
+    usersListPath: path.resolve(__dirname, "../database/Users.json"),
     getAll: () => {
         //funcion para leer mi base de datos
-        const usersList = JSON.parse(fs.readFileSync(usersListPath, "utf8")); //creo una variable usersList que me trae la lista de usuarios
+        const usersList = JSON.parse(fs.readFileSync(User.usersListPath, "utf8")); //creo una variable usersList que me trae la lista de usuarios
         return usersList; //retorno la lista de usuarios
     },
     createUsers: (user) => {
         //Objeto con toda la data que nosotros vamos a persistir (e.d. que se guarde en la base)
         let newUser = {
-            id: uuid.v4(),//genero un id único
+            id: uuidv4(),//genero un id único
             name: user.name,
             email: user.email,
             password: bcrypt.hashSync(user.password, 10)
