@@ -14,10 +14,10 @@ const storage = multer.diskStorage({
         let nameFile = Date.now() + path.extname(file.originalname);
         cb(null, nameFile);
     },
-        limits: {
-        fileSize: 1024 * 1024 * 5 //5MB
-    }   //el limits es para que no se pase del tamaño de archivo que queremos, en este caso hasta 5MB. 
-        //Tambien existen los filtros para el tipo de archivo jpg, png, etc. 
+    limits: {
+        fileSize: 1024 * 1024 * 5, //5MB
+    }, //el limits es para que no se pase del tamaño de archivo que queremos, en este caso hasta 5MB.
+    //Tambien existen los filtros para el tipo de archivo jpg, png, etc.
 });
 
 const upload = multer({ storage });

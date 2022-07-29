@@ -1,33 +1,42 @@
 const fs = require("fs"); //requiero el fs que sirve para leer y escribir archivos
 const path = require("path");
-const { v4: uuidv4 } = require("uuid"); //requiero el uuid
-
 const usersListPath = path.resolve(__dirname, "../database/users.json");
 const usersList = JSON.parse(fs.readFileSync(usersListPath, "utf-8"));
 
 const usersModel = require("../models/usersModel");
 
 const usersController = {
-    login: (req, res) => { //funcion para logearse
+    login: (req, res) => {
+        //funcion para logearse
         res.render("users/login", { styles: "login" }); //renderizo la vista login
+    },
+    logout: (req, res) => {
+        req.session.destroy();
+        res.clearCookie("user");
+        res.redirect("/");
     },
     processLogin: (req, res) => {
         try {
             let currentUser = {
                 email: req.body.email,
-                password: req.body.password
+                password: req.body.password,
             };
 
             let validate = usersModel.validateUser(currentUser);
 
             if (validate) {
                 req.session.user = validate;
-                res.redirect("/");
-            } 
+                if (req.body.remember) {
+                    res.cookie("user", validate.name, {
+                        maxAge: 1000 * 60 * 60 * 24 * 7,
+                    });
+                }
+                res.redirect("/"); // a la ruta
+            }
         } catch (error) {
             res.json({
                 success: false,
-                error: error.message
+                error: error.message,
             });
         }
     },

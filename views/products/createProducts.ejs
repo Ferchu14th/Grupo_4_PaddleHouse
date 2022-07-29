@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partials/head") %>
-<body>
-    <%- include("../partials/header") %> 
-    <main class="register">
+<%- include("../partials/head") %>
 
-        /*para incorporar la propiedad "image" en el JSON utilizando el middleware Multer agregamos el enctype dentro del form*/
+    <body>
+        <%- include("../partials/header") %>
+            <main class="register">
 
-<form action="/products" method="post" enctype="multipart/form-data">
-            
-            <h4>Crear producto</h4>
+                <!-- para incorporar la propiedad "image" en el JSON utilizando el middleware Multer agregamos el enctype dentro del form -->
+                <form action="/products" method="post" enctype="multipart/form-data">
 
-            <div class="box">
-                <label for="category"></label>
-                <input class="input" type="text" name="category" id="category" placeholder="categoria">
-            </div>
+                    <h4>Crear producto</h4>
 
-            <div class="box">
-                <label for="brand"></label>
-                <input class="input" type="text" name="brand" id="brand" placeholder="marca">
-            </div>
+                    <div class="box">
+                        <label for="category"></label>
+                        <input class="input" type="text" name="category" id="category" placeholder="categoria">
+                    </div>
 
-            <div class="box">
-                <label for="model"></label>
-                <input class="input" type="text" name="model" id="model" placeholder="modelo">
-            </div>
+                    <div class="box">
+                        <label for="brand"></label>
+                        <input class="input" type="text" name="brand" id="brand" placeholder="marca">
+                    </div>
 
-            <div class="box">
-                <label for="price"></label>
-                <input class="input" type="number" name="price" id="price" placeholder="precio">
-            </div>
+                    <div class="box">
+                        <label for="model"></label>
+                        <input class="input" type="text" name="model" id="model" placeholder="modelo">
+                    </div>
 
-            <div class="box-imagen">
-                <div class="cargarImagen">
-                <label for="image">Cargar imagen del producto</label>
-                </div>
-                <div>
-                    /*acá incorporamos el imput type file, el id que seria opcional y el multiple que sirve 
-                    para poder seleccionar más de un archivo */
-                    <input class="input" type="file" name="image" id="image" multiple>
-                </div>
-            </div>
+                    <div class="box">
+                        <label for="price"></label>
+                        <input class="input" type="number" name="price" id="price" placeholder="precio">
+                    </div>
 
-            <div class="box">
-                <label for="description"></label>
-                <input class="input" type="text" name="description" id="description" placeholder="descripcion">
-            </div>
+                    <div class="box-imagen">
+                        <div class="cargarImagen">
+                            <label for="image">Cargar imagen del producto</label>
+                        </div>
+                        <div>
+                            <!-- acá incorporamos el imput type file, el id que seria opcional y el multiple que sirve 
+                    para poder seleccionar más de un archivo  -->
+                            <input class="input" type="file" name="image" id="image" multiple>
+                        </div>
+                    </div>
 
-            <div class="box">
-                <button class="button" type="submit">CREAR PRODUCTO</button>
-            </div>
-        </div>
-        </form>
+                    <div class="box">
+                        <label for="description"></label>
+                        <input class="input" type="text" name="description" id="description" placeholder="descripcion">
+                    </div>
 
-    </main>
+                    <div class="box">
+                        <button class="button" type="submit">CREAR PRODUCTO</button>
+                    </div>
+                    </div>
+                </form>
+
+            </main>
 
 
-    <%- include("../partials/footer") %>
-</body>
+            <%- include("../partials/footer") %>
+    </body>
+
 </html>
