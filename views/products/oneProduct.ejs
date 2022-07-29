@@ -26,10 +26,14 @@
 
             <p class="description">DESCRIPCIÓN:</br>
               <%= products.description %></p>
+              
               <button class="button button1" id="agregar" type="submit">
                 Agregar al carrito
               </button>
-          </div>
+                <form action="/products/edit/<%=products.id%>">
+                <button class="button button1" type="submit"> Editar Producto </button>
+              </form>
+              
         </section>
     </main>
     <%- include("../partials/footer") %>
