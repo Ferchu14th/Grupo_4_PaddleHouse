@@ -90,3 +90,33 @@ Participantes: Equipo completo
 **¿Qué deberían dejar de hacer?**
 
 1. Buscar muchas referencias que nos hacen perder el foco en nuestro proyecto
+
+------------------------------------------------------------------------------------------------------------------------
+## Retro sprint 4 ##
+
+### Equipo 4 Paddle House ###
+
+Fecha: 15/08/2022
+
+Participantes: Equipo completo
+
+**¿Qué hicieron bien en el sprint anterior?**
+
+1. Seguimos bien organizados con las tareas
+2. Utilizamos Trello al detalle
+3. Comenzamos a comprender en profundidad algunos temas
+4. Seguimos colaborando entre nosotros para entender mejor los temas
+
+**¿Qué hicieron mal?**
+
+1. Tuvimos problemas con las rutas a nivel de cascada hasta que pudimos detectarlo y correjirlo.
+
+**¿Qué deberían empezar a hacer?**
+
+1. Profundizar nuevas funcionalidades y aplicarlas al proyecto
+2. Utilizar los ejemplos de los desafíos para acelerar el ritmo
+3. Ir aplicando cierta optimización del código con las nuevas funcionalidades aprendidas 
+
+**¿Qué deberían dejar de hacer?**
+
+1. Trabajar todos en el mismo sitio del GitHub, sin usar ramas.
