@@ -10,7 +10,6 @@ const PORT = process.env.PORT || 3050; // creo una variable que me trae el puert
 const indexRoutes = require("./routes/indexRoutes");
 const productsRoutes = require('./routes/productsRoutes');
 const usersRoutes = require('./routes/usersRoutes');
-const rememberMe = require("./middlewares/rememberMe");
 const cookieParser = require("cookie-parser");
 
 //ubicación de la carpeta de vistas para express
@@ -21,15 +20,17 @@ app.set('view engine', 'ejs');
 // uso los siguientes middlewares para leer lo que viene por formulario
 // el "extended: true" fuerza a que sea un objeto literal lo que nos llega por formulario
 // y luego lo convierto en JSON (segunda línea de código)
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware');
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(methodOverride('_method'));
 app.use(cookieParser());
 app.use(session({
     secret: 'secret',
-    //    cookie: {maxAge: 60000},
+    resave: false,
+    saveUninitialized: false
 }));
-app.use(rememberMe);
+app.use(userLoggedMiddleware);
 
 /******Nuevas Rutas a través de Routes y Controllers INDEX o ENTRY POINT*****/
 app.use('/', indexRoutes);

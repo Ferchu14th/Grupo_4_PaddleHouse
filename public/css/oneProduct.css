@@ -231,6 +231,36 @@
     width: 90%;
     font-size: 100%;
 }
+.logos3 > li {
+  display: inline-block;
+}
+.logos3 > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: blue;
+  text-decoration: none;
+}
+
+.logos3 li a:hover{
+  color:black;
+}
+
+.dropdown-menu{
+  position: absolute;
+  background: cadetblue;
+  display: none;
+}
+
+.dropdown-menu li a{
+  display: block;
+  padding: 15px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.logos3 li:hover .dropdown-menu{
+  display: block;
+}
 
 /*--------ARTICULOS------*/
 section {

@@ -11,18 +11,35 @@
             <button class="button-search"><i class="fa fa-search"></i></button>
             </div>
             <div class="logos3">
-                <a class="contacto-logo" href=#>CONTACTO:
-                    <div></div>
-                    <i class="fas fa-address-card"></i>
-                </a>
-                <a class="micuenta-logo" href="/users/login">MI CUENTA:
-                    <div></div>
-                    <i class="fas fa-sign-in-alt"> </i>
-                </a>
-                <a class="carrito-logo" href="/products/cart">CARRITO:
-                    <div></div>
-                    <i class="fas fa-shopping-basket"> </i>
-                </a>
+                <% if (locals.isLogged) { %>
+					<li class="nav-item dropdown">
+						<a href="#">
+							Hi <%= locals.userLogged.name %> 
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="/users/profile">My profile</a></li>
+							<li><a class="dropdown-item" href="/users/logout">Logout</a></li>
+						</ul>
+					</li>
+                    <a class="carrito-logo" href="/products/cart">CARRITO:
+                        <div></div>
+                        <i class="fas fa-shopping-basket"> </i>
+                    </a>
+				<% } else { %>
+                    <a class="contacto-logo" href=#>CONTACTO:
+                        <div></div>
+                        <i class="fas fa-address-card"></i>
+                    </a>
+					<a class="micuenta-logo" href="/users/login">MI CUENTA:
+                        <div></div>
+                        <i class="fas fa-sign-in-alt"> </i>
+                    </a>
+                    <a class="carrito-logo" href="/products/cart">CARRITO:
+                        <div></div>
+                        <i class="fas fa-shopping-basket"> </i>
+                    </a>
+				<% } %>
+                
             </div>
         </div>
     </div>

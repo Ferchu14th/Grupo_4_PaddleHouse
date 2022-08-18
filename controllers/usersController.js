@@ -1,68 +1,102 @@
-const fs = require("fs"); //requiero el fs que sirve para leer y escribir archivos
-const path = require("path");
-const usersListPath = path.resolve(__dirname, "../database/users.json");
-const usersList = JSON.parse(fs.readFileSync(usersListPath, "utf-8"));
+const bcryptjs = require('bcryptjs');
+const fs = require ("fs")
+const {validationResult} = require('express-validator');
+const { v4: uuidv4 } = require ("uuid")
+const path = require('path');
 
-const usersModel = require("../models/usersModel");
+const User = require('../models/usersModel');
+const usersListPath = path.join(__dirname,"../database/Users.json");
+const usersList = JSON.parse(fs.readFileSync(usersListPath,"utf-8"));
 
-const usersController = {
-    login: (req, res) => {
-        //funcion para logearse
-        res.render("users/login", { styles: "login" }); //renderizo la vista login
-    },
-    logout: (req, res) => {
-        req.session.destroy();
-        res.clearCookie("user");
-        res.redirect("/");
-    },
-    processLogin: (req, res) => {
-        try {
-            let currentUser = {
-                email: req.body.email,
-                password: req.body.password,
-            };
+const controller = {
+	register: (req, res) => {
+		res.render('users/register',{styles: "register"});
+	},
+	processRegister: (req, res) => {
+		const resultValidation = validationResult(req);
 
-            let validate = usersModel.validateUser(currentUser);
+		if (resultValidation.errors.length > 0) {
+			return res.render('users/register', {
+				errors: resultValidation.mapped(),
+				oldData: req.body,
+                styles: "register",
+			});
+		}
 
-            if (validate) {
-                req.session.user = validate;
-                if (req.body.remember) {
-                    res.cookie("user", validate.name, {
-                        maxAge: 1000 * 60 * 60 * 24 * 7,
-                    });
-                }
-                res.redirect("/"); // a la ruta
-            }
-        } catch (error) {
-            res.json({
-                success: false,
-                error: error.message,
-            });
-        }
-    },
-    register: (req, res) => {
-        //creo una función para registrar un usuario
-        res.render("users/register", { styles: "register" }); //renderizo la vista register
-    },
-    processRegister: (req, res) => {
-        //proceso el registro de crear un usuario
-        const currentUser = req.body; //creo una variable currentUser que me trae el body del formulario
-        const listUsers = usersModel.getAll(); //creo una variable listUsers que me trae la lista de usuarios
+		let userInDB = User.findByField('email', req.body.email);
 
-        const newUser = listUsers.find((user) => {
-            if (user.email == currentUser.email) {
-                //si el email del usuario es igual al email que se ingresa en el formulario
-                res.render("users/register", {
-                    styles: "register",
-                    error: "El email ya existe",
-                });
-            }
-        });
-        if (!newUser) {
-            //si el usuario no existe
-            usersModel.createUsers(currentUser); //creo un nuevo usuario
-            res.redirect("/"); //y redirijo al usuario a la página principal
-        }
-    },
-};
-module.exports = usersController;
+		if (userInDB) {
+			return res.render('users/register', {
+				errors: {
+					email: {
+						msg: 'Este email ya está registrado'
+					}
+				},
+				oldData: req.body,
+                styles: "register",
+			});
+		}
+		
+		let user = req.body;
+		
+		
+		user.password = bcryptjs.hashSync(user.password, 10);
+
+		if (resultValidation.errors.length == 0) {
+            usersList.push(user);
+            fs.writeFileSync(usersListPath, JSON.stringify(usersList, null, 2))
+			return res.redirect('./login');
+		}
+	},
+	login: (req, res) => {
+		return res.render('users/login', {styles:"login"});
+	},
+	processLogin: (req, res) => {
+		let userToLogin = User.findByField('email', req.body.email);
+		
+		if(userToLogin) {
+			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
+			if (isOkThePassword) {
+				delete userToLogin.password;
+				req.session.userLogged = userToLogin;
+
+				if(req.body.remember_user) {
+					res.cookie('userEmail', req.body.email, { maxAge: (1000 * 60) * 60 })
+				}
+
+				return res.redirect('./profile');
+			} 
+			return res.render('users/login', {
+				errors: {
+					email: {
+						msg: 'Las credenciales son inválidas'
+					}
+				},
+                styles:"login",
+			});
+		}
+
+		return res.render('users/login', {
+			errors: {
+				email: {
+					msg: 'No se encuentra este email en nuestra base de datos'
+				}
+			},
+            styles:"login",
+		});
+	},
+	profile: (req, res) => {
+		return res.render("users/profile", {
+			user: req.session.userLogged,
+            styles:"login",
+		});
+	},
+
+	logout: (req, res) => {
+		res.clearCookie('userEmail');
+		req.session.destroy();
+		return res.redirect('/');
+	}
+}
+
+module.exports = controller;

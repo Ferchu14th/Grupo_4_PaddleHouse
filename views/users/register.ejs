@@ -15,17 +15,42 @@
             <div class="inputs">
             <div class="box">
                 <label for="user"></label>
-                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario" required>
+                <% if (locals.errors && errors.name) { %>
+                    <div class="text-danger">
+                        <%= errors.name.msg %> 
+                    </div>
+                <% } %>
+                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario" required
+                value="<%= locals.oldData ? oldData.name : null %>">
             </div>
 
             <div class="box">
                 <label for="user"></label>
-                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email" required>
+                <% if (locals.errors && errors.email) { %>
+                    <div class="text-danger">
+                        <%= errors.email.msg %>
+                    </div>
+                <% } %>
+                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email" required
+                value="<%= locals.oldData ? oldData.email : null %>">  
             </div>
 
             <div class="box">
                 <label for="password"></label>
                 <input class="input" type="password" name="password" placeholder="Crea tu contraseña">
+                <% if (locals.errors && errors.password) { %>
+									<div class="text-danger">
+										<%= errors.password.msg %>
+									</div>
+								<% } %>
+            </div>
+            <div class="box-imagen">
+                <div class="cargarImagen">
+                    <label for="image">Cargar foto de perfil</label>
+                </div>
+                <div>
+                    <input class="input" type="file" name="image" id="image" multiple>
+                </div>
             </div>
 
             <div class="box">
