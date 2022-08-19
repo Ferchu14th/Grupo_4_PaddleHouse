@@ -14,6 +14,7 @@
                 <% if (locals.isLogged) { %>
 					<li class="nav-item dropdown">
 						<a href="#">
+                            <img src="/images/avatars/<%= locals.userLogged.avatar.filename %>">
 							Hi <%= locals.userLogged.name %> 
 						</a>
 						<ul class="dropdown-menu">

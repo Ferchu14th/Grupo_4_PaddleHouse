@@ -8,7 +8,9 @@
 		<div class="row">
 			<div class="col-md-3">
 				<h2>Hi <%= user.name %> </h2>
-				<img src="/images/avatars/<%= user.image %> ">
+				<div class="UserAvatar">
+				<img id="avatar" src="/images/avatars/<%= user.avatar.filename %> " alt="" >
+					</div>
 				<br>
 				<br>
 				<div class="alert alert-success"><%= user.email %> </div>

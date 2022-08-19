@@ -1,32 +1,64 @@
 [
-    {
-        "id": "c58aaba1-93da-45f5-9e10-58c6d2f18a02",
-        "name": "fedesoto",
-        "email": "fede@gmail.com",
-        "password": "$2b$10$ZSuk.FNc.ZWZx20SebOhMuNWU8h6Vnb4lr69Nvu.LBCxRS.kBiAa6"
-    },
-    {
-        "id": "fafae5be-73c8-49be-91b4-758f6f8361bc",
-        "name": "pablograna",
-        "email": "pablo@gmail.com",
-        "password": "$2b$10$o3ouBVgRb3W19V1WeObkuuehSpM9YrBC/qpIMnldJIDxB7/EyUIWW"
-    },
-    {
-        "id": "5cc54f64-e83c-4e6c-b377-96728828a1b0",
-        "name": "tinchobuf",
-        "email": "tinchobuf@gmail.com",
-        "password": "$2b$10$6StYFd4tTkxMho2cdxrDLe2ThuVrpm7KXL1YmpkJILmf6y13ifFly"
-    },
-    {
-        "id": "f1b9d26b-9f01-45e1-9aff-310cecf4b90d",
-        "name": "sebas",
-        "email": "sebas@gmail.com",
-        "password": "$2b$10$EC1opaR77RZOAPksjDweDeFcLkuCqkT.iwg6WX18ZiF57dbDQN7XS"
-    },
-    {
-        "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c",
-        "name": "ferchu14",
-        "email": "ferchu14th@gmail.com",
-        "password": "$2b$10$0v.ZjT0ctsof3VVkw1wc8uthxMKpAfFV2zVmZEipcI487xw83Nt6K"
+  {
+    "id": "c58aaba1-93da-45f5-9e10-58c6d2f18a02",
+    "name": "fedesoto",
+    "email": "fede@gmail.com",
+    "password": "$2b$10$ZSuk.FNc.ZWZx20SebOhMuNWU8h6Vnb4lr69Nvu.LBCxRS.kBiAa6"
+  },
+  {
+    "id": "fafae5be-73c8-49be-91b4-758f6f8361bc",
+    "name": "pablograna",
+    "email": "pablo@gmail.com",
+    "password": "$2b$10$o3ouBVgRb3W19V1WeObkuuehSpM9YrBC/qpIMnldJIDxB7/EyUIWW"
+  },
+  {
+    "id": "5cc54f64-e83c-4e6c-b377-96728828a1b0",
+    "name": "tinchobuf",
+    "email": "tinchobuf@gmail.com",
+    "password": "$2b$10$6StYFd4tTkxMho2cdxrDLe2ThuVrpm7KXL1YmpkJILmf6y13ifFly"
+  },
+  {
+    "id": "f1b9d26b-9f01-45e1-9aff-310cecf4b90d",
+    "name": "sebas",
+    "email": "sebas@gmail.com",
+    "password": "$2b$10$EC1opaR77RZOAPksjDweDeFcLkuCqkT.iwg6WX18ZiF57dbDQN7XS"
+  },
+  {
+    "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c",
+    "name": "ferchu14",
+    "email": "ferchu14th@gmail.com",
+    "password": "$2b$10$0v.ZjT0ctsof3VVkw1wc8uthxMKpAfFV2zVmZEipcI487xw83Nt6K"
+  },
+  {
+    "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c1",
+    "name": "prueba",
+    "email": "prueba1@gmail.com",
+    "password": "$2a$10$XyWmTlVUxwdR57wHbvxgl.BDzHLhJ04d1IlAhPficRAdOEXNy10.6",
+    "avatar": {
+      "fieldname": "image",
+      "originalname": "65bc705d2ec7226c4d6899f448fb324d.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+      "filename": "1660868785103_img.jpg",
+      "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660868785103_img.jpg",
+      "size": 21700
     }
+  },
+  {
+    "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c111",
+    "name": "prueba3",
+    "email": "prueba3@gmail.com",
+    "password": "$2a$10$8IQTZuWhfh2fjOqEVJEG5Ox714PQZmWZnlKH0RH8lQsBDxd.NhSLm",
+    "avatar": {
+      "fieldname": "image",
+      "originalname": "bart-simpson-icon-26.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+      "filename": "1660872596763.jpg",
+      "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660872596763.jpg",
+      "size": 9065
+    }
+  }
 ]

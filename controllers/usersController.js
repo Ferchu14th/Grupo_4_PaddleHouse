@@ -1,18 +1,17 @@
 const bcryptjs = require('bcryptjs');
-const fs = require ("fs")
+
 const {validationResult} = require('express-validator');
-const { v4: uuidv4 } = require ("uuid")
-const path = require('path');
+
 
 const User = require('../models/usersModel');
-const usersListPath = path.join(__dirname,"../database/Users.json");
-const usersList = JSON.parse(fs.readFileSync(usersListPath,"utf-8"));
+
 
 const controller = {
 	register: (req, res) => {
 		res.render('users/register',{styles: "register"});
 	},
 	processRegister: (req, res) => {
+		
 		const resultValidation = validationResult(req);
 
 		if (resultValidation.errors.length > 0) {
@@ -36,17 +35,16 @@ const controller = {
                 styles: "register",
 			});
 		}
-		
-		let user = req.body;
-		
-		
-		user.password = bcryptjs.hashSync(user.password, 10);
-
-		if (resultValidation.errors.length == 0) {
-            usersList.push(user);
-            fs.writeFileSync(usersListPath, JSON.stringify(usersList, null, 2))
-			return res.redirect('./login');
+		let userToCreate = {
+			...req.body,
+			password: bcryptjs.hashSync(req.body.password, 10),
+			avatar: req.file
 		}
+
+		let userCreated = User.create(userToCreate);
+		
+		return res.redirect('./login');
+
 	},
 	login: (req, res) => {
 		return res.render('users/login', {styles:"login"});
