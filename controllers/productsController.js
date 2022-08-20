@@ -7,9 +7,9 @@ const productListPath = path.resolve(__dirname, "../database/products.json"); //
 const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8")); //parseamos el archivo json y lo guardamos en una variable
 
 module.exports = {
-  // Vista de todos los productos
+  
   getAllProducts: (req, res) => {
-    //Vista de todos los productos
+    // Vista de todos los productos
     res.render("./products/allProducts", {
       //renderizamos la vista de todos los productos
       styles: "allProducts", //le pasamos el estilo que queremos que se muestre

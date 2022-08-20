@@ -62,5 +62,22 @@
       "size": 9065
     },
     "admin": true
+  },
+  {
+    "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c111",
+    "name": "friedel",
+    "email": "riedelfernando@gmail.com",
+    "password": "$2a$10$lON.VJEZ0j3NpR6GxpgdlOL3RE6CIwnP0646RjezxGG6QpYdK0Jba",
+    "avatar": {
+      "fieldname": "image",
+      "originalname": "Fer Riedel Casual.jpg",
+      "encoding": "7bit",
+      "mimetype": "image/jpeg",
+      "destination": "C:\\Users\\XS01741\\OneDrive - Cirion Technologies\\Escritorio\\CODE\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+      "filename": "1661029678932.jpg",
+      "path": "C:\\Users\\XS01741\\OneDrive - Cirion Technologies\\Escritorio\\CODE\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1661029678932.jpg",
+      "size": 69511
+    },
+    "admin": false
   }
 ]
