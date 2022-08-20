@@ -28,7 +28,7 @@ const controller = {
 			return res.render('users/register', {
 				errors: {
 					email: {
-						msg: 'Este email ya está registrado'
+						msg: '*Este email ya está registrado'
 					}
 				},
 				oldData: req.body,
@@ -38,7 +38,8 @@ const controller = {
 		let userToCreate = {
 			...req.body,
 			password: bcryptjs.hashSync(req.body.password, 10),
-			avatar: req.file
+			avatar: req.file,
+			admin: false,
 		}
 
 		let userCreated = User.create(userToCreate);
@@ -86,7 +87,7 @@ const controller = {
 	profile: (req, res) => {
 		return res.render("users/profile", {
 			user: req.session.userLogged,
-            styles:"login",
+            styles:"profile",
 		});
 	},
 

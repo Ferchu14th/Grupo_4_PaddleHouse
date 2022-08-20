@@ -14,19 +14,26 @@
                 <form action="/users/login" method="post">
                     <div class="box">
                         <label for="user"></label>
+                        <div class="contenedor">
                         <input class="input" type="email" name="email" placeholder=email required>
-                        
+                        <% if (locals.errors && errors.email) { %>
+                            <div class="text-danger">
+                                <%= errors.email.msg %>
+                            </div>
+                        <% } %>
+                        </div>
                     </div>
                     <div class="box">
                         <label for="password"></label>
                         <input class="input" type="password" name="password" placeholder="Contraseña"
                             required>
                     </div>
+                    <div class="recordarUsuario">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="remember_user">Recordar mi usuario
+                        </label>
+                    </div>
                     <div>
-                    <label for = "remember"> 
-                        Recordarme
-                        <imput type=""checkbox" name=""remember">
-                    </label>>
                         <button class="button" type="submit">INICIA SESION</button>
                     </div>
 

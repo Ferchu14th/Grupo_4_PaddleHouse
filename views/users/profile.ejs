@@ -4,20 +4,21 @@
 <body>
 	<%- include("../partials/header") %>
 	
-	<div class="container" style="margin-top: 40px;">
+	<main class="profile">
 		<div class="row">
-			<div class="col-md-3">
-				<h2>Hi <%= user.name %> </h2>
+			<div >
+				<h2>¡ Hola <%= user.name %> !</h2>
+				<h3>BIENVENIDO DE VUELTA</h3>
 				<div class="UserAvatar">
 				<img id="avatar" src="/images/avatars/<%= user.avatar.filename %> " alt="" >
-					</div>
+				</div>
 				<br>
 				<br>
-				<div class="alert alert-success"><%= user.email %> </div>
+				<div class="usuarioEmail"><%= user.email %> </div>
 			</div>
 		</div>
 	</div>
-	
+	</main>
 	<%- include("../partials/footer") %>
 </body>
 </html>

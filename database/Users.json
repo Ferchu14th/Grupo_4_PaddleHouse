@@ -31,34 +31,36 @@
   },
   {
     "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c1",
-    "name": "prueba",
-    "email": "prueba1@gmail.com",
-    "password": "$2a$10$XyWmTlVUxwdR57wHbvxgl.BDzHLhJ04d1IlAhPficRAdOEXNy10.6",
+    "name": "pruebaUsuario",
+    "email": "pruebaUsuario@gmail.com",
+    "password": "$2a$10$JBj5VJxgBOXUuHeWVv0gUO.CJCg2HLkWXn4HIQJ/PSlmLG6vdWVFO",
     "avatar": {
       "fieldname": "image",
       "originalname": "65bc705d2ec7226c4d6899f448fb324d.jpg",
       "encoding": "7bit",
       "mimetype": "image/jpeg",
       "destination": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars",
-      "filename": "1660868785103_img.jpg",
-      "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660868785103_img.jpg",
+      "filename": "1660958840921.jpg",
+      "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660958840921.jpg",
       "size": 21700
-    }
+    },
+    "admin": false
   },
   {
-    "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c111",
-    "name": "prueba3",
-    "email": "prueba3@gmail.com",
-    "password": "$2a$10$8IQTZuWhfh2fjOqEVJEG5Ox714PQZmWZnlKH0RH8lQsBDxd.NhSLm",
+    "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c11",
+    "name": "pruebaAdmin",
+    "email": "pruebaAdmin@gmail.com",
+    "password": "$2a$10$HnlyFYG2ENliyuc1dex8tu4ojS.IPA1zXslpFDg1UmjKTlbcL1.BC",
     "avatar": {
       "fieldname": "image",
       "originalname": "bart-simpson-icon-26.jpg",
       "encoding": "7bit",
       "mimetype": "image/jpeg",
       "destination": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars",
-      "filename": "1660872596763.jpg",
-      "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660872596763.jpg",
+      "filename": "1660958910597.jpg",
+      "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660958910597.jpg",
       "size": 9065
-    }
+    },
+    "admin": true
   }
 ]

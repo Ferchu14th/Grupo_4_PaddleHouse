@@ -34,6 +34,11 @@ h4 {
   font-size: 30px;
 }
 
+h5 {
+  font-size: 17px;
+  padding: 10px 0px;
+}
+
 p {
   font-size: 24px;
 }
@@ -267,6 +272,11 @@ main .box {
   background-color: #ebebeb;
 }
 
+main .recordarUsuario{
+  background-color: #ebebeb;
+  padding: 10px 0px;
+}  
+
 main .input {
   border-radius: 5px;
   width: 50%;
@@ -302,6 +312,14 @@ main .button:hover {
   text-decoration: dashed;
 }
 
+.contenedor{
+  width: 100%;
+}
+
+.text-danger{
+  font-size: 20px;
+  color: red;
+}
 
 .a-footer {
   box-sizing: border-box;
@@ -410,6 +428,11 @@ color: white;
     font-size: 200%;
     color: #1386d3;
   }
+
+  .fa-plus-circle{
+    font-size: 200%;
+    color: #1386d3;
+  }  
 
   .barra-accesorios {
     box-sizing: border-box;
