@@ -4,11 +4,9 @@
     "brand": "ADIDAS",
     "model": "MatchLigth",
     "price": "35000",
+    "image": "1658613375355.jpg",
     "description": "Paleta ultra liviana especial para damas",
-    "id": "7a8f8545-969a-4717-9157-f63b94cf2f90",
-    "image": [
-      "1658358563305.jpg"
-    ]
+    "id": "7a8f8545-969a-4717-9157-f63b94cf2f90"
   },
   {
     "category": "PALETA",
@@ -91,5 +89,23 @@
     "image": [
       "1658527157663.jpg"
     ]
+  },
+  {
+    "category": "Paleta",
+    "brand": "Adidas",
+    "model": "Essnova Carbon",
+    "price": "67900",
+    "image": "1661632666929.jpg",
+    "description": "Obtén un retorno de energía sin límites con la nueva paleta Adidas Carbon Control 2022",
+    "id": "a0ba8ac9-aa5f-465e-8449-e2e832f35eef"
+  },
+  {
+    "category": "BOLSOS-PALETERO",
+    "brand": "Adidas",
+    "model": "Supernova",
+    "price": "21500",
+    "image": "1661638596882.jpg",
+    "description": "Mochila Azul de fibra antideslizante",
+    "id": "7659a2b1-c055-4f5e-895b-4d979e03b937"
   }
 ]
