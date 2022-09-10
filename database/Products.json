@@ -13,11 +13,9 @@
     "brand": "KELME",
     "model": "Falcon",
     "price": "22500",
+    "image": "1658613375366.jpg",
     "description": "Paleta sin vibraciones, ultra compacta.",
-    "id": "a5176eae-c8fd-4379-9445-bae064c1d8e6",
-    "image": [
-      "1658359096277.jpg"
-    ]
+    "id": "a5176eae-c8fd-4379-9445-bae064c1d8e6"
   },
   {
     "category": "PALETA",
