@@ -1,57 +1,76 @@
 const bcryptjs = require('bcryptjs');
-
-const {validationResult} = require('express-validator');
-
-
-const User = require('../models/usersModel');
+const { validationResult } = require('express-validator');
+const path = require('path');
+const db = require('../database/models');
+const { Op } = require("sequelize");
+const sequelize = db.sequelize;
+//const User = require('../database/models/Users');
 
 
 const controller = {
 	register: (req, res) => {
-		res.render('users/register',{styles: "register"});
-	},
-	processRegister: (req, res) => {
-		
-		const resultValidation = validationResult(req);
+        res.render('users/register'  ,{styles: "register"});
+    },
 
-		if (resultValidation.errors.length > 0) {
+    processRegister: async (req, res) => {
+        const resultValidation = validationResult(req);
+
+if (resultValidation.errors.length > 0) {
 			return res.render('users/register', {
 				errors: resultValidation.mapped(),
 				oldData: req.body,
                 styles: "register",
 			});
 		}
-
-		let userInDB = User.findByField('email', req.body.email);
-
-		if (userInDB) {
-			return res.render('users/register', {
-				errors: {
-					email: {
-						msg: '*Este email ya está registrado'
-					}
-				},
-				oldData: req.body,
-                styles: "register",
-			});
-		}
-		let userToCreate = {
-			...req.body,
-			password: bcryptjs.hashSync(req.body.password, 10),
-			avatar: req.file,
-			admin: false,
-		}
-
-		let userCreated = User.create(userToCreate);
-		
-		return res.redirect('./login');
-
-	},
+        let usuarioRepetido = await db.Users.findOne({
+            where: {
+                email: { [Op.like]: req.body.email }
+            }
+        })
+        
+        if (!resultValidation.errors.length && !usuarioRepetido) {
+            
+            db.Users.create({
+				name: req.body.name,
+                email: req.body.email,
+                password: bcryptjs.hashSync(req.body.password, 10),
+                // repeatPassword: bcryptjs.hashSync(req.body.repeatPassword, 12),
+                avatar: req.files,
+				isAdmin: false,
+            }).then(function(user) {
+                req.session.userLogged = user;
+                res.redirect("/")
+            })
+        } else {
+            if (usuarioRepetido) {
+                return res.render('users/register', {
+                    errors: {
+                        email: {
+                            msg: 'Este email ya está registrado'
+                        }
+                    },
+                    oldData: req.body,
+					styles: "register"
+            })} else {
+                
+                return res.render('users/register', {
+                    errors: resultValidation.mapped(),
+                    oldData: req.body,
+					styles: "register"
+                });
+            }
+        }
+    },
+	
 	login: (req, res) => {
 		return res.render('users/login', {styles:"login"});
 	},
-	processLogin: (req, res) => {
-		let userToLogin = User.findByField('email', req.body.email);
+	processLogin: async(req, res) => {
+		let userToLogin = await db.Users.findOne({
+            where: {
+                email: { [Op.like]: req.body.email }
+            }
+        })
 		
 		if(userToLogin) {
 			let isOkThePassword = bcryptjs.compareSync(req.body.password, userToLogin.password);

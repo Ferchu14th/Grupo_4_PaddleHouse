@@ -6,10 +6,10 @@ module.exports = (sequelize, dataTypes) =>{
             primaryKey: true,
             autoIncrement: true
         },
-        fullName: dataTypes.STRING(50),
+        name: dataTypes.STRING(50),
         email: dataTypes.STRING(50),
         password: dataTypes.STRING(50),
-        image: dataTypes.STRING(100),
+        avatar: dataTypes.STRING(100),
         isAdmin: dataTypes.BOOLEAN
     };
     let options = {

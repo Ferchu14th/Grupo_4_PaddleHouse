@@ -30,7 +30,7 @@
               <button class="button button1" id="agregar" type="submit">
                 Agregar al carrito
               </button>
-              <% if(locals.userLogged && locals.userLogged.admin == true) { %> 
+              <% if(locals.userLogged && locals.userLogged.isAdmin == 1) { %> 
                 <form action="/products/edit/<%=products.id%>">
                 <button class="button button1" type="submit"> Editar Producto </button>
               </form>

@@ -14,8 +14,8 @@
               
                 <% if (locals.isLogged) { %>
 					<li class="nav-item dropdown">
-                        <img src="/images/avatars/<%= locals.userLogged.avatar.filename %>">
-                            Hola <%= locals.userLogged.name %> 
+                        <img src="/images/avatars/<%= locals.userLogged.avatar%>">
+                           <%= locals.userLogged.name %> 
                            
 						<ul class="dropdown-menu">
 							<a class="dropdown-item" href="/users/profile">Mi Perfil</a>
@@ -41,7 +41,7 @@
                         <i class="fas fa-shopping-basket"> </i>
                     </a>
 				<% } %>
-                <% if(locals.userLogged && locals.userLogged.admin == true){ %>
+                <% if(locals.userLogged && locals.userLogged.isAdmin == 1){ %>
                     <a class="micuenta-logo" href="/products/create">CREAR
                         <div></div>
                         <i class="fas fa-plus-circle"></i>

@@ -1,0 +1,134 @@
+[
+ {
+  "id": "c58aaba1-93da-45f5-9e10-58c6d2f18a02",
+  "name": "fedesoto",
+  "email": "fede@gmail.com",
+  "password": "$2b$10$ZSuk.FNc.ZWZx20SebOhMuNWU8h6Vnb4lr69Nvu.LBCxRS.kBiAa6"
+ },
+ {
+  "id": "fafae5be-73c8-49be-91b4-758f6f8361bc",
+  "name": "pablograna",
+  "email": "pablo@gmail.com",
+  "password": "$2b$10$o3ouBVgRb3W19V1WeObkuuehSpM9YrBC/qpIMnldJIDxB7/EyUIWW"
+ },
+ {
+  "id": "5cc54f64-e83c-4e6c-b377-96728828a1b0",
+  "name": "tinchobuf",
+  "email": "tinchobuf@gmail.com",
+  "password": "$2b$10$6StYFd4tTkxMho2cdxrDLe2ThuVrpm7KXL1YmpkJILmf6y13ifFly"
+ },
+ {
+  "id": "f1b9d26b-9f01-45e1-9aff-310cecf4b90d",
+  "name": "sebas",
+  "email": "sebas@gmail.com",
+  "password": "$2b$10$EC1opaR77RZOAPksjDweDeFcLkuCqkT.iwg6WX18ZiF57dbDQN7XS"
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c",
+  "name": "ferchu14",
+  "email": "ferchu14th@gmail.com",
+  "password": "$2b$10$0v.ZjT0ctsof3VVkw1wc8uthxMKpAfFV2zVmZEipcI487xw83Nt6K"
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c1",
+  "name": "pruebaUsuario",
+  "email": "pruebaUsuario@gmail.com",
+  "password": "$2a$10$JBj5VJxgBOXUuHeWVv0gUO.CJCg2HLkWXn4HIQJ/PSlmLG6vdWVFO",
+  "avatar": {
+   "fieldname": "image",
+   "originalname": "65bc705d2ec7226c4d6899f448fb324d.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+   "filename": "1660958840921.jpg",
+   "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660958840921.jpg",
+   "size": 21700
+  },
+  "admin": false
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c11",
+  "name": "pruebaAdmin",
+  "email": "pruebaAdmin@gmail.com",
+  "password": "$2a$10$HnlyFYG2ENliyuc1dex8tu4ojS.IPA1zXslpFDg1UmjKTlbcL1.BC",
+  "avatar": {
+   "fieldname": "image",
+   "originalname": "bart-simpson-icon-26.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+   "filename": "1660958910597.jpg",
+   "path": "D:\\Documentos\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1660958910597.jpg",
+   "size": 9065
+  },
+  "admin": true
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c111",
+  "name": "friedel",
+  "email": "riedelfernando@gmail.com",
+  "password": "$2a$10$lON.VJEZ0j3NpR6GxpgdlOL3RE6CIwnP0646RjezxGG6QpYdK0Jba",
+  "avatar": {
+   "fieldname": "image",
+   "originalname": "Fer Riedel Casual.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "C:\\Users\\XS01741\\OneDrive - Cirion Technologies\\Escritorio\\CODE\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+   "filename": "1661029678932.jpg",
+   "path": "C:\\Users\\XS01741\\OneDrive - Cirion Technologies\\Escritorio\\CODE\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1661029678932.jpg",
+   "size": 69511
+  },
+  "admin": true
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c1111",
+  "name": "NEWpitch3425a",
+  "email": "asff@hotmail.com",
+  "password": "$2a$10$TsLgx4pmdZkbK9rDyqIWg.Cs/Zw6Bxae1YmMwq1cD1Kpp55Nb8y9C",
+  "avatar": {
+   "fieldname": "image",
+   "originalname": "1659112192093.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "C:\\Users\\marrt\\OneDrive\\Escritorio\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+   "filename": "1662910156607.jpg",
+   "path": "C:\\Users\\marrt\\OneDrive\\Escritorio\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1662910156607.jpg",
+   "size": 149216
+  },
+  "admin": false
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c11111",
+  "name": "NEWpitch3425555555",
+  "email": "marrtinblllluf@gmail.com",
+  "password": "$2a$10$gBrl3m/EiH4tD4ymZYIgee10oTca70Da7Z85HN8fnOAbmA1x3MAAW",
+  "avatar": {
+   "fieldname": "image",
+   "originalname": "1658526842632.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "C:\\Users\\marrt\\OneDrive\\Escritorio\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+   "filename": "1662939741208.jpg",
+   "path": "C:\\Users\\marrt\\OneDrive\\Escritorio\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1662939741208.jpg",
+   "size": 12558
+  },
+  "admin": false
+ },
+ {
+  "id": "ea7b9645-93f7-4523-82bc-46a5a6a90b9c111111",
+  "name": "gdh",
+  "email": "marrtinbufssds@gmail.com",
+  "password": "$2a$10$lYGdWkmqXY/s8JOak4vZVOor1uS0.BCudhoSXOn1XFNl2pCjgAAR2",
+  "avatar": {
+   "fieldname": "image",
+   "originalname": "1658526716543.jpg",
+   "encoding": "7bit",
+   "mimetype": "image/jpeg",
+   "destination": "C:\\Users\\marrt\\OneDrive\\Escritorio\\Grupo_4_PaddleHouse\\public\\images\\avatars",
+   "filename": "1662939832509.jpg",
+   "path": "C:\\Users\\marrt\\OneDrive\\Escritorio\\Grupo_4_PaddleHouse\\public\\images\\avatars\\1662939832509.jpg",
+   "size": 9173
+  },
+  "admin": false
+ }
+]

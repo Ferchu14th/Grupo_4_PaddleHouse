@@ -3,7 +3,7 @@ const { v4: uuidv4 } = require("uuid"); //requiero el uuid
 const fs = require("fs"); //requiero el fs que sirve para leer y escribir archivos
 const path = require("path"); //requiero el path que sirve para crear rutas
 //Tenemos un objeto literal (productList) con datos, que estamos ubicando, listando y parseando.
-const productListPath = path.resolve(__dirname, "../database/products.json"); //resolvemos el path de la carpeta database
+const productListPath = path.resolve(__dirname, "../data/products.json"); //resolvemos el path de la carpeta database
 const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8")); //parseamos el archivo json y lo guardamos en una variable
 
 module.exports = {
