@@ -6,11 +6,12 @@ module.exports = (sequelize, dataTypes) =>{
             primaryKey: true,
             autoIncrement: true
         },
-        name: dataTypes.STRING(100),
+        category: dataTypes.STRING(100),
+        brand: dataTypes.STRING(100),
         description: dataTypes.TEXT,
         image: dataTypes.STRING(100),
         price: dataTypes.MEDIUMINT,
-        discount: dataTypes.TINYINT,
+        model: dataTypes.STRING(100),
         inventory_id: dataTypes.BIGINT(10),
     };
     let options = {
