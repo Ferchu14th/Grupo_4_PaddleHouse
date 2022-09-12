@@ -35,7 +35,7 @@ if (resultValidation.errors.length > 0) {
                 email: req.body.email,
                 password: bcryptjs.hashSync(req.body.password, 10),
                 // repeatPassword: bcryptjs.hashSync(req.body.repeatPassword, 12),
-                avatar: req.files,
+                avatar: req.file.filename,
 				isAdmin: false,
             }).then(function(user) {
                 req.session.userLogged = user;
