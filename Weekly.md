@@ -82,3 +82,29 @@ Participantes: Equipo completo
 ## Qué va a hacer hoy ##
 1. Terminar el Weekly
 2. Terminar el sprint 5 para entregarlo en tiempo y forma 
+
+## Weekly Sprint 6 ##
+
+### Equipo 4 Paddle House ###
+
+Fecha: 12/9/2022
+
+Participantes: Equipo completo
+
+## Qué hizo ayer ##
+
+1. Repasamos conceptos de base de datos, que utilizamos para este sprint 6
+2. Retomamos fuentes de terceros (Tutorials en Youtube para reforzar ejemplos)
+3. Reunion de seguimiento Sprint 6
+4. Consolidamos conocimientos de Sequelize y Promise
+
+
+## Si se encontró con algún impedimento ##
+
+1. Algunos problemas con las herramientas para base de datos (caso Dbeaver)
+2. Algunos problemas en resolucion de errores
+
+
+## Qué va a hacer hoy ##
+1. Terminar el Weekly
+2. Terminar el sprint 6 para entregarlo en tiempo y forma 

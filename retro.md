@@ -120,3 +120,34 @@ Participantes: Equipo completo
 **¿Qué deberían dejar de hacer?**
 
 1. Trabajar todos en el mismo sitio del GitHub, sin usar ramas.
+
+------------------------------------------------------------------------------------------------------------------------
+## Retro sprint 5 ##
+
+### Equipo 4 Paddle House ###
+
+Fecha: 12/09/2022
+
+Participantes: Equipo completo
+
+**¿Qué hicieron bien en el sprint anterior?**
+
+1. Seguimos bien organizados con las tareas
+2. Participamos activamente de las clases todos sus integrantes
+3. Buscamos otras fuentes alternativas
+4. Seguimos colaborando entre nosotros para entender mejor los temas
+
+**¿Qué hicieron mal?**
+
+1. No logramos comenzar el sprint a la par del dictado de las clases de BD y luego cuando estábamos en JS Front nos costo retomar BD.
+
+**¿Qué deberían empezar a hacer?**
+
+1. Conocer más las herramientas que se utilizan como Dbeaver, phpMyAdmin o Xampp.
+2. Hacer paso a paso los desafíos
+3. Recurrir a las fuentes que nos ofrece el playground y los profes como plus
+
+**¿Qué deberían dejar de hacer?**
+
+1. Trabajar todos en el mismo sitio del GitHub, sin usar ramas.
+2. Hacerlo en paralelo a los temas de la clase
