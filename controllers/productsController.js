@@ -1,133 +1,175 @@
-const { application } = require("express"); //requiero el express
-const { v4: uuidv4 } = require("uuid"); //requiero el uuid
-const fs = require("fs"); //requiero el fs que sirve para leer y escribir archivos
-const path = require("path"); //requiero el path que sirve para crear rutas
-//Tenemos un objeto literal (productList) con datos, que estamos ubicando, listando y parseando.
-const productListPath = path.resolve(__dirname, "../data/products.json"); //resolvemos el path de la carpeta database
-const productList = JSON.parse(fs.readFileSync(productListPath, "utf-8")); //parseamos el archivo json y lo guardamos en una variable
+const path = require("path");
+const db = require("../database/models");
+const sequelize = db.sequelize;
 
-module.exports = {
-  
-  getAllProducts: (req, res) => {
-    // Vista de todos los productos
-    res.render("./products/allProducts", {
-      //renderizamos la vista de todos los productos
-      styles: "allProducts", //le pasamos el estilo que queremos que se muestre
-      products: productList, //le pasamos el objeto productList
-    });
-  },
-  productDetail: (req, res) => {
-    //Vista de un producto
-    let id = req.params.id; //obtenemos el id del producto
-    let product = productList.find((e) => e.id == id); //buscamos el producto en la lista de productos
+const { validationResult } = require("express-validator");
 
-    res.render("./products/oneProduct", {
-      //renderizamos la vista del producto
-      styles: "oneProduct", //le pasamos el estilo correspondiente
-      products: product, //le pasamos el producto
-    });
+const productsController = {
+  //Muestra todos los productos en LH:3000/products
+  getAllProducts: async (req, res) => {
+    //llamamos a la DB y mostramos todos los prods.
+    let userLogged = await req.session.userLogged;
+
+    db.Products.findAll()
+      .then((response) => {
+        res.render("products/allProducts", {
+          products: response,
+          styles: "allProducts",
+          userLogged,
+        });
+      })
+      .catch(function (e) {
+        res.render("error"); // si no  encuentra el ususario
+      });
   },
 
-  // Carrito de Compras que por ahora no tocamos
   cartProducts: (req, res) => {
-    res.render("products/productCart", { styles: "productCart" });
+    db.Products.findAll()
+      .then((response) => {
+        res.render("products/productCart", {
+          productCart: response,
+          styles: "productCart",
+        });
+      })
+      .catch(function (e) {
+        res.render("error"); // si no  encuentra el ususario
+      });
   },
 
-  // Método x 2: Formulario de creación de productos con método GET (renderización) createProducts y
-  // POST(procesamiento) StoreProducts
-  createProducts: (req, res) => {
-    //Formulario de creación de productos
-    res.render("products/createProducts", {
-      //renderizamos la vista de creación de productos
-      styles: "register", //utilizamos el estilo register para el formulario de registro
-    });
+  productDetail: async (req, res) => {
+    //entramos al producto mediante req.params.id
+
+    let userLogged = await req.session.userLogged;
+
+    db.Products.findByPk(req.params.id)
+      .then(response => {
+        res.render("products/oneProduct", {
+          products: response,
+          styles: "oneProduct",
+          userLogged,
+        });
+      })
+      .catch(function (e) {
+        res.render("error"); // si no  encuentra el ususario
+      });
   },
-  storeProducts: (req, res) => {
-    //Procesamiento de creación de productos
-    let product = req.body; //req.body es un objeto que contiene todos los datos que se envían desde el formulario
-    let image = req.file; //el file es el nombre de la propiedad que se le pasa al middleware multer
-    let images = req.files; //array de imágenes
 
-    //console.log("store image",req.file); //con console y req.file veo la imagen
-    product.id = uuidv4(); //uuidv4 es una función que genera un id único
+  //VISTA DE CREAR PRODUCTO
+  createProducts: async function (req, res) {
+    let inventory = await db.Inventory.findAll();
 
-    if (image) {
-      //si existe una imagen sola
-      product.image = image.filename; //el nombre de la imagen que se subió
-    } else if (images) {
-      //si existen más de una imagen
-      product.image = images.map((image) => image.filename); //entonces subo el array de imágenes
+    res.render(
+      "products/createProducts",
+      { styles: "register" }
+    );
+  },
+
+  storeProducts: async function (req, res) {
+    const resultProductsValidation = validationResult(req);
+    //console.log('resultProductsValidation', resultProductsValidation)
+
+    if (!resultProductsValidation.errors.length) {
+      await db.Products.create({
+        brand: req.body.brand,
+        description: req.body.description,
+        image: req.file.filename,
+        price: req.body.price,
+        discount: req.body.discount,
+        category: req.body.category,
+        model: req.body.model,
+        inventory_id: req.body.inventory_id || 1,
+      });
+      res.redirect("/products");
+    } else {
+      //  let productType = await db.ProductType.findAll();
+      let inventory = await db.Inventory.findAll();
+      // let console = await db.Console.findAll();
+
+      return res.render("products/createProducts", {
+        errors: resultProductsValidation.mapped(),
+        oldData: req.body,
+        inventory: inventory,
+        styles: "register" 
+      });
     }
-
-    //voy creando el array con push
-    productList.push(product); //agregamos el producto al array
-
-    //voy grabando en JSON
-    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2)); //el null y 2 son opcionales pero mejoran la vista del JSON
-
-    res.redirect("/products"); //redireccionamos a la vista de todos los productos
   },
 
-  // Método x 2 para la modificación/edición de un producto con método GET (renderización) editproducts y PUT (procesamiento)
-  editProducts: (req, res) => {
-    //Formulario de edición de productos
-    const id = req.params.id; //obtenemos el id del producto
-    const product1 = productList.find((element) => element.id == id); //buscamos el producto en la lista de productos
+  //VISTA DE EDITAR PRODUCTO
+  editProducts: async function (req, res) {
+    // let productType = await db.ProductType.findAll();
+    let inventory = await db.Inventory.findAll();
+    //let console = await db.Console.findAll();
+
+    let product = await db.Products.findByPk(req.params.id);
 
     res.render("products/editProducts", {
-      //renderizamos la vista de edición de productos
-      styles: "register", //utilizamos el estilo register para el formulario de editar un producto
-      product: product1, //le pasamos el producto
+      old: product,
+      product: product,
+      styles: "register",
     });
   },
 
-  updateProducts: (req, res) => {
-    //Procesamiento de edición de productos
-    let id = req.params.id; //obtenemos el id del producto
-    let newProduct = req.body; //req.body es un objeto que contiene todos los datos que se envían desde el formulario
+  //EDITAR PRODUCTO POR POST!
+  updateProducts: async function (req, res) {
+    // res.send(req.body)
+    const resultProductsValidation = validationResult(req);
+    let file = req.file;
+    if (!resultProductsValidation.errors.length) {
+      await db.Products.update(
+        {
+          brand: req.body.brand,
+          description: req.body.description,
+          image: file ? req.file.filename : req.body.image,
+          price: req.body.price,
+          discount: req.body.discount,
+          category: req.body.category,
+          model: req.body.model,
+          inventory_id: req.body.inventory_id,
+        },
+        {
+          where: {
+            id: req.params.id,
+          },
+        }
+      );
+      res.redirect("/products");
+    } else {
+      let inventory = await db.Inventory.findAll();
 
-    newProduct.id = id; //le asignamos el mismo id al producto
+      let product = await db.Products.findByPk(req.params.id);
 
-    for (let index = 0; index < productList.length; index++) {
-      //recorremos el array de productos
-      const element = productList[index]; //guardamos el elemento actual del array
-      if (element.id == id) {
-        //si el elemento actual es el producto que queremos editar
-        productList[index] = newProduct; //lo reemplazamos por el nuevo producto
-      }
+      return res.render("products/productEdit", {
+        errors: resultProductsValidation.mapped(),
+        old: product,
+        oldData: req.body,
+        inventory: inventory,
+      });
     }
-    //hay que actualizar el archivo con fs (como hicimos con el producto) el null y el 2 es fijo para que mantenga el formato el JSON.
-    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2)); //el null y 2 son opcionales pero mejoran la vista del JSON
-
-    res.redirect("/products"); //redireccionamos a la vista de todos los productos
   },
 
-  deleteProduct: (req, res) => {
-    //Procesamiento de eliminación de productos
-    let id = req.params.id; //obtenemos el id del producto
-    for (let index = 0; index < productList.length; index++) {
-      const element = productList[index]; //guardamos el elemento actual del array
-      if (element.id == id) {
-        //si el elemento actual es el producto que queremos eliminar
-        productList.splice(index, 1); //lo eliminamos del array
-      }
-    }
+  deleteProduct: async function (req, res) {
+    let product = await db.Products.findByPk(req.params.id);
 
-    fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2)); //usamos fs para grabar el archivo JSON
+    await product.destroy();
 
-    res.redirect("/products"); //redireccionamos a la vista de todos los productos
+    res.redirect("/products");
   },
-
-  // Para filtrar los productos en la vista de todos los productos que se llama allProducts por categoria
-  productFilter: (req, res) => {
+  productFilter: async (req, res) => {
     //Filtro de productos
     const clasificacion = req.params.category; //obtenemos la categoría del producto
-    const nuevaLista = productList.filter((e) => e.category == clasificacion); //filtramos la lista de productos por la categoría
+    const productList = await db.Products.findAll({
+      where: {
+        category: clasificacion
+      } 
+    })
 
     res.render("products/allProducts", {
       //renderizamos la vista de todos los productos
       styles: "allProducts", //le pasamos el estilo correspondiente
-      products: nuevaLista, //le pasamos la lista de productos filtrada
+      products: productList, //le pasamos la lista de productos filtrada
     });
   },
+ 
 };
+
+module.exports = productsController;
