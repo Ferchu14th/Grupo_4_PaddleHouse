@@ -40,8 +40,8 @@ router.post('/', upload.single('image'), productsController.storeProducts); //pe
 //router.post('/', upload.array('image', 3), validate, productsController.storeProducts); //permite subir de a muchas imágenes
 
 // Route edit a products
-router.get('/edit/:id', productsController.editProducts);
-router.put('/edit/:id', productsController.updateProducts)
+router.get('/edit/:id', upload.single('image'), productsController.editProducts);
+router.put('/edit/:id', upload.single('image'), productsController.updateProducts)
 
 // Route to delete a product
 router.delete('/delete/:id', productsController.deleteProduct);
