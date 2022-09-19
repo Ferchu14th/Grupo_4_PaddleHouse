@@ -25,9 +25,10 @@ const userValidations = [
 			minLowercase: 1,
 			minUppercase: 1,
 			minNumbers: 1,
+			minSymbols: 1
 		})
 		.withMessage(
-			"Su clave debe contener un mínimo de 8 caracteres con al menos 1 letra minúscula, 1 mayúscula y un número"
+			"Su clave debe contener un mínimo de 8 caracteres con al menos 1 letra minúscula, 1 mayúscula un número y un caracter especial"
 		),
 
 	body("avatar").custom((value, { req }) => {

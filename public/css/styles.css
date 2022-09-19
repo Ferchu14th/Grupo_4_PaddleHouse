@@ -280,8 +280,8 @@ text-decoration: none;
 }
 
 .nav-item img{
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: auto;
   vertical-align: middle;
   border-radius: 100%;
 }
@@ -296,7 +296,7 @@ display: block;
 
 .nav-item img{
   width: 60px;
-  height: 50px;
+  height: auto;
 }
 
 section {

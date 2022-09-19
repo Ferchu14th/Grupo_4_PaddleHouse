@@ -281,8 +281,8 @@ text-decoration: none;
 }
 
 .nav-item img{
-  width: 70px;
-  height: 60px;
+  width: 60px;
+  height: auto;
   vertical-align: middle;
   border-radius: 100%;
 }
