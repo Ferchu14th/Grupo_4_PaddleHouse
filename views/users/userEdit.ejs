@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<%- include("../partials/head", {Solapa:"ZG - Registro"}) %>
+
+    <body>
+
+        <%- include('../partials/header') %>
+
+            <main>
+                <form method="POST" action="/users/edit?_method=PUT" enctype="multipart/form-data" class="form-user">
+
+                    <h2>Editar Cuenta</h2>
+
+                    <div class="inputs">
+                        <div class="box">
+                            <label for="name">Edite su Nombre y Apellido:</label>
+                            <input id="name" type="text" name="name" placeholder="Nombre Completo"
+                                value="<%= locals.oldData ? oldData.name : user.name %>">
+                        </div>
+                            <% if (locals.errors && errors.name) { %>
+                                <div class="text-error">
+                                    <%= errors.name.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+
+                        <div>
+                            <label for="email">Edite su Email:</i></label>
+                            <input id="email" type="text" name="email" placeholder="Email"
+                                value="<%= locals.oldData ? oldData.email : user.email %>">
+
+                            <% if (locals.errors && errors.email) { %>
+                                <div class="text-error">
+                                    <%= errors.email.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div>
+                            <label for="image">Edite la imagen </i></label>
+                            <input id="image" type="file" name="image" placeholder="Agregar imagen">
+
+                            <% if (locals.errors && errors.image) { %>
+                                <div class="text-error">
+                                    <%= errors.image.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <div>
+                            <label for="contraseña">Edite su Contraseña</i></label>
+                            <input id="contraseña" type="password" name="password" placeholder="Contraseña">
+
+                            <% if (locals.errors && errors.password) { %>
+                                <div class="text-error">
+                                    <%= errors.password.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+
+                        <ul class="errores"></ul>
+                        <div>
+                            <button type="submit">Actualizar datos</button>
+                        </div>
+
+                        <hr>
+                </form>
+
+            </main>
+
+            <%- include('../partials/footer') %>
+
+                <!--          <script src="/js/editUserValidation.js"></script> -->
+    </body>
+
+</html>
