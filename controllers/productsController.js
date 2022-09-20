@@ -60,7 +60,7 @@ const productsController = {
 
     res.render(
       "products/createProducts",
-      { styles: "register" }
+      { styles: "register", inventory:inventory }
     );
   },
 
@@ -86,10 +86,10 @@ const productsController = {
       // let console = await db.Console.findAll();
 
       return res.render("products/createProducts", {
-        errors: resultProductsValidation.mapped(),
-        oldData: req.body,
         inventory: inventory,
-        styles: "register" 
+        errors: resultProductsValidation.mapped(),
+				oldData: req.body,
+				styles: "register",
       });
     }
   },
@@ -138,11 +138,13 @@ const productsController = {
 
       let product = await db.Products.findByPk(req.params.id);
 
-      return res.render("products/productEdit", {
+      return res.render("products/editProducts", {
         errors: resultProductsValidation.mapped(),
         old: product,
         oldData: req.body,
         inventory: inventory,
+        styles: "register",
+        product: product,
       });
     }
   },

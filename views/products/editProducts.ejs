@@ -10,32 +10,56 @@
             
             <div class="box">
                 <label for="category"></label>
+                <div class="contenedor">
                 <input class="input" 
                 type="text" name="category" 
                 placeholder="category" value="<%= product.category ?? ''%>">
+                <% if (locals.errors && errors.category) { %>
+                    <div class="text-danger">
+                        <%= errors.category.msg %> 
+                    </div>
+                <% } %>
             </div>
-
+        </div>
             <div class="box">
                 <label for="brand"></label>
+                <div class="contenedor">
                 <input class="input" 
                 type="text" name="brand" 
                 placeholder="brand" value="<%= product.brand ?? ''%>">
+                <% if (locals.errors && errors.brand) { %>
+                    <div class="text-danger">
+                        <%= errors.brand.msg %> 
+                    </div>
+                <% } %>
             </div>
-
+        </div>
             <div class="box">
                 <label for="model"></label>
+                <div class="contenedor">
                 <input class="input" 
                 type="text" name="model" 
                 placeholder="model" value="<%= product.model ?? ''%>">
+                <% if (locals.errors && errors.model) { %>
+                    <div class="text-danger">
+                        <%= errors.model.msg %> 
+                    </div>
+                <% } %>
             </div>
-
+        </div>
             <div class="box">
                 <label for="price"></label>
+                <div class="contenedor">
                 <input class="input" 
                 type="number" name="price" 
                 placeholder="price" value="<%= product.price ?? ''%>"> 
+                <% if (locals.errors && errors.price) { %>
+                    <div class="text-danger">
+                        <%= errors.price.msg %> 
+                    </div>
+                <% } %>
             </div>
-
+        </div>
             <div class="box-image">
             <img id="producto" src="/images/uploads/<%= product.image %>" alt="product.image" />
                 <div class="cargarImagen">
@@ -45,16 +69,27 @@
                 <input class="input" 
                 type="file" name="image" 
                 placeholder="imagen del producto" value="<%= product.image ?? ''%>">
+                <% if (locals.errors && errors.image) { %>
+                    <div class="text-danger">
+                        <%= errors.image.msg %> 
+                    </div>
+                <% } %>
                 </div>
                 </div>
 
             <div class="box">
                 <label for="description"></label>
+                <div class="contenedor">
                 <input class="input" 
                 type="text" name="description" 
                 placeholder="description" value="<%= product.description ?? ''%>">
+                <% if (locals.errors && errors.description) { %>
+                    <div class="text-danger">
+                        <%= errors.description.msg %> 
+                    </div>
+                <% } %>
             </div>
-
+        </div>
             <div class="box">
                 <button class="button" type="submit">EDITAR PRODUCTO</button>
             </div>
