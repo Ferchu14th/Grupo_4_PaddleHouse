@@ -32,13 +32,13 @@ app.use(session({
 }));
 app.use(userLoggedMiddleware);
 
-/******Nuevas Rutas a través de Routes y Controllers INDEX o ENTRY POINT*****/
+/******Rutas INDEX o ENTRY POINT*****/
 app.use('/', indexRoutes);
 
-/******Nuevas Rutas a través de Routes y Controllers PRODUCTOS con PREFIJO /products ******/
+/******Rutas PRODUCTOS con PREFIJO /products para NAVEGADOR ******/
 app.use('/products', productsRoutes);
 
-/******Nuevas Rutas a través de Routes y Controllers USUARIOS******/
+/******Rutas USUARIOS con PREFIJO /users para NAVEGADOR******/
 app.use('/users', usersRoutes)
 
 //configuración de public static
@@ -48,3 +48,23 @@ app.use(express.static(path.join(__dirname, "public")));
 app.listen(PORT, () => {
     console.log("listening on port http://localhost:" + PORT);
 });
+
+/*** Error  ***/
+// ** No mover de aquí **
+// ** catch 404 and forward to error handler **
+
+app.use((req, res, next) => next(createError(404)));
+
+//Error handler
+app.use((err, req, res, next) => {
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.path = req.path;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
+});
+
+module.exports = app;

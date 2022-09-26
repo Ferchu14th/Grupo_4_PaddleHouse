@@ -1,103 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partials/head") %>
-<body>
-    <%- include("../partials/header") %> 
-    <main class="register">
-        <form action="/products/edit/<%= product.id?? ''%>?_method=PUT" method="post" enctype="multipart/form-data">
-            
-            <h4>Editar producto <%= product.category + " " + product.model ?? ''%> </h4>
-            
-            <div class="box">
-                <label for="category"></label>
-                <div class="contenedor">
-                <input class="input" 
-                type="text" name="category" 
-                placeholder="category" value="<%= product.category ?? ''%>">
-                <% if (locals.errors && errors.category) { %>
-                    <div class="text-danger">
-                        <%= errors.category.msg %> 
-                    </div>
-                <% } %>
-            </div>
-        </div>
-            <div class="box">
-                <label for="brand"></label>
-                <div class="contenedor">
-                <input class="input" 
-                type="text" name="brand" 
-                placeholder="brand" value="<%= product.brand ?? ''%>">
-                <% if (locals.errors && errors.brand) { %>
-                    <div class="text-danger">
-                        <%= errors.brand.msg %> 
-                    </div>
-                <% } %>
-            </div>
-        </div>
-            <div class="box">
-                <label for="model"></label>
-                <div class="contenedor">
-                <input class="input" 
-                type="text" name="model" 
-                placeholder="model" value="<%= product.model ?? ''%>">
-                <% if (locals.errors && errors.model) { %>
-                    <div class="text-danger">
-                        <%= errors.model.msg %> 
-                    </div>
-                <% } %>
-            </div>
-        </div>
-            <div class="box">
-                <label for="price"></label>
-                <div class="contenedor">
-                <input class="input" 
-                type="number" name="price" 
-                placeholder="price" value="<%= product.price ?? ''%>"> 
-                <% if (locals.errors && errors.price) { %>
-                    <div class="text-danger">
-                        <%= errors.price.msg %> 
-                    </div>
-                <% } %>
-            </div>
-        </div>
-            <div class="box-image">
-            <img id="producto" src="/images/uploads/<%= product.image %>" alt="product.image" />
-                <div class="cargarImagen">
-                <label for="image">Cargar imagen del producto</label>
-                </div>
-                <div>
-                <input class="input" 
-                type="file" name="image" 
-                placeholder="imagen del producto" value="<%= product.image ?? ''%>">
-                <% if (locals.errors && errors.image) { %>
-                    <div class="text-danger">
-                        <%= errors.image.msg %> 
-                    </div>
-                <% } %>
-                </div>
-                </div>
+<%- include("../partials/head", {Solapa: "PH: Prod.Admin.Edit"}) %>
 
-            <div class="box">
-                <label for="description"></label>
-                <div class="contenedor">
-                <input class="input" 
-                type="text" name="description" 
-                placeholder="description" value="<%= product.description ?? ''%>">
-                <% if (locals.errors && errors.description) { %>
-                    <div class="text-danger">
-                        <%= errors.description.msg %> 
+    <body>
+        <%- include("../partials/header") %>
+            <main class="register">
+                <form action="/products/edit/<%= product.id?? ''%>?_method=PUT" method="POST"
+                    enctype="multipart/form-data">
+
+                    <h4>Editar producto <%= product.category + " " + product.model ?? '' %>
+                    </h4>
+
+                    <div class="box">
+                        <label for="category"></label>
+                        <div class="contenedor">
+                            <input class="input" type="text" name="category" placeholder="category"
+                                value="<%= product.category ?? ''%>">
+                            <% if (locals.errors && errors.category) { %>
+                                <div class="text-danger">
+                                    <%= errors.category.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                     </div>
-                <% } %>
-            </div>
-        </div>
-            <div class="box">
-                <button class="button" type="submit">EDITAR PRODUCTO</button>
-            </div>
-            </form>
-            <form class="box" action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
+                    <div class="box">
+                        <label for="brand"></label>
+                        <div class="contenedor">
+                            <input class="input" type="text" name="brand" placeholder="brand"
+                                value="<%= product.brand ?? ''%>">
+                            <% if (locals.errors && errors.brand) { %>
+                                <div class="text-danger">
+                                    <%= errors.brand.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <label for="model"></label>
+                        <div class="contenedor">
+                            <input class="input" type="text" name="model" placeholder="model"
+                                value="<%= product.model ?? ''%>">
+                            <% if (locals.errors && errors.model) { %>
+                                <div class="text-danger">
+                                    <%= errors.model.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <label for="price"></label>
+                        <div class="contenedor">
+                            <input class="input" type="number" name="price" placeholder="price"
+                                value="<%= product.price ?? ''%>">
+                            <% if (locals.errors && errors.price) { %>
+                                <div class="text-danger">
+                                    <%= errors.price.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                    <div class="box-image">
+                        <img id="producto" src="/images/uploads/<%= product.image %>" alt="product.image" />
+                        <div class="cargarImagen">
+                            <label for="image">Cargar imagen del producto</label>
+                        </div>
+                        <div>
+                            <input class="input" type="file" name="image" placeholder="imagen del producto"
+                                value="<%= product.image ?? ''%>">
+                            <% if (locals.errors && errors.image) { %>
+                                <div class="text-danger">
+                                    <%= errors.image.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <label for="description"></label>
+                        <div class="contenedor">
+                            <input class="input" type="text" name="description" placeholder="description"
+                                value="<%= product.description ?? ''%>">
+                            <% if (locals.errors && errors.description) { %>
+                                <div class="text-danger">
+                                    <%= errors.description.msg %>
+                                </div>
+                                <% } %>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <button class="button" type="submit">EDITAR PRODUCTO</button>
+                    </div>
+                </form>
+                <form class="box" action="/products/delete/<%= product.id %>?_method=DELETE" method="POST">
                     <button class="button-delete" type="submit">BORRAR PRODUCTO</button>
-            </form>
-    </main>
-    <%- include("../partials/footer") %>
-</body>
+                </form>
+            </main>
+            <%- include("../partials/footer") %>
+                <script src="/js/editProductValidation.js"></script>
+    </body>
+
 </html>

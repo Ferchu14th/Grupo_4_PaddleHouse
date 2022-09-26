@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<%- include("../partials/head") %>
+<%- include("../partials/head", {Solapa:'PH: Prod.Admin.Create'}) %>
 
     <body>
         <%- include("../partials/header") %>
@@ -9,87 +9,94 @@
                 <!-- para incorporar la propiedad "image" en el JSON utilizando el middleware Multer agregamos el enctype dentro del form -->
                 <form action="/products" method="post" enctype="multipart/form-data">
 
-                    <h4>Crear producto</h4>
+                    <h4>Crear/Agregar Producto</h4>
 
                     <div class="box">
                         <label for="category"></label>
                         <div class="contenedor">
-                        <input class="input" type="text" name="category" id="category" placeholder="categoria">
-                        <% if (locals.errors && errors.category) { %>
-                            <div class="text-danger">
-                                <%= errors.category.msg %> 
-                            </div>
-                        <% } %>
+                            <input class="input" id="category" type="text" name="category" placeholder="categoria">
+
+                            <% if (locals.errors && errors.category) { %>
+                                <div class="text-danger">
+                                    <%= errors.category.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                     </div>
-                </div>
 
                     <div class="box">
                         <label for="brand"></label>
                         <div class="contenedor">
-                        <input class="input" type="text" name="brand" id="brand" placeholder="marca">
-                        <% if (locals.errors && errors.brand) { %>
-                            <div class="text-danger">
-                                <%= errors.brand.msg %> 
-                            </div>
-                        <% } %>
+                            <input class="input" id="brand" type="text" name="brand" placeholder="marca">
+
+                            <% if (locals.errors && errors.brand) { %>
+                                <div class="text-danger">
+                                    <%= errors.brand.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                     </div>
-                </div>
 
                     <div class="box">
                         <label for="model"></label>
                         <div class="contenedor">
-                        <input class="input" type="text" name="model" id="model" placeholder="modelo">
-                        <% if (locals.errors && errors.model) { %>
-                            <div class="text-danger">
-                                <%= errors.model.msg %> 
-                            </div>
-                        <% } %>
+                            <input class="input" id="model" type="text" name="model" placeholder="modelo">
+
+                            <% if (locals.errors && errors.model) { %>
+                                <div class="text-danger">
+                                    <%= errors.model.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                     </div>
-                </div>
 
                     <div class="box">
                         <label for="price"></label>
                         <div class="contenedor">
-                        <input class="input" type="number" name="price" id="price" placeholder="precio">
-                        <% if (locals.errors && errors.price) { %>
-                            <div class="text-danger">
-                                <%= errors.price.msg %> 
-                            </div>
-                        <% } %>
+                            <input class="input" id="price" type="number" name="price" placeholder="precio">
+
+                            <% if (locals.errors && errors.price) { %>
+                                <div class="text-danger">
+                                    <%= errors.price.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                     </div>
-                </div>
 
                     <div class="box-imagen">
                         <div class="cargarImagen">
                             <label for="image">Cargar imagen del producto</label>
                         </div>
                         <div>
-                            <!-- acá incorporamos el imput type file, el id que seria opcional y el multiple que sirve 
+                    <!-- acá incorporamos el imput type file, el id que seria opcional y el multiple que sirve 
                     para poder seleccionar más de un archivo  -->
                             <input class="input" type="file" name="image" id="image" multiple>
                         </div>
+
                         <% if (locals.errors && errors.image) { %>
                             <div class="text-danger">
-                                <%= errors.image.msg %> 
+                                <%= errors.image.msg %>
                             </div>
-                        <% } %>
+                            <% } %>
                     </div>
-                </div>
+                    </div>
 
                     <div class="box">
                         <label for="description"></label>
                         <div class="contenedor">
-                        <input class="input" type="text" name="description" id="description" placeholder="descripcion">
-                        <% if (locals.errors && errors.description) { %>
-                            <div class="text-danger">
-                                <%= errors.description.msg %> 
-                            </div>
-                        <% } %>
+                            <input class="input" id="description" type="text" name="description"
+                                placeholder="descripcion">
+
+                            <% if (locals.errors && errors.description) { %>
+                                <div class="text-danger">
+                                    <%= errors.description.msg %>
+                                </div>
+                                <% } %>
+                        </div>
                     </div>
-                </div>
 
                     <div class="box">
-                        <button class="button" type="submit">CREAR PRODUCTO</button>
+                        <button class="button" type="submit">CREAR/AGREGAR PRODUCTO</button>
                     </div>
                     </div>
                 </form>
@@ -98,6 +105,7 @@
 
 
             <%- include("../partials/footer") %>
+                <script src="/js/productsValidations.js"></script>
     </body>
 
 </html>
