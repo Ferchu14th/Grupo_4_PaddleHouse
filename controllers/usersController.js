@@ -114,7 +114,7 @@ const controller = {
 	edit: (req, res) => {
 		res.render("users/userEdit", {
 			user: req.session.userLogged,
-			styles: "profile",
+			styles: "register",
 		});
 	},
 

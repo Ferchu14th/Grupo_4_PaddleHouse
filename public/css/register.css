@@ -371,6 +371,13 @@ main .titulo {
   font-size: 20px;
   color: red;
 }
+
+.errorList{
+  display: none;
+  padding: 8px;
+  color: red;
+}
+
 .contenedor{
   width: 100%;
 }

@@ -8,7 +8,7 @@
     <%- include("../partials/header") %>
 
     <main class="register">
-        <form action="/users/register" method="POST" enctype="multipart/form-data">
+        <form action="/users/register" method="POST" enctype="multipart/form-data" id="formulario">
 
             <p>Inicio > Mi cuenta > Crear cuenta</p>
             <h4>Crear cuenta</h4>
@@ -16,7 +16,7 @@
             <div class="box">
                 <label for="user"></label>
                 <div class="contenedor">
-                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario">
+                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario" value="<%= locals.oldData ? oldData.name : null %>">
                 <% if (locals.errors && errors.name) { %>
                     <div class="text-danger">
                         <%= errors.name.msg %> 
@@ -28,7 +28,7 @@
             <div class="box">
                 <label for="user"></label>
                 <div class="contenedor">
-                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email">
+                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email" value="<%= locals.oldData ? oldData.email : null %>">
                 <% if (locals.errors && errors.email) { %>
                     <div class="text-danger">
                         <%= errors.email.msg %>
@@ -40,7 +40,7 @@
             <div class="box">
                 <label for="password"></label>
                 <div class="contenedor">
-                <input class="input" type="password" name="password" placeholder="Crea tu contraseña">
+                <input class="input" type="password" name="password" placeholder="Crea tu contraseña" value="<%= locals.oldData ? oldData.password : null %>">
                 <% if (locals.errors && errors.password) { %>
 									<div class="text-danger">
 										<%= errors.password.msg %>
@@ -62,8 +62,10 @@
                 </div>
             </div>
 
+            <ul class="errorList"></ul>
+
             <div class="box">
-                <button class="button" type="submit">CREA TU CUENTA</button>
+                <button class="button" type="submit" id="button-submit">CREA TU CUENTA</button>
             </div>
 
         </form>
@@ -71,6 +73,8 @@
 
     </main>
         <%- include("../partials/footer") %>
+
+        <script src="/js/registerValidation.js"></script>
 
 </body>
 

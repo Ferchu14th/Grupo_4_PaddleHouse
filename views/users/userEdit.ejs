@@ -7,28 +7,29 @@
 
         <%- include('../partials/header') %>
 
-            <main>
+            <main class="register">
                 <form method="POST" action="/users/edit?_method=PUT" enctype="multipart/form-data" class="form-user">
-
-                    <h2>Editar Cuenta</h2>
+                    <br>
+                    <h4>Editar Cuenta</h4>
 
                     <div class="inputs">
                         <div class="box">
-                            <label for="name">Edite su Nombre y Apellido:</label>
-                            <input id="name" type="text" name="name" placeholder="Nombre Completo"
+                            <label for="user"></label>
+                            <div class="contenedor">
+                            <input class="input" type="text" name="name" placeholder="Edite su usuario"
                                 value="<%= locals.oldData ? oldData.name : user.name %>">
-                        </div>
                             <% if (locals.errors && errors.name) { %>
                                 <div class="text-error">
                                     <%= errors.name.msg %>
                                 </div>
                                 <% } %>
                         </div>
+                    </div>
 
-
-                        <div>
-                            <label for="email">Edite su Email:</i></label>
-                            <input id="email" type="text" name="email" placeholder="Email"
+                        <div class="box">
+                            <label for="user"></label>
+                            <div class="contenedor">
+                            <input class="input" type="text" name="email" placeholder="Edite su Email"
                                 value="<%= locals.oldData ? oldData.email : user.email %>">
 
                             <% if (locals.errors && errors.email) { %>
@@ -37,10 +38,27 @@
                                 </div>
                                 <% } %>
                         </div>
+                    </div>
 
-                        <div>
-                            <label for="image">Edite la imagen </i></label>
-                            <input id="image" type="file" name="image" placeholder="Agregar imagen">
+                    <div class="box">
+                        <label for="password"></label>
+                        <div class="contenedor">
+                        <input class="input" type="password" name="password" placeholder="Edite su Contraseña">
+
+                        <% if (locals.errors && errors.password) { %>
+                            <div class="text-error">
+                                <%= errors.password.msg %>
+                            </div>
+                            <% } %>
+                    </div>
+                </div>
+
+                        <div class="box-imagen">
+                            <div class="cargarImagen">
+                            <label for="image">Editar foto de perfil</label>
+                            </div>
+                            <div>
+                            <input class="input" type="file" name="image" placeholder="Agregar imagen">
 
                             <% if (locals.errors && errors.image) { %>
                                 <div class="text-error">
@@ -48,24 +66,13 @@
                                 </div>
                                 <% } %>
                         </div>
+                    </div>
 
-                        <div>
-                            <label for="contraseña">Edite su Contraseña</i></label>
-                            <input id="contraseña" type="password" name="password" placeholder="Contraseña">
+                        <div class="box">
+                            <button class="button" type="submit" id="button-submit">ACTUALIZAR DATOS DE LA CUENTA</button>
+                        </div>  
 
-                            <% if (locals.errors && errors.password) { %>
-                                <div class="text-error">
-                                    <%= errors.password.msg %>
-                                </div>
-                                <% } %>
-                        </div>
-
-                        <ul class="errores"></ul>
-                        <div>
-                            <button type="submit">Actualizar datos</button>
-                        </div>
-
-                        <hr>
+                        
                 </form>
 
             </main>
