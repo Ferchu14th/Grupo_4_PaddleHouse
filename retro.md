@@ -151,3 +151,35 @@ Participantes: Equipo completo
 
 1. Trabajar todos en el mismo sitio del GitHub, sin usar ramas.
 2. Hacerlo en paralelo a los temas de la clase
+
+---------------------------------------------------------------------------------------------------
+
+## Retro sprint 6 y 7 (Final)##
+
+### Equipo 4 Paddle House ###
+
+Fecha: 01/10/2022
+
+Participantes: Equipo completo
+
+**¿Qué hicieron bien en el sprint anterior?**
+
+1. Estuvimos macheando las clases con el proyecto
+2. Seguimos bien organizados con las tareas
+3. Estamos reforzando conceptos explorando la documentación adicional que ofrece DH, Profes y Compañeros.
+4. Seguimos colaborando entre nosotros para entender mejor los temas
+
+**¿Qué hicieron mal?**
+
+1. Seguimos atrasados con los temas, nos sobrepasan y luego tenemos que repasarlos para entenderlos y aplicarlos.
+
+**¿Qué deberían empezar a hacer?**
+
+1. Seguir profundizando en las herramientas adicionales que nos dieron.
+2. Ser protagonistas en los desafíos en clase y ofrecernos a realizarlos.
+
+**¿Qué deberían dejar de hacer?**
+
+1. Bloquearnos cuando venimos retrasados o no entendemos bien un tema.
+2. Dispersarnos cuando nos reunimos
+

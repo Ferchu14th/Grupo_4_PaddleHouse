@@ -108,3 +108,30 @@ Participantes: Equipo completo
 ## Qué va a hacer hoy ##
 1. Terminar el Weekly
 2. Terminar el sprint 6 para entregarlo en tiempo y forma 
+
+## Weekly Sprint 7 y 8 ##
+
+### Equipo 4 Paddle House ###
+
+Fecha: 01/10/2022
+
+Participantes: Equipo completo
+
+## Qué hizo ayer ##
+
+1. Revisamos Playground y como aplicará en estos sprints.
+2. Retomamos fuentes de terceros (Tutorials en Youtube para reforzar ejemplos)
+3. Reunion de seguimiento Sprint 7
+4. Consolidamos conocimientos de REACT y revisamos Sprint 8
+
+
+## Si se encontró con algún impedimento ##
+
+1. Algunos problemas con instalaciones de algunos paquetes que resolvimos en equipo.
+2. Algunos problemas de interpretación de lo que había que hacer.
+
+
+## Qué va a hacer hoy ##
+1. Terminar el Weekly
+2. Terminar el sprint 7 y comenzar con el 8.
+ 
