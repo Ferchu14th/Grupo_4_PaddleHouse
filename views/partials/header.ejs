@@ -2,50 +2,52 @@
     <div class="top-header">
         <div class="logo-nav-iconos">
             <div class="logo">
-                <a href="/"><img class="logo-foto" src="/images/LogoPaddleHouse.jpg" alt="Logo de PaddelHouse"></a>
+                <a href="/products"><img class="logo-foto" src="/images/LogoPaddleHouse.jpg" alt="Logo de PaddelHouse"></a>
             </div>
             <div>
                 <input class="input-search" type="text" placeholder="Buscar productos, marcas y más">
             </div>
             <div>
-            <button class="button-search"><i class="fa fa-search"></i></button>
+                <button class="button-search"><i class="fa fa-search"></i></button>
             </div>
             <div class="logos3">
-              
+
                 <% if (locals.isLogged) { %>
-					<li class="nav-item dropdown">
+                    <li class="nav-item dropdown">
                         <img src="/images/avatars/<%= locals.userLogged.avatar%>">
-                           <%= locals.userLogged.name %> 
-						<ul class="dropdown-menu">
-							<a class="dropdown-item" href="/users/profile">Mi Perfil</a>
-                            <li><hr class="divisor"></li>
-							<a class="dropdown-item" href="/users/logout">Cerrar sesion</a>
-						</ul>
-					</li>
+                        <%= locals.userLogged.name %>
+                            <ul class="dropdown-menu">
+                                <a class="dropdown-item" href="/users/profile">Mi Perfil</a>
+                                <li>
+                                    <hr class="divisor">
+                                </li>
+                                <a class="dropdown-item" href="/users/logout">Cerrar sesion</a>
+                            </ul>
+                    </li>
                     <a class="carrito-logo" href="/products/cart">CARRITO:
                         <div></div>
                         <i class="fas fa-shopping-basket"> </i>
                     </a>
-				<% } else { %>
-                    <a class="contacto-logo" href=#>CONTACTO:
-                        <div></div>
-                        <i class="fas fa-address-card"></i>
-                    </a>
-					<a class="micuenta-logo" href="/users/login">MI CUENTA:
-                        <div></div>
-                        <i class="fas fa-sign-in-alt"> </i>
-                    </a>
-                    <a class="carrito-logo" href="/products/cart">CARRITO:
-                        <div></div>
-                        <i class="fas fa-shopping-basket"> </i>
-                    </a>
-				<% } %>
-                <% if(locals.userLogged && locals.userLogged.isAdmin == 1){ %>
-                    <a class="micuenta-logo" href="/products/create">CREAR
-                        <div></div>
-                        <i class="fas fa-plus-circle"></i>
-                    </a>
-                <% } %>
+                    <% } else { %>
+                        <a class="contacto-logo" href=#>CONTACTO:
+                            <div></div>
+                            <i class="fas fa-address-card"></i>
+                        </a>
+                        <a class="micuenta-logo" href="/users/login">MI CUENTA:
+                            <div></div>
+                            <i class="fas fa-sign-in-alt"> </i>
+                        </a>
+                        <a class="carrito-logo" href="/products/cart">CARRITO:
+                            <div></div>
+                            <i class="fas fa-shopping-basket"> </i>
+                        </a>
+                        <% } %>
+                            <% if(locals.userLogged && locals.userLogged.isAdmin==1){ %>
+                                <a class="micuenta-logo" href="/products/create">CREAR
+                                    <div></div>
+                                    <i class="fas fa-plus-circle"></i>
+                                </a>
+                                <% } %>
             </div>
         </div>
     </div>
@@ -56,7 +58,7 @@
             <a class="barra-accesoriosC" href="/products/ACCESORIOS">ACCESORIOS</a>
             <a class="barra-accesoriosD" href="/products/BOLSOS-PALETERO">BOLSOS</a>
         </div>
-        
+
     </nav>
     </div>
     </div>

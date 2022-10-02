@@ -175,3 +175,108 @@ const productsController = {
 };
 
 module.exports = productsController;
+
+// Esta bueno quedarnos con la forma anterior de como creamos el JSON (tomo como ejemplo la de Rocko)
+
+//METODOS CON JSON
+
+//METODO INDEX PARA USO CON JSON!
+    // index: (req, res) => {
+    //     let productos = path.join(__dirname, '../data/products.json');
+    //     let producto = fs.readFileSync(productos, 'utf-8');
+    //     let productosJSON = JSON.parse(producto);
+    //     res.render('products/products', {productosJSON, toThousand});
+    // },
+
+
+// detail: (req, res) => {
+    //     let productos = path.join(__dirname, '../data/products.json');
+    //     let producto = fs.readFileSync(productos, 'utf-8');
+    //     let productosJSON = JSON.parse(producto);
+
+    //     let productDetail = productosJSON.find(productDetail=>productDetail.id==req.params.id);
+    //     res.render('products/productDetail', {productDetail, toThousand})
+    // },
+
+
+
+      //METODO CREATE CON JSON
+    // create: (req, res) => {
+	// 	res.render('products/productCreate');
+	// },
+
+
+
+    //FUNCIONALIDAD PARA CREAR PRODUCTO
+    // store: (req,res) => {
+    //     let productos = path.join(__dirname, '../data/products.json');
+    //     //NOS TRAEMOS EL JSON
+    //     let producto = fs.readFileSync(productos, 'utf-8');
+    //     //MANIPULO EL JSON Y LO CONVIERTO EN OBJ. LIT.
+    //     let productosJSON = JSON.parse(producto);
+    //     let ids = productosJSON.map(p=>p.id); //guardar en un array todos los ids
+    //     let id= Math.max(...ids)+1; //filtra el mayor de los ids del array, se le suma 1 para el id del nuevo producto
+    //     //Valores Nuevos de mi Obj Literal.
+    //     productosJSON.push({
+    //         id: parseInt(id),
+    //         name: req.body.name,
+    //         description: req.body.description,
+    //         imagen: req.files[0].filename,
+    //         price: parseFloat(req.body.price),
+    //         discount: parseInt(req.body.discount),
+    //         category: req.body.category,
+    //         console: req.body.console,
+    //         productType: req.body.productType
+    //     })  
+        
+        
+    //     fs.writeFileSync(path.join(__dirname, '../data/products.json'), JSON.stringify(productosJSON, null, ' '));
+    //     res.redirect('/products')  
+    // },
+
+
+    // edit: (req,res) => {
+    //     let productos = path.join(__dirname, '../data/products.json');
+    //     let producto = fs.readFileSync(productos, 'utf-8');
+    //     let productosJSON = JSON.parse(producto);
+    //     let productoAEditar = productosJSON.find(p=>p.id == req.params.id)
+        
+    //     res.render('products/productEdit', {old:productoAEditar});
+    // }, 
+
+    // update: (req,res) => {
+    //     let productos = path.join(__dirname, '../data/products.json');
+    //     let producto = fs.readFileSync(productos, 'utf-8');
+    //     let productosJSON = JSON.parse(producto);
+    //     let id = req.params.id
+    //     let productoAEditar = productosJSON.find(p=>p.id == id)
+    //     let imagen
+    //     if(req.file !=undefined){
+    //         imagen = req.file.filename
+    //     } else {
+    //         imagen = productoAEditar.imagen
+    //     }
+    //     productoAEditar = {
+    //         id: productoAEditar.id,
+    //         ...req.body,
+    //         imagen: imagen
+    //     }
+    //     let nuevoProducto = productosJSON.map(p => {
+    //         if(p.id == productoAEditar.id){
+    //             return p = {...productoAEditar}  
+    //         }
+    //         return p
+    //     })
+    //     fs.writeFileSync(productos, JSON.stringify(nuevoProducto, null, ' '));
+    //     res.redirect('/products');
+    // }, 
+
+     // delete: (req,res) => {
+    //     let productos = path.join(__dirname, '../data/products.json');
+    //     let producto = fs.readFileSync(productos, 'utf-8');
+    //     let productosJSON = JSON.parse(producto);
+
+    //     let finalProducts = productosJSON.filter(finalProducts=>finalProducts.id!=req.params.id)
+    //     fs.writeFileSync(productos, JSON.stringify(finalProducts, null, ' '));
+    //     res.redirect('/products');
+    // }

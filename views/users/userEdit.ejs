@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<%- include("../partials/head", {Solapa:"Paddle House - Edit"}) %>
+<%- include("../partials/head", {Solapa:"PH: Edit"}) %>
 
     <body>
 
-        <%- include('../partials/header') %>
+        <%- include("../partials/head", {Solapa: "PH: Editar Usuario" }) %>
 
             <main class="register">
                 <form method="POST" action="/users/edit?_method=PUT" enctype="multipart/form-data" class="form-user">

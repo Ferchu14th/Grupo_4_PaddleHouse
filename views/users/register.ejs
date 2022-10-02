@@ -1,81 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include("../partials/head") %>
+<%- include("../partials/head", {Solapa: "PH: Registro" }) %>
 
-<body>
+    <body>
 
-    <%- include("../partials/header") %>
+        <%- include("../partials/header") %>
 
-    <main class="register">
-        <form action="/users/register" method="POST" enctype="multipart/form-data" id="formulario">
+            <main class="register">
+                <form action="/users/register" method="POST" enctype="multipart/form-data" id="formulario">
 
-            <p>Inicio > Mi cuenta > Crear cuenta</p>
-            <h4>Crear cuenta</h4>
-            <div class="inputs">
-            <div class="box">
-                <label for="user"></label>
-                <div class="contenedor">
-                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario" value="<%= locals.oldData ? oldData.name : null %>">
-                <% if (locals.errors && errors.name) { %>
-                    <div class="text-danger">
-                        <%= errors.name.msg %> 
-                    </div>
-                <% } %>
-                 </div> 
-            </div>
-
-            <div class="box">
-                <label for="user"></label>
-                <div class="contenedor">
-                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email" value="<%= locals.oldData ? oldData.email : null %>">
-                <% if (locals.errors && errors.email) { %>
-                    <div class="text-danger">
-                        <%= errors.email.msg %>
-                    </div>
-                <% } %> 
-                 </div> 
-            </div>
-
-            <div class="box">
-                <label for="password"></label>
-                <div class="contenedor">
-                <input class="input" type="password" name="password" placeholder="Crea tu contraseña" value="<%= locals.oldData ? oldData.password : null %>">
-                <% if (locals.errors && errors.password) { %>
-									<div class="text-danger">
-										<%= errors.password.msg %>
-									</div>
-								<% } %>
+                    <p>Inicio > Mi cuenta > Crear cuenta</p>
+                    <h4>Crear cuenta</h4>
+                    <div class="inputs">
+                        <div class="box">
+                            <label for="user"></label>
+                            <div class="contenedor">
+                                <input class="input" type="text" name="name" placeholder="Crea un nombre de usuario"
+                                    value="<%= locals.oldData ? oldData.name : null %>">
+                                <% if (locals.errors && errors.name) { %>
+                                    <div class="text-danger">
+                                        <%= errors.name.msg %>
+                                    </div>
+                                    <% } %>
                             </div>
-            </div>
-            <div class="box-imagen">
-                <div class="cargarImagen">
-                    <label for="image">Cargar foto de perfil</label>
-                </div>
-                <div>
-                    <input class="input" type="file" name="image" id="image" multiple>
-                    <% if (locals.errors && errors.avatar) { %>
-                        <div class="text-danger">
-                            <%= errors.avatar.msg %>
                         </div>
-                    <% } %>
-                </div>
-            </div>
 
-            <ul class="errorList"></ul>
+                        <div class="box">
+                            <label for="user"></label>
+                            <div class="contenedor">
+                                <input class="input" type="email" name="email" placeholder="Ingresa aquí tu email"
+                                    value="<%= locals.oldData ? oldData.email : null %>">
+                                <% if (locals.errors && errors.email) { %>
+                                    <div class="text-danger">
+                                        <%= errors.email.msg %>
+                                    </div>
+                                    <% } %>
+                            </div>
+                        </div>
 
-            <div class="box">
-                <button class="button" type="submit" id="button-submit">CREA TU CUENTA</button>
-            </div>
+                        <div class="box">
+                            <label for="password"></label>
+                            <div class="contenedor">
+                                <input class="input" type="password" name="password" placeholder="Crea tu contraseña"
+                                    value="<%= locals.oldData ? oldData.password : null %>">
+                                <% if (locals.errors && errors.password) { %>
+                                    <div class="text-danger">
+                                        <%= errors.password.msg %>
+                                    </div>
+                                    <% } %>
+                            </div>
+                        </div>
+                        <div class="box-imagen">
+                            <div class="cargarImagen">
+                                <label for="image">Cargar foto de perfil</label>
+                            </div>
+                            <div>
+                                <input class="input" type="file" name="image" id="image" multiple>
+                                <% if (locals.errors && errors.avatar) { %>
+                                    <div class="text-danger">
+                                        <%= errors.avatar.msg %>
+                                    </div>
+                                    <% } %>
+                            </div>
+                        </div>
 
-        </form>
-        <h5>Ya tenés una cuenta? <a class="boton-iniciar" href="/users/login">INICIAR SESION (LOGIN)</a></h5>
+                        <ul class="errorList"></ul>
 
-    </main>
-        <%- include("../partials/footer") %>
+                        <div class="box">
+                            <button class="button" type="submit" id="button-submit">CREA TU CUENTA</button>
+                        </div>
 
-        <script src="/js/registerValidation.js"></script>
+                </form>
+                <h5>Ya tenés una cuenta? <a class="boton-iniciar" href="/users/login">INICIAR SESION (LOGIN)</a></h5>
 
-</body>
+            </main>
+            <%- include("../partials/footer") %>
+
+                <script src="/js/registerValidation.js"></script>
+
+    </body>
 
 </html>

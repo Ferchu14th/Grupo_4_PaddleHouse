@@ -1,6 +1,6 @@
 window.onload = () => {
 
-    let form = document.querySelector("form")
+    let form = document.querySelector("form-user")
     let errorsList = document.querySelector(".errorList")
 
     form.addEventListener("submit", (e) => {
