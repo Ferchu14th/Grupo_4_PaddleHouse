@@ -1,7 +1,7 @@
-module.exports = (sequelize, dataTypes) =>{
+module.exports = (sequelize, dataTypes) => {
     let alias = 'Products';
     let cols = {
-        id:{
+        id: {
             type: dataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true
@@ -19,16 +19,16 @@ module.exports = (sequelize, dataTypes) =>{
         timestamps: false
     };
 
-    const Product = sequelize.define(alias,cols,options);
+    const Product = sequelize.define(alias, cols, options);
 
-      Product.associate = function(models){
+    Product.associate = function (models) {
 
-        Product.belongsTo(models.Inventory,{
-            as:'inventories',
-            foreignKey:'inventory_id'
+        Product.belongsTo(models.Inventory, {
+            as: 'inventories',
+            foreignKey: 'inventory_id'
         })
-    
-        
+
+
 
     }
 
