@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 15-09-2022 a las 08:51:22
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.1.6
+-- Host: 127.0.0.1
+-- Generation Time: Oct 07, 2022 at 12:56 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `paddle_house_db`
+-- Database: `paddle_house_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `inventory`
+-- Table structure for table `inventory`
 --
 
 CREATE TABLE `inventory` (
@@ -35,7 +35,7 @@ CREATE TABLE `inventory` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `inventory`
+-- Dumping data for table `inventory`
 --
 
 INSERT INTO `inventory` (`id`, `name`, `qty`, `warehouse`) VALUES
@@ -52,7 +52,7 @@ INSERT INTO `inventory` (`id`, `name`, `qty`, `warehouse`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `products`
+-- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
@@ -67,16 +67,16 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `products`
+-- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id`, `category`, `description`, `image`, `price`, `brand`, `inventory_id`, `model`) VALUES
 (1, 'PALETA', 'Paleta ultra liviana especial para damas', '1658613375355.jpg', 35000, 'ADIDAS', 1, 'MatchLigth'),
-(2, 'PALETA', 'Paleta sin vibraciones, ultra compacta.', '1658613375366.jpg', 22500, 'KELME', 1, 'Falcon'),
-(3, 'PALETA', 'Paleta liviana especial para jóvenes', '1658359374447.jpg', 27600, 'SOFTEE', 1, 'Lycan'),
+(2, 'PALETA', 'Paleta sin vibraciones, ultra compacta.', '1663640807978.jpg', 22500, 'KELME', 1, 'Falcon'),
+(3, 'paleta', 'Paleta liviana especial para jóvenes', '1663689535635.jpg', 20000, 'kelme', 1, 'negra'),
 (4, 'ACCESORIOS', 'Estuche por 60', '1658360213826.jpg', 1650, 'SOFTEE', 1, 'Cubre Grip Confort 100'),
-(5, 'ACCESORIOS', 'Nexus Blanco Estuche de 60 unidades', '1658360880554.jpg', 1450, 'NEXUS', 1, 'Grip Paddle Performance Blanco'),
-(6, 'ACCESORIOS', 'Estuche de Grid Adidas color rojo para mangos de paletas de padel', '1658526716543.jpg', 250, 'ADIDAS', 1, 'Grid Paddle Performance Rojo'),
+(5, 'ACCESORIOS', 'Nexus Blanco Estuche de 60 unidades', '1665002298261.jpg', 1450, 'NEXUSA', 1, 'Grip Paddle Performance Blanco'),
+(6, 'ACCESORIOS', 'Estuche de Grid Adidas color rojo para mangos de paletas de padel', '1665002335797.jpg', 250, 'ADIDAS', 1, 'Grid Paddle Performance Rojo'),
 (7, 'BOLSOS-PALETERO', 'Bolso para paletas de padel impermeable de gran capacidad', '1658526842632.jpg', 19810, 'ADIDAS', 1, 'Multigame Lite White C'),
 (8, 'BOLSOS-PALETERO', 'Bolso para paletas de padel color blanco individual', '1658527023807.jpg', 15430, 'ADIDAS', 1, 'Weekend White'),
 (9, 'BOLSOS-PALETERO', 'Bolso para paletas de padel casual individual', '1658527157663.jpg', 16100, 'ADIDAS', 1, 'Weekend green');
@@ -84,7 +84,7 @@ INSERT INTO `products` (`id`, `category`, `description`, `image`, `price`, `bran
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -97,64 +97,65 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `avatar`, `isAdmin`) VALUES
-(27, 'Admin', 'pruebaAdmin@gmail.com', '$2a$10$FfFr2ehOmpYDScB4LN4pM.qCd9uWWkO/t1GwJw4S0XuuallJ9jm1e', 'image-1663023400511.jpg', 1),
-(28, 'UserNormal', 'User@gmail.com', '$2a$10$iTrXRi4gnU2gwWza96XoSumQ59dFtWBCSl5OrliwB1800EziXmmk6', 'image-1663023482122.jpg', 0);
+(27, 'Admin', 'pruebaAdmin@gmail.com', '$2a$12$YbOSydoJ.tuVJnIJ/kG5.eeB.1TyOS5B9vbkdAgaon0aoq1DfzF6a', 'image-1665002268981.jpg', 1),
+(28, 'UserNormal', 'User@gmail.com', '$2a$10$iTrXRi4gnU2gwWza96XoSumQ59dFtWBCSl5OrliwB1800EziXmmk6', 'image-1663023482122.jpg', 0),
+(32, 'User3', 'user3@hotmail.com', '$2a$10$/5853MznfIb.TXXTbADDd.fYv2haXM1etHSyCorhxJ6kGuQ9USp6G', 'image-1665096096820.jpg', 0);
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `inventory`
+-- Indexes for table `inventory`
 --
 ALTER TABLE `inventory`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `products`
+-- Indexes for table `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`),
   ADD KEY `category_FK` (`inventory_id`);
 
 --
--- Indices de la tabla `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `inventory`
+-- AUTO_INCREMENT for table `inventory`
 --
 ALTER TABLE `inventory`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT de la tabla `products`
+-- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
--- AUTO_INCREMENT de la tabla `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `products`
+-- Constraints for table `products`
 --
 ALTER TABLE `products`
   ADD CONSTRAINT `category_FK` FOREIGN KEY (`inventory_id`) REFERENCES `inventory` (`id`);
