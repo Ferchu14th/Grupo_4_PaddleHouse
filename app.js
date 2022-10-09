@@ -12,6 +12,14 @@ const productsRoutes = require('./routes/productsRoutes');
 const usersRoutes = require('./routes/usersRoutes');
 const cookieParser = require("cookie-parser");
 
+//Routes de Api
+const productsApiRouter = require('./routes/api/productApiRoute');
+const usersApiRouter = require('./routes/api/userApiRoute');
+
+//Endpoints de Apis
+app.use('/api/products', productsApiRouter);
+app.use('/api/users', usersApiRouter);
+
 //ubicación de la carpeta de vistas para express
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
