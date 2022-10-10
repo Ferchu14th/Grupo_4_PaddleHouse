@@ -28,6 +28,7 @@ const productsApiController = {
                             image: "/images/uploads/" + product.image,
                             price: product.price,
                             model: product.model,
+                            detail: "/api/products/" + product.id
                         }
                     })
                 }
