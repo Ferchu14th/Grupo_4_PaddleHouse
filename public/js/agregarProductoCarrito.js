@@ -1,6 +1,10 @@
+function productosEnElCarrito(){
+  return localStorage.shoppingList ? JSON.parse(localStorage.shoppingList).length: 0
+}
+const cartNumber = document.querySelector(".cart-number");
+cartNumber.innerHTML = productosEnElCarrito();
 window.addEventListener("load", (e) => {
     const addProductButton = document.querySelector("#agregar");
-  
     // innerText nos permite capturar el valor de nuestra etiqueta.
     const productTitle = document.querySelector(".modelo").innerText;
     const productPrice = document.querySelector(".precio").innerHTML;
@@ -64,6 +68,7 @@ window.addEventListener("load", (e) => {
         // //seteamos de nuevo el LS con el nuevo precio
         // localStorage.setItem("shoppingPrice", JSON.stringify(totalPrice));
       }
+      cartNumber.innerHTML = productosEnElCarrito();
     };
   });
   

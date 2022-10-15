@@ -144,7 +144,12 @@
     padding: 3%;
     color: black;
   }
-  
+  .cart-number {
+    position: absolute;
+    padding-top: 6px;
+    background-color: red;
+    color: white;
+  }
   .fa-address-card {
     font-size: 200%;
     color: #1386d3;

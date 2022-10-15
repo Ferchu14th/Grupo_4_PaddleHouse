@@ -24,10 +24,6 @@
                                 <a class="dropdown-item" href="/users/logout">Cerrar sesion</a>
                             </ul>
                     </li>
-                    <a class="carrito-logo" href="/products/cart">CARRITO:
-                        <div></div>
-                        <i class="fas fa-shopping-basket"> </i>
-                    </a>
                     <% } else { %>
                         <a class="contacto-logo" href=#>CONTACTO:
                             <div></div>
@@ -37,11 +33,13 @@
                             <div></div>
                             <i class="fas fa-sign-in-alt"> </i>
                         </a>
+                      
+                        <% } %>
                         <a class="carrito-logo" href="/products/cart">CARRITO:
                             <div></div>
                             <i class="fas fa-shopping-basket"> </i>
+                            <span class="badge red z-depth-1 mr-1 cart-number">0</span>
                         </a>
-                        <% } %>
                             <% if(locals.userLogged && locals.userLogged.isAdmin==1){ %>
                                 <a class="micuenta-logo" href="/products/create">CREAR
                                     <div></div>

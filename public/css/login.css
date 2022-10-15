@@ -397,7 +397,12 @@ color: white;
     display: flex;
     justify-content: flex-start;
   }
-
+  .cart-number {
+    position: absolute;
+    padding-top: 6px;
+    background-color: red;
+    color: white;
+  }
   .contacto-logo {
     box-sizing: border-box;
     display: flex;

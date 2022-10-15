@@ -17,7 +17,12 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-
+.cart-number {
+  position: absolute;
+  padding-top: 6px;
+  background-color: red;
+  color: white;
+}
 .cart-product-container {
   border: 1px solid red;
   width: 25%;
