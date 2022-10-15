@@ -32,15 +32,15 @@
             <% for(let i=0; i < products.length; i++){ %>
                 <div class="Desc-1">
                   <a href="/products/oneProduct/<%= products[i].id %> ">
-                    <h4>
+                    <h4 class="modelo">
                       <%= `${products[i].brand} ${products[i].model} `%>
                     </h4>
                   </a>
                   <a class="img" href="/products/oneProduct/<%= products[i].id %> ">
-                    <img src="/images/uploads/<%= products[i].image %>" alt="">
+                    <img id="producto" src="/images/uploads/<%= products[i].image %>" alt="">
                   </a>
                   <div class="precios">
-                    <p>
+                    <p class="precio">
                       $<%= products[i].price %>
                     </p>
                       <button class="button button1" id="agregar" type="submit">
@@ -54,7 +54,7 @@
         </div>
     </main>
         <%- include("../partials/footer") %>
-
+        <script src="/js/agregarProductoCarrito.js"></script>
 </body>
 
 </html>
