@@ -43,9 +43,11 @@
                     <p class="precio">
                       $<%= products[i].price %>
                     </p>
-                      <button class="button button1" id="agregar" type="submit">
-                        Agregar al carrito
+                    <a href="/products/oneProduct/<%= products[i].id %> ">
+                      <button class="button button1" type="submit">
+                        Ver detalles
                       </button>
+                    </a>
                     </a>
                   </div>
                 </div>
@@ -54,7 +56,7 @@
         </div>
     </main>
         <%- include("../partials/footer") %>
-        <script src="/js/agregarProductoCarrito.js"></script>
+        
 </body>
 
 </html>
