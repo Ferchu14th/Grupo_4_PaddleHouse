@@ -48,7 +48,7 @@ window.addEventListener("load", (e) => {
         localStorage.setItem("shoppingPrice", JSON.stringify(precioCarrito));
         // agregamos un alert que indica que el producto se agrego.
         //se puede hacer una ventana modal tambien
-        alert(`agregaste ${newProduct.title} al carrito`);
+        swal.fire(`Agregaste ${newProduct.title} al carrito`);
       } else {
         //leemos el array desde localStorage ya con contenido.
         let shoppingList = JSON.parse(localStorage.shoppingList);
@@ -60,7 +60,7 @@ window.addEventListener("load", (e) => {
         localStorage.setItem("shoppingList", JSON.stringify(shoppingList));
         localStorage.setItem("shoppingPrice", JSON.stringify(shoppingPrice));
         //ejecutamos el alert de que se agrego el nuevo producto
-        alert(`agregaste ${newProduct.title} al carrito`);
+        swal.fire(`Agregaste ${newProduct.title} al carrito`);
         //leemos el precio que almacenamos en LS
         // const firstPrice = JSON.parse(localStorage.shoppingPrice);
         // // sumamos el precio almacenado con el del nuevo producto
