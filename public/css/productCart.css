@@ -16,6 +16,7 @@ header {
 .cart-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .cart-number {
   position: absolute;
@@ -23,17 +24,89 @@ header {
   background-color: red;
   color: white;
 }
+#reset-cart{
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  border-radius: 30px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+}
+#reset-cart:hover {
+  background-color: red;
+  color: white;
+}
+#buy-cart{
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(82, 185, 82);
+  border-radius: 30px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+}
+#buy-cart:hover {
+  background-color: rgb(82, 185, 82);
+  color: white;
+}
+.cart-botones{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly
+}
+
 .cart-product-container {
-  border: 1px solid red;
+  border: 1px solid  #4472c4;
   width: 25%;
   margin: 10px;
 }
-
+.cart-product-container:hover{
+  background-color: white;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
 h3 {
   text-align: center;
   font-size: 24px;
+  background-color: #4472c4;
+  color: white;
+
+}
+.cart-text{
+  text-align: center;
+  font-size: 24px;
+  background-color: #4472c4;
+  color: white;
 }
 
+.delete-btn{
+  background-color: white;
+  color: black;
+  border: 2px solid red;
+  border-radius: 30px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+}
+.delete-btn:hover {
+  background-color: red;
+  color: white;
+}
 img {
   width: 100%;
 }
@@ -435,7 +508,7 @@ display: block;
   padding: 15px;
   text-align: center;
   width: 100%;
-  border: grey 2px solid;
+  border: #0d6efd 2px solid;
   height: 70%;
 }
 
@@ -531,7 +604,7 @@ color: white;
   .a-footer {
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
@@ -544,6 +617,6 @@ color: white;
   }
 
   .enlaces-fonts {
-    font-size: 36px;
+    font-size: 23px;
   }
 }

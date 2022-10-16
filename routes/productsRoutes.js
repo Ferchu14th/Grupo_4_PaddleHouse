@@ -7,7 +7,7 @@ const productsValidation = require('../middlewares/validateProductsMd');
 const editProductsValidation = require('../middlewares/validateEditProductsMd');
 const adminMiddleware = require('../middlewares/adminMiddleware');
 /*requiero el Middleware Multer para subir imágenes/archivos al JSON*/
-
+const authMiddleware = require ('../middlewares/authMiddleware');
 const productsController = require('../controllers/productsController');
 
 // Route create a new product
@@ -16,7 +16,7 @@ router.post('/', upload.single('image'), productsValidation, productsController.
 
 
 // Route to Carrito de Compras (en construcción)
-router.get('/cart', productsController.cartProducts);
+router.get('/cart', authMiddleware, productsController.cartProducts);
 
 // Route to get all products
 router.get('/', productsController.getAllProducts);

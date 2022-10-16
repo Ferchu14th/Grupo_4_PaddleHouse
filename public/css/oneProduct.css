@@ -398,7 +398,7 @@ p.description {
     padding: 15px;
     text-align: center;
     width: 100%;
-    border: grey 2px solid;
+    border: #0d6efd 2px solid;
     height: 70%;
 }
 
@@ -496,21 +496,21 @@ p.description {
     }
 
     .a-footer {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: stretch;
-        width: 100%;
-        text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      width: 100%;
+      text-align: center;
     }
-
+  
     .footer-ul {
-        font-size: 23px;
+      font-size: 23px;
     }
-
+  
     .enlaces-fonts {
-        font-size: 36px;
+      font-size: 23px;
     }
 }

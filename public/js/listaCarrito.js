@@ -23,8 +23,8 @@ window.addEventListener("load", (e) => {
       <div class="cart-product-container">
         <h3>${product.title}</h3>
         <img src="${product.image}"/>
-        <p>${product.price}</p>
-        <button class='delete-btn' data-id='${product.id}'>Borrar</button>
+        <p>${product.price}$</p>
+        <button class='delete-btn' data-id='${product.id}'><i class="fa fa-trash" aria-hidden="true"></i></button>
       </div>
       `;
         });
@@ -71,7 +71,10 @@ window.addEventListener("load", (e) => {
         console.log(sumWithInitial);
         priceContainer.innerHTML += `
     <h3> TOTAL: $${sumWithInitial} </h3>
+    <div class="cart-botones">
     <button id="reset-cart">Limpiar</button>
+    <button id="buy-cart">Finalizar Compra</button>
+     </div>
     `;
 
         //funcionalidad limpiar Carrito despues de que aparezca el boton y dentro del if para evitar errores.
