@@ -7,7 +7,7 @@
     <body>
 
         <%- include("./partials/header") %>
-            <section>
+            <section class="carrusel">
                  <!-- <div class="overlay">
                 </div> 
                  <div class="absolute">
@@ -19,32 +19,37 @@
                 
                  <img name="paddleHouse" width= "100%" height= "100%">
         
-                <script class="intro">
+                <script>
                     
-                   window.addEventListener('load', function(){
-                
-        
-                let imagenes = [];
-                        imagenes[0]="/images/padle.slider2.png";
-                        imagenes[1]= "/images/padle_slider1.jpg";
-                        imagenes[2]= "/images/padle_slider_delfina.png";
-                        imagenes[3]= "/images/padle_slider_juan.png";
-                        imagenes[4]= "/images/padle_slider.png";
-                        
+                    var i = 0;    // Start Point
+var images = []; // Images Array
+var time = 3000; // Time Between Switch
+  
+// Image List
+images[0] = "/images/padle_slider1.jpg";
+images[1] = "/images/padle_slider_delfina.png";
+images[2] = "/images/padle_slider_juan.png";
+images[3] = "/images/padle_slider.png";
 
-                        var indiceImagenes = 0
-                       function cambiarImagenes(){
-                        document.paddleHouse.src = imagenes[indiceImagenes];
-                        if (indiceImagenes < 4){
-                            indiceImagenes++;
-                        } else{
-                            indiceImagenes = 0
-                         
-                        
-                        }
-                    }
-                    setInterval(cambiarImagenes, 2000);
-                       });
+// Change Image
+function changeImg(){
+ document.paddleHouse.src = images[i];
+
+ // Check If Index Is Under Max
+ if(i < images.length - 1){
+   // Add 1 to Index
+   i++; 
+ } else { 
+  // Reset Back To O
+  i = 0;
+ }
+
+ // Run function every x seconds
+ setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
                     
                 </script> 
             </section>
