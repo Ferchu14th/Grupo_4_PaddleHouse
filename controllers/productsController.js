@@ -1,6 +1,7 @@
 const path = require("path");
 const db = require("../database/models");
 const sequelize = db.sequelize;
+const { Op } = require("sequelize");
 
 const { validationResult } = require("express-validator");
 
@@ -171,7 +172,30 @@ const productsController = {
       products: productList, //le pasamos la lista de productos filtrada
     });
   },
- 
+  searchProduct: async (req, res) => {
+    let search = req.params.search;
+
+    await db.Products.findAll({
+      
+        where: {
+          
+            [Op.or]:[
+            {category: {[Op.like]: "%" + search + "%"}},
+            {brand: {[Op.like]: "%" + search + "%"}}
+          ]   
+        },
+    })
+    .then((productFilter) => {
+      res.render("products/search", {
+        styles: "allProducts",
+        products: productFilter,
+        });
+        
+    })
+    .catch((error) => {
+      console.error(error);
+    })
+  },
 };
 
 module.exports = productsController;

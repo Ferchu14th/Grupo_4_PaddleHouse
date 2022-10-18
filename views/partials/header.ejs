@@ -4,11 +4,14 @@
             <div class="logo">
                 <a href="/home"><img class="logo-foto" src="/images/LogoPaddleHouse.jpg" alt="Logo de PaddelHouse"></a>
             </div>
-            <div>
-                <input class="input-search" type="text" placeholder="Buscar productos, marcas y más">
-            </div>
-            <div>
-                <button class="button-search"><i class="fa fa-search"></i></button>
+            <div class="form-buscador">
+                <form class="formSearch" action="">
+                    <input id="search" type="text" class="input-search" placeholder="BUSCAR PRODUCTOS">
+                </form>
+                <script defer src="/js/search.js"></script>
+                <div>
+                    <button class="button-search"><i class="fa fa-search"></i></button>
+                </div>
             </div>
             <div class="logos3">
 
@@ -33,13 +36,13 @@
                             <div></div>
                             <i class="fas fa-sign-in-alt"> </i>
                         </a>
-                      
+
                         <% } %>
-                        <a class="carrito-logo" href="/products/cart">CARRITO:
-                            <div></div>
-                            <i class="fas fa-shopping-basket"> </i>
-                            <span class="badge red z-depth-1 mr-1 cart-number">0</span>
-                        </a>
+                            <a class="carrito-logo" href="/products/cart">CARRITO:
+                                <div></div>
+                                <i class="fas fa-shopping-basket"> </i>
+                                <span class="badge red z-depth-1 mr-1 cart-number">0</span>
+                            </a>
                             <% if(locals.userLogged && locals.userLogged.isAdmin==1){ %>
                                 <a class="micuenta-logo" href="/products/create">CREAR
                                     <div></div>

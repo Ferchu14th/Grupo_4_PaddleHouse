@@ -13,18 +13,21 @@ head {
 header {
   font-family: "Abel", sans-serif;
 }
+
 .cart-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+
 .cart-number {
   position: absolute;
   padding-top: 6px;
   background-color: red;
   color: white;
 }
-#reset-cart{
+
+#reset-cart {
   background-color: white;
   color: black;
   border: 2px solid red;
@@ -37,11 +40,13 @@ header {
   margin: 2px 1px;
   transition-duration: 0.4s;
 }
+
 #reset-cart:hover {
   background-color: red;
   color: white;
 }
-#buy-cart{
+
+#buy-cart {
   background-color: white;
   color: black;
   border: 2px solid rgb(82, 185, 82);
@@ -54,28 +59,32 @@ header {
   margin: 2px 1px;
   transition-duration: 0.4s;
 }
+
 #buy-cart:hover {
   background-color: rgb(82, 185, 82);
   color: white;
 }
-.cart-botones{
+
+.cart-botones {
   box-sizing: border-box;
   display: flex;
   justify-content: space-evenly
 }
 
 .cart-product-container {
-  border: 1px solid  #4472c4;
+  border: 1px solid #4472c4;
   width: 25%;
   margin: 10px;
 }
-.cart-product-container:hover{
+
+.cart-product-container:hover {
   background-color: white;
   color: black;
   text-align: center;
   text-decoration: none;
   transition-duration: 0.4s;
 }
+
 h3 {
   text-align: center;
   font-size: 24px;
@@ -83,14 +92,15 @@ h3 {
   color: white;
 
 }
-.cart-text{
+
+.cart-text {
   text-align: center;
   font-size: 24px;
   background-color: #4472c4;
   color: white;
 }
 
-.delete-btn{
+.delete-btn {
   background-color: white;
   color: black;
   border: 2px solid red;
@@ -103,10 +113,12 @@ h3 {
   margin: 2px 1px;
   transition-duration: 0.4s;
 }
+
 .delete-btn:hover {
   background-color: red;
   color: white;
 }
+
 img {
   width: 100%;
 }
@@ -201,12 +213,17 @@ header .form {
   width: 50%;
 }
 
+header .form-buscador {
+  display: flex;
+  align-items: center;
+}
+
 header .input-search {
+  width: 600px;
+  height: 100%;
   border-radius: 10px;
   border: #1386d3 2px solid;
   padding: 10px;
-  width: 250px;
-  margin-block-end: auto;
 }
 
 header .button-search {
@@ -254,7 +271,7 @@ header .button-search {
   color: #1386d3;
 }
 
-.fa-plus-circle{
+.fa-plus-circle {
   font-size: 200%;
   color: #1386d3;
 }
@@ -321,6 +338,7 @@ header .button-search {
   background-color: #4472c4;
   color: white;
 }
+
 .logos3 {
   box-sizing: border-box;
   display: flex;
@@ -329,6 +347,7 @@ header .button-search {
   width: 90%;
   font-size: 100%;
 }
+
 .logos3 {
   box-sizing: border-box;
   display: flex;
@@ -337,25 +356,29 @@ header .button-search {
   width: 90%;
   font-size: 100%;
 }
-.logos3 > li {
-display: inline-block;
-padding: 3%;
-width: auto;
-height: auto;
+
+.logos3>li {
+  display: inline-block;
+  padding: 3%;
+  width: auto;
+  height: auto;
 }
-.logos3 > li > a {
-display: block;
-padding: 15px 20px 0px 0px;
-color: blue;
-text-decoration: none;
+
+.logos3>li>a {
+  display: block;
+  padding: 15px 20px 0px 0px;
+  color: blue;
+  text-decoration: none;
 }
-.dropdown-item{
+
+.dropdown-item {
   display: block;
   padding: 4px 16px;
   width: 100%;
   color: black;
 }
-.dropdown-menu{
+
+.dropdown-menu {
   position: absolute;
   background-color: #ffffff;
   padding: 10px;
@@ -368,24 +391,25 @@ text-decoration: none;
   border-radius: 5%;
 }
 
-.dropdown-menu li a{
-display: block;
-padding: 15px;
-color: aliceblue;
-text-decoration: none;
+.dropdown-menu li a {
+  display: block;
+  padding: 15px;
+  color: aliceblue;
+  text-decoration: none;
 }
 
-.nav-item img{
+.nav-item img {
   width: 60px;
   height: auto;
   vertical-align: middle;
   border-radius: 100%;
 }
-.logos3 li:hover .dropdown-menu{
-display: block;
+
+.logos3 li:hover .dropdown-menu {
+  display: block;
 }
 
-.divisor{
+.divisor {
   list-style: none;
 }
 
@@ -537,13 +561,16 @@ display: block;
   justify-content: center;
   height: 100%;
 }
-.enlaces-fonts{
-  color:black;
+
+.enlaces-fonts {
+  color: black;
 }
-.enlaces-fonts:hover{
+
+.enlaces-fonts:hover {
   background-color: #4472c4;
-color: white;
+  color: white;
 }
+
 .logx {
   width: 80%;
 }
@@ -566,6 +593,28 @@ color: white;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+  }
+
+  header .form-buscador {
+    display: flex;
+    align-items: center;
+  }
+
+  header .input-search {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    border: #1386d3 2px solid;
+    padding: 10px;
+  }
+
+  header .button-search {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    background-color: white;
+
   }
 
   .micuenta-logo {

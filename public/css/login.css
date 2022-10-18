@@ -112,12 +112,17 @@ header .form {
   width: 50%;
 }
 
+header .form-buscador {
+  display: flex;
+  align-items: center;
+}
+
 header .input-search {
+  width: 600px;
+  height: 100%;
   border-radius: 10px;
   border: #1386d3 2px solid;
   padding: 10px;
-  width: 250px;
-  margin-block-end: auto;
 }
 
 header .button-search {
@@ -227,6 +232,7 @@ header .button-search {
   background-color: #4472c4;
   color: white;
 }
+
 .logos3 {
   box-sizing: border-box;
   display: flex;
@@ -235,34 +241,36 @@ header .button-search {
   width: 80%;
   font-size: 100%;
 }
-.logos3 > li {
+
+.logos3>li {
   display: inline-block;
 }
-.logos3 > li > a {
+
+.logos3>li>a {
   display: block;
   padding: 15px 20px;
   color: blue;
   text-decoration: none;
 }
 
-.logos3 li a:hover{
-  color:black;
+.logos3 li a:hover {
+  color: black;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   position: absolute;
   background: cadetblue;
   display: none;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
   display: block;
   padding: 15px;
   color: aliceblue;
   text-decoration: none;
 }
 
-.logos3 li:hover .dropdown-menu{
+.logos3 li:hover .dropdown-menu {
   display: block;
 }
 
@@ -273,10 +281,10 @@ main .box {
   background-color: #ebebeb;
 }
 
-main .recordarUsuario{
+main .recordarUsuario {
   background-color: #ebebeb;
   padding: 10px 0px;
-}  
+}
 
 main .input {
   border-radius: 5px;
@@ -302,22 +310,24 @@ main .button {
 main .button:hover {
   background-color: #0022aa;
 }
- .titulo {
+
+.titulo {
   display: flex;
   justify-content: center;
   width: 100%;
   background-color: #ebebeb;
 }
-.crear-link{
+
+.crear-link {
   color: black;
   text-decoration: dashed;
 }
 
-.contenedor{
+.contenedor {
   width: 100%;
 }
 
-.text-danger{
+.text-danger {
   font-size: 20px;
   color: red;
 }
@@ -357,13 +367,16 @@ main .button:hover {
   justify-content: center;
   height: 100%;
 }
-.enlaces-fonts{
-  color:black;
+
+.enlaces-fonts {
+  color: black;
 }
-.enlaces-fonts:hover{
+
+.enlaces-fonts:hover {
   background-color: #4472c4;
-color: white;
+  color: white;
 }
+
 .logx {
   width: 80%;
 }
@@ -387,6 +400,28 @@ color: white;
     flex-direction: column;
   }
 
+  header .form-buscador {
+    display: flex;
+    align-items: center;
+  }
+
+  header .input-search {
+    width: 400px;
+    height: 100%;
+    border-radius: 10px;
+    border: #1386d3 2px solid;
+    padding: 10px;
+  }
+
+  header .button-search {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    background-color: white;
+
+  }
+
   .micuenta-logo {
     box-sizing: border-box;
     display: flex;
@@ -398,12 +433,14 @@ color: white;
     display: flex;
     justify-content: flex-start;
   }
+
   .cart-number {
     position: absolute;
     padding-top: 6px;
     background-color: red;
     color: white;
   }
+
   .contacto-logo {
     box-sizing: border-box;
     display: flex;
@@ -435,10 +472,10 @@ color: white;
     color: #1386d3;
   }
 
-  .fa-plus-circle{
+  .fa-plus-circle {
     font-size: 200%;
     color: #1386d3;
-  }  
+  }
 
   .barra-accesorios {
     box-sizing: border-box;

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("../partials/head", {Solapa: "PH: PRODUCTOS" }) %>
+
+  <body>
+
+    <%- include("../partials/header") %>
+
+      <main>
+        <h5>INICIO/PRODUCTO</h5>
+        <div class="DescripcionProductos">
+          <article class="SelectorProducto">
+
+            <p class="marca-producto"> Marcas:
+            <pre> </pre>
+            </p>
+            <div>
+              <input type="checkbox" name="interests" value="a" id="a">
+              <label for="a">Adidas</label>
+            </div>
+            <div>
+              <input type="checkbox" name="interests" value="b" id="b">
+              <label for="b">Kelmer</label>
+            </div>
+            <div>
+              <input type="checkbox" name="interests" value="c" id="c">
+              <label for="c">Higer</label>
+            </div>
+          </article>
+
+          <% for(let i=0; i < products.length; i++){ %>
+            <div class="Desc-1">
+              <a href="/products/oneProduct/<%= products[i].id %> ">
+                <h4 class="modelo">
+                  <%= `${products[i].brand} ${products[i].model} `%>
+                </h4>
+              </a>
+              <a class="img" href="/products/oneProduct/<%= products[i].id %> ">
+                <img id="producto" src="/images/uploads/<%= products[i].image %>" alt="">
+              </a>
+              <div class="precios">
+                <p class="precio">
+                  $<%= products[i].price %>
+                </p>
+                <a href="/products/oneProduct/<%= products[i].id %> ">
+                  <button class="button button1" type="submit">
+                    Ver detalles
+                  </button>
+                </a>
+                </a>
+              </div>
+            </div>
+            <% } %>
+        </div>
+        </div>
+      </main>
+      <%- include("../partials/footer") %>
+
+  </body>
+
+</html>

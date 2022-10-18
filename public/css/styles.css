@@ -109,12 +109,17 @@ header .form {
   width: 50%;
 }
 
+header .form-buscador {
+  display: flex;
+  align-items: center;
+}
+
 header .input-search {
+  width: 600px;
+  height: 100%;
   border-radius: 10px;
   border: #1386d3 2px solid;
   padding: 10px;
-  width: 250px;
-  margin-block-end: auto;
 }
 
 header .button-search {
@@ -146,12 +151,14 @@ header .button-search {
   padding: 3%;
   color: black;
 }
+
 .cart-number {
   position: absolute;
   padding-top: 6px;
   background-color: red;
   color: white;
 }
+
 .fa-address-card {
   font-size: 200%;
   color: #1386d3;
@@ -339,10 +346,12 @@ video {
   justify-content: center;
 
 }
-.carrusel{
+
+.carrusel {
   width: 100%;
   height: 400px;
 }
+
 .overlay {
   width: 100%;
   height: 100%;
@@ -597,6 +606,7 @@ video {
 #count {
   width: 15px;
 }
+
 /* ESTILOS GENERALES LOGIN Y REGISTRO */
 
 
@@ -745,10 +755,12 @@ ul.errores li {
 
 /* - MEDIA QUERIES - */
 @media (max-width: 391px) {
-  .carrusel{
+  .carrusel {
     width: 100%;
     height: 100%;
-  }}
+  }
+}
+
 @media (max-width: 658px) {
   .barra-accesorios {
     font-size: 25px;
@@ -765,19 +777,23 @@ ul.errores li {
   .titulos-producto3 {
     font-size: 25px;
   }
-  .carrusel{
+
+  .carrusel {
     width: 100%;
     height: 300px;
   }
+
   .logx {
     width: 80%;
   }
+
   @media(max-width:506px) {
-    .carrusel{
+    .carrusel {
       width: 100%;
       height: 200px;
     }
   }
+
   @media(max-width:1050px) {
     .productoss2 {
       width: 78%;
@@ -797,6 +813,28 @@ ul.errores li {
       box-sizing: border-box;
       display: flex;
       flex-direction: column;
+    }
+
+    header .form-buscador {
+      display: flex;
+      align-items: center;
+    }
+
+    header .input-search {
+      width: 400px;
+      height: 100%;
+      border-radius: 10px;
+      border: #1386d3 2px solid;
+      padding: 10px;
+    }
+
+    header .button-search {
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      width: auto;
+      background-color: white;
+
     }
 
     .logos3 {
@@ -928,9 +966,11 @@ ul.errores li {
     .footer-ul {
       font-size: 15px;
     }
-    .servicios-footer{
+
+    .servicios-footer {
       font-size: 15px;
     }
+
     .enlaces-fonts {
       font-size: 15px;
     }
