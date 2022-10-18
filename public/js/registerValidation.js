@@ -27,6 +27,9 @@ window.onload = () => {
         } if (form.password.value.length < 8) {
             errors.push("Debe ingresar una contraseña que contenga mas de 8 caracteres")
         }
+        if (form.image.value == "") {
+            errors.push('El campo "imagen" está vacío');
+        }
 
         if (errors.length > 0) {
             e.preventDefault();

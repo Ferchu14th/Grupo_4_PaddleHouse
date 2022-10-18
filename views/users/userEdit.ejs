@@ -43,7 +43,7 @@
                     <div class="box">
                         <label for="password"></label>
                         <div class="contenedor">
-                        <input class="input" type="password" name="password" placeholder="Edite su Contraseña">
+                        <input class="input" type="password" name="password" placeholder="Edite su Contraseña" >
 
                         <% if (locals.errors && errors.password) { %>
                             <div class="text-error">
@@ -58,7 +58,7 @@
                             <label for="image">Editar foto de perfil</label>
                             </div>
                             <div>
-                            <input class="input" type="file" name="image" placeholder="Agregar imagen">
+                            <input class="input" type="file" name="image" placeholder="Agregar imagen" value="<%= user.avatar %>">
 
                             <% if (locals.errors && errors.image) { %>
                                 <div class="text-error">

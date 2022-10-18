@@ -120,13 +120,14 @@ const controller = {
 
 	update: (req, res) => {
 		db.Users.findByPk(req.session.userLogged.id).then(function (user) {
+			let file = req.file;
 			user
 				.update({
 					name: req.body.name,
 					email: req.body.email,
 					password: bcryptjs.hashSync(req.body.password, 12),
 					// repeatPassword: bcryptjs.hashSync(req.body.repeatPassword, 12),
-					avatar: req.file.filename
+					avatar: file ? req.file.filename : req.body.image,
 				})
 				.then((user) => {
 					req.session.userLogged = user;
