@@ -79,6 +79,27 @@ const productsApiController = {
                 res.json({ status: 800 });
             });
     },
-};
+    ultimo: (req, res) => {
+        db.Products.findAll({order:[["id", "DESC"]], limit:1})
+        .then(function (product) {
+            product[0].setDataValue("endpoint", "/api/products/lastProduct/" + product.length)
+
+            let apiResponse= {
+                meta: {
+                    status: 200,
+                    url:"/api/products/lastProduct",
+                    total: product.length
+                },
+                data: product
+            }
+            res.json(apiResponse)
+        })
+        .catch(function(error){
+            res.json({status:500})
+        })
+    }
+
+}
+;
 
 module.exports = productsApiController;
